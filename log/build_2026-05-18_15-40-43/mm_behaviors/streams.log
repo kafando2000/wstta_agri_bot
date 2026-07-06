@@ -1,0 +1,15 @@
+[0.059s] Invoking command in '/home/kafando/Ros2_ws/build/mm_behaviors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16
+[0.288s] [ 16%] [32mBuilding CXX object CMakeFiles/wstta_robot_bt_node.dir/src/mm_moveit_actions.cpp.o[0m
+[10.910s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[10.910s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[10.910s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[10.910s]                  from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:1[m[K,
+[10.910s]                  from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:1[m[K:
+[10.910s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus PlanForTheArm::[01;32m[KonRunning[m[K()[m[K’:
+[10.910s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:180:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_model[m[K’ was not declared in this scope; did you mean ‘[01m[Krobot_model_[m[K’?
+[10.910s]   180 |             [01;31m[Kjoint_model[m[K->getTypeName().c_str());
+[10.911s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[20.165s] gmake[2]: *** [CMakeFiles/wstta_robot_bt_node.dir/build.make:104: CMakeFiles/wstta_robot_bt_node.dir/src/mm_moveit_actions.cpp.o] Error 1
+[20.165s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wstta_robot_bt_node.dir/all] Error 2
+[20.166s] gmake: *** [Makefile:146: all] Error 2
+[20.169s] Invoked command in '/home/kafando/Ros2_ws/build/mm_behaviors' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16

@@ -1,0 +1,4 @@
+/home/kafando/Ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/CustomMessage.idl
+/home/kafando/Ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:srv/ConcatStrings.idl
+/home/kafando/Ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:action/CustomAction.idl
+/home/kafando/Ros2_ws/build/custom_interfaces/rosidl_adapter/custom_interfaces:action/ReachLocation.idl

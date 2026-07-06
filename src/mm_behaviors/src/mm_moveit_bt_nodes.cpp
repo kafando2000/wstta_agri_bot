@@ -324,7 +324,7 @@ BT::NodeStatus  PlanExecForGripper::onStart(){
     }
      moveit_cpp::PlanningComponent::PlanRequestParameters plan_params;
 
-    // 3. Set your custom Planner ID (must match your ompl_planning.yaml config name)
+    // Set custom Planner ID (must match your ompl_planning.yaml config name)
     plan_params.planner_id = "RRTConnectkConfigDefault";
 
     // Optional: You can also explicitly set the pipeline ID if using multiple pipelines

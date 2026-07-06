@@ -1,0 +1,16 @@
+In file included from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_bt_node.hpp:5[m[K,
+                 from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_bt_node.cpp:1[m[K:
+/opt/ros/jazzy/include/behaviortree_cpp/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::[01;32m[KregisterNodeType[m[K(const std::string&, ExtraArgs ...) [35m[K[with T = UnLoad; ExtraArgs = {}; std::string = std::__cxx11::basic_string<char>][m[K[m[K’:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_bt_node.cpp:72:45:[m[K   required from here
+[01m[K/opt/ros/jazzy/include/behaviortree_cpp/bt_factory.h:412:24:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: since you have a static method providedPorts(),
+you MUST add a constructor with signature:
+(const std::string&, const NodeConfig&)
+
+  411 |       static_assert(![01;31m[K(has_static_ports_list && !param_constructable[m[K
+      |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  412 | [01;31m[K                       && sizeof...(ExtraArgs) == 0)[m[K,
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/behaviortree_cpp/bt_factory.h:412:24:[m[K [01;36m[Knote: [m[K‘[01m[K(((!(bool)has_static_ports_list) || ((bool)param_constructable)) || (0 != 0))[m[K’ evaluates to false
+gmake[2]: *** [CMakeFiles/wstta_robot_bt_node.dir/build.make:76: CMakeFiles/wstta_robot_bt_node.dir/src/mm_bt_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wstta_robot_bt_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

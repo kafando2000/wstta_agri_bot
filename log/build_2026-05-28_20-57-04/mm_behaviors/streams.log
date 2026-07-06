@@ -1,0 +1,61 @@
+[0.020s] Invoking command in '/home/kafando/Ros2_ws/build/mm_behaviors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16
+[0.044s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.240s] -- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.266s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.272s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.283s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.295s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.338s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.341s] -- Found rmw_cyclonedds_cpp: 2.2.3 (/opt/ros/jazzy/share/rmw_cyclonedds_cpp/cmake)
+[0.361s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.401s] -- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.410s] -- Found rclcpp_action: 28.1.18 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[0.442s] -- Found behaviortree_cpp: 4.9.0 (/opt/ros/jazzy/share/behaviortree_cpp/cmake)
+[0.443s] -- Found tf2: 0.36.20 (/opt/ros/jazzy/share/tf2/cmake)
+[0.455s] -- Found tf2_ros: 0.36.20 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[0.506s] -- Found tf2_geometry_msgs: 0.36.20 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+[0.509s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[0.510s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.511s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.527s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.528s] -- Found custom_interfaces: 0.0.0 (/home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake)
+[0.554s] -- Found moveit: 2.14.1 (/home/kafando/ws_moveit/install/moveit/share/moveit/cmake)
+[0.554s] -- Found moveit_msgs: 2.7.1 (/home/kafando/ws_moveit/install/moveit_msgs/share/moveit_msgs/cmake)
+[0.696s] -- Found moveit_ros_planning: 2.14.1 (/home/kafando/ws_moveit/install/moveit_ros_planning/share/moveit_ros_planning/cmake)
+[0.704s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono 
+[0.707s] -- Found parameter_traits: 0.7.1 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[0.712s] -- Found rclcpp_lifecycle: 28.1.18 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[0.737s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[0.768s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem 
+[0.802s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[0.845s] -- Found moveit_ros_planning_interface: 2.14.1 (/home/kafando/ws_moveit/install/moveit_ros_planning_interface/share/moveit_ros_planning_interface/cmake)
+[0.849s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread 
+[0.859s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options 
+[0.881s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread 
+[0.907s] -- Found nav2_common: 1.3.11 (/opt/ros/jazzy/share/nav2_common/cmake)
+[0.907s] -- Found navigation2: 1.3.11 (/opt/ros/jazzy/share/navigation2/cmake)
+[0.907s] -- Found nav2_msgs: 1.3.11 (/opt/ros/jazzy/share/nav2_msgs/cmake)
+[0.988s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: serialization filesystem system 
+[1.015s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.080s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.080s] -- Configured cppcheck include dirs: /home/kafando/Ros2_ws/src/mm_behaviors/include
+[1.080s] -- Configured cppcheck exclude dirs and/or files: 
+[1.080s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.080s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.081s] -- Added test 'lint_cmake' to check CMake code style
+[1.081s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.082s] -- Added test 'uncrustify' to check C / C++ code style
+[1.082s] -- Configured uncrustify additional arguments: 
+[1.082s] -- Added test 'xmllint' to check XML markup files
+[1.083s] -- Configuring done (1.0s)
+[1.107s] -- Generating done (0.0s)
+[1.112s] -- Build files have been written to: /home/kafando/Ros2_ws/build/mm_behaviors
+[1.175s] [ 16%] [32mBuilding CXX object CMakeFiles/wstta_bt_node.dir/src/mm_bt_node.cpp.o[0m
+[2.266s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_bt_node.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kompl/util/Console.h: No such file or directory
+[2.266s]     2 | #include [01;31m[K<ompl/util/Console.h>[m[K
+[2.266s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.266s] compilation terminated.
+[2.281s] gmake[2]: *** [CMakeFiles/wstta_bt_node.dir/build.make:76: CMakeFiles/wstta_bt_node.dir/src/mm_bt_node.cpp.o] Error 1
+[2.281s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wstta_bt_node.dir/all] Error 2
+[2.282s] gmake: *** [Makefile:146: all] Error 2
+[2.283s] Invoked command in '/home/kafando/Ros2_ws/build/mm_behaviors' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16

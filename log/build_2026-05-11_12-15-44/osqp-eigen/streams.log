@@ -1,0 +1,54 @@
+[0.014s] Invoking command in '/home/kafando/Ros2_ws/build/osqp-eigen': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kafando/Ros2_ws/src/osqp-eigen -DCMAKE_INSTALL_PREFIX=/home/kafando/Ros2_ws/install/osqp-eigen
+[0.065s] -- The C compiler identification is GNU 13.3.0
+[0.117s] -- The CXX compiler identification is GNU 13.3.0
+[0.129s] -- Detecting C compiler ABI info
+[0.253s] -- Detecting C compiler ABI info - done
+[0.264s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.264s] -- Detecting C compile features
+[0.265s] -- Detecting C compile features - done
+[0.278s] -- Detecting CXX compiler ABI info
+[0.409s] -- Detecting CXX compiler ABI info - done
+[0.415s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.415s] -- Detecting CXX compile features
+[0.416s] -- Detecting CXX compile features - done
+[0.418s] -- Setting build type to 'Release' as none was specified.
+[0.432s] [33mCMake Warning (dev) at cmake/OsqpEigenDependencies.cmake:37 (set):
+[0.432s]   Cannot set "OSQP_EIGEN_OSQP_TARGET_TO_LINK": current scope has no parent.
+[0.432s] Call Stack (most recent call first):
+[0.432s]   CMakeLists.txt:75 (include)
+[0.432s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.432s] [0m
+[0.548s] -- Configuring done (0.5s)
+[0.551s] -- Generating done (0.0s)
+[0.552s] -- Build files have been written to: /home/kafando/Ros2_ws/build/osqp-eigen
+[0.555s] Invoked command in '/home/kafando/Ros2_ws/build/osqp-eigen' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kafando/Ros2_ws/src/osqp-eigen -DCMAKE_INSTALL_PREFIX=/home/kafando/Ros2_ws/install/osqp-eigen
+[0.556s] Invoking command in '/home/kafando/Ros2_ws/build/osqp-eigen': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/osqp-eigen -- -j16 -l16
+[0.619s] [ 80%] [32mBuilding CXX object CMakeFiles/OsqpEigen.dir/src/Solver.cpp.o[0m
+[0.619s] [ 80%] [32mBuilding CXX object CMakeFiles/OsqpEigen.dir/src/Data.cpp.o[0m
+[0.619s] [ 80%] [32mBuilding CXX object CMakeFiles/OsqpEigen.dir/src/Settings.cpp.o[0m
+[0.619s] [ 80%] [32mBuilding CXX object CMakeFiles/OsqpEigen.dir/src/Debug.cpp.o[0m
+[1.811s] [100%] [32m[1mLinking CXX shared library libOsqpEigen.so[0m
+[1.889s] [100%] Built target OsqpEigen
+[1.898s] Invoked command in '/home/kafando/Ros2_ws/build/osqp-eigen' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/osqp-eigen -- -j16 -l16
+[1.912s] Invoking command in '/home/kafando/Ros2_ws/build/osqp-eigen': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kafando/Ros2_ws/build/osqp-eigen
+[1.920s] -- Install configuration: "Release"
+[1.921s] -- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/lib/libOsqpEigen.so.0.11.0
+[1.921s] -- Set non-toolchain portion of runtime path of "/home/kafando/Ros2_ws/install/osqp-eigen/lib/libOsqpEigen.so.0.11.0" to "$ORIGIN/:$ORIGIN/../lib:/opt/ros/jazzy/lib"
+[1.921s] -- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/lib/libOsqpEigen.so
+[1.921s] -- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/OsqpEigen.h
+[1.921s] -- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/Constants.hpp
+[1.921s] -- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/SparseMatrixHelper.hpp
+[1.921s] -- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/SparseMatrixHelper.tpp
+[1.921s] -- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/Data.hpp
+[1.921s] -- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/Data.tpp
+[1.921s] -- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/Settings.hpp
+[1.921s] -- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/Solver.hpp
+[1.921s] -- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/Solver.tpp
+[1.921s] -- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/Compat.hpp
+[1.921s] -- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/Debug.hpp
+[1.921s] -- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/lib/cmake/OsqpEigen/OsqpEigenConfigVersion.cmake
+[1.922s] -- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/lib/cmake/OsqpEigen/OsqpEigenConfig.cmake
+[1.922s] -- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/lib/cmake/OsqpEigen/OsqpEigenTargets.cmake
+[1.922s] -- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/lib/cmake/OsqpEigen/OsqpEigenTargets-release.cmake
+[1.922s] -- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/share/cmake/osqp-eigen/package.xml
+[1.923s] Invoked command in '/home/kafando/Ros2_ws/build/osqp-eigen' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kafando/Ros2_ws/build/osqp-eigen

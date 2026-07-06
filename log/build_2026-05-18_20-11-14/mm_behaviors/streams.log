@@ -1,0 +1,30 @@
+[0.048s] Invoking command in '/home/kafando/Ros2_ws/build/mm_behaviors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16
+[0.260s] [ 16%] [32mBuilding CXX object CMakeFiles/wstta_robot_bt_node.dir/src/mm_moveit_actions.cpp.o[0m
+[30.710s] [ 33%] [32m[1mLinking CXX executable wstta_robot_bt_node[0m
+[32.568s] [100%] Built target wstta_robot_bt_node
+[32.594s] Invoked command in '/home/kafando/Ros2_ws/build/mm_behaviors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16
+[32.598s] Invoking command in '/home/kafando/Ros2_ws/build/mm_behaviors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kafando/Ros2_ws/build/mm_behaviors
+[32.612s] -- Install configuration: "Debug"
+[32.613s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/xml_tree
+[32.613s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/xml_tree/mm_behaviors.xml
+[32.613s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/launch
+[32.613s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/launch/mm_bt_nodes.launch.py
+[32.613s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/config
+[32.613s] -- Installing: /home/kafando/Ros2_ws/install/mm_behaviors/lib/mm_behaviors/wstta_robot_bt_node
+[32.645s] -- Set non-toolchain portion of runtime path of "/home/kafando/Ros2_ws/install/mm_behaviors/lib/mm_behaviors/wstta_robot_bt_node" to ""
+[32.645s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/ament_index/resource_index/package_run_dependencies/mm_behaviors
+[32.645s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/ament_index/resource_index/parent_prefix_path/mm_behaviors
+[32.645s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/environment/ament_prefix_path.sh
+[32.646s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/environment/ament_prefix_path.dsv
+[32.646s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/environment/path.sh
+[32.646s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/environment/path.dsv
+[32.646s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/local_setup.bash
+[32.646s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/local_setup.sh
+[32.646s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/local_setup.zsh
+[32.646s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/local_setup.dsv
+[32.646s] -- Installing: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/package.dsv
+[32.646s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/ament_index/resource_index/packages/mm_behaviors
+[32.647s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/cmake/mm_behaviorsConfig.cmake
+[32.647s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/cmake/mm_behaviorsConfig-version.cmake
+[32.647s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/package.xml
+[32.649s] Invoked command in '/home/kafando/Ros2_ws/build/mm_behaviors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kafando/Ros2_ws/build/mm_behaviors

@@ -1,0 +1,4 @@
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus PlanForTheArm::[01;32m[KonRunning[m[K()[m[K’:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:304:42:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  304 |                 if(Poses && [01;35m[KPoses->size()>index[m[K){
+      |                             [01;35m[K~~~~~~~~~~~~~^~~~~~[m[K

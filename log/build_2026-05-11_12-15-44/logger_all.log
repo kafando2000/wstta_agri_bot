@@ -1,0 +1,258 @@
+[0.089s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'osqp-eigen']
+[0.089s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['osqp-eigen'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x77831c3fa150>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x77831c3136b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x77831c3136b0>>, mixin_verb=('build',))
+[0.117s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.117s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.117s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.117s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.117s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.117s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.117s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kafando/Ros2_ws'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(docker_compose_dev) by extensions ['ignore', 'ignore_ament_install']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(docker_compose_dev) by extension 'ignore'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(docker_compose_dev) by extension 'ignore_ament_install'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(docker_compose_dev) by extensions ['colcon_pkg']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(docker_compose_dev) by extension 'colcon_pkg'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(docker_compose_dev) by extensions ['colcon_meta']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(docker_compose_dev) by extension 'colcon_meta'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(docker_compose_dev) by extensions ['ros']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(docker_compose_dev) by extension 'ros'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(docker_compose_dev) by extensions ['cmake', 'python']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(docker_compose_dev) by extension 'cmake'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(docker_compose_dev) by extension 'python'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(docker_compose_dev) by extensions ['python_setup_py']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(docker_compose_dev) by extension 'python_setup_py'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(docker_setup_scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(docker_setup_scripts) by extension 'ignore'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(docker_setup_scripts) by extension 'ignore_ament_install'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker_setup_scripts) by extensions ['colcon_pkg']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker_setup_scripts) by extension 'colcon_pkg'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker_setup_scripts) by extensions ['colcon_meta']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker_setup_scripts) by extension 'colcon_meta'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker_setup_scripts) by extensions ['ros']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker_setup_scripts) by extension 'ros'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker_setup_scripts) by extensions ['cmake', 'python']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker_setup_scripts) by extension 'cmake'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker_setup_scripts) by extension 'python'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker_setup_scripts) by extensions ['python_setup_py']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(docker_setup_scripts) by extension 'python_setup_py'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_concepts) by extensions ['ignore', 'ignore_ament_install']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_concepts) by extension 'ignore'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_concepts) by extension 'ignore_ament_install'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_concepts) by extensions ['colcon_pkg']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_concepts) by extension 'colcon_pkg'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_concepts) by extensions ['colcon_meta']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_concepts) by extension 'colcon_meta'
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_concepts) by extensions ['ros']
+[0.136s] Level 1:colcon.colcon_core.package_identification:_identify(src/bt_concepts) by extension 'ros'
+[0.138s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bt_concepts' with type 'ros.ament_cmake' and name 'bt_concepts'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_controllers) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_controllers) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_controllers) by extension 'ignore_ament_install'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_controllers) by extensions ['colcon_pkg']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_controllers) by extension 'colcon_pkg'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_controllers) by extensions ['colcon_meta']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_controllers) by extension 'colcon_meta'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_controllers) by extensions ['ros']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_controllers) by extension 'ros'
+[0.138s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_controllers' with type 'ros.ament_cmake' and name 'custom_controllers'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'ignore'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'ignore_ament_install'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['colcon_pkg']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'colcon_pkg'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['colcon_meta']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'colcon_meta'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['ros']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'ros'
+[0.139s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_interfaces' with type 'ros.ament_cmake' and name 'custom_interfaces'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_behaviors) by extensions ['ignore', 'ignore_ament_install']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_behaviors) by extension 'ignore'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_behaviors) by extension 'ignore_ament_install'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_behaviors) by extensions ['colcon_pkg']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_behaviors) by extension 'colcon_pkg'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_behaviors) by extensions ['colcon_meta']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_behaviors) by extension 'colcon_meta'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_behaviors) by extensions ['ros']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_behaviors) by extension 'ros'
+[0.140s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mm_behaviors' with type 'ros.ament_cmake' and name 'mm_behaviors'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_bringup) by extension 'ignore'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_bringup) by extension 'ignore_ament_install'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_bringup) by extensions ['colcon_pkg']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_bringup) by extension 'colcon_pkg'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_bringup) by extensions ['colcon_meta']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_bringup) by extension 'colcon_meta'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_bringup) by extensions ['ros']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_bringup) by extension 'ros'
+[0.141s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mm_bringup' with type 'ros.ament_cmake' and name 'mm_bringup'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_moveit) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_moveit) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_moveit) by extension 'ignore_ament_install'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_moveit) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_moveit) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_moveit) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_moveit) by extension 'colcon_meta'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_moveit) by extensions ['ros']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_moveit) by extension 'ros'
+[0.141s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mm_moveit' with type 'ros.ament_cmake' and name 'mm_moveit'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_nav) by extensions ['ignore', 'ignore_ament_install']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_nav) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_nav) by extension 'ignore_ament_install'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_nav) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_nav) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_nav) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_nav) by extension 'colcon_meta'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_nav) by extensions ['ros']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/mm_nav) by extension 'ros'
+[0.142s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mm_nav' with type 'ros.ament_cmake' and name 'mm_nav'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/osqp-eigen) by extensions ['ignore', 'ignore_ament_install']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/osqp-eigen) by extension 'ignore'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/osqp-eigen) by extension 'ignore_ament_install'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/osqp-eigen) by extensions ['colcon_pkg']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/osqp-eigen) by extension 'colcon_pkg'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/osqp-eigen) by extensions ['colcon_meta']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/osqp-eigen) by extension 'colcon_meta'
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/osqp-eigen) by extensions ['ros']
+[0.142s] Level 1:colcon.colcon_core.package_identification:_identify(src/osqp-eigen) by extension 'ros'
+[0.144s] DEBUG:colcon.colcon_core.package_identification:Package 'src/osqp-eigen' with type 'ros.cmake' and name 'osqp-eigen'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_ros_concepts) by extensions ['ignore', 'ignore_ament_install']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_ros_concepts) by extension 'ignore'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_ros_concepts) by extension 'ignore_ament_install'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_ros_concepts) by extensions ['colcon_pkg']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_ros_concepts) by extension 'colcon_pkg'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_ros_concepts) by extensions ['colcon_meta']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_ros_concepts) by extension 'colcon_meta'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_ros_concepts) by extensions ['ros']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/the_ros_concepts) by extension 'ros'
+[0.144s] DEBUG:colcon.colcon_core.package_identification:Package 'src/the_ros_concepts' with type 'ros.ament_cmake' and name 'the_ros_concepts'
+[0.144s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.144s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.144s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.144s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.144s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.157s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'custom_controllers' in 'src/custom_controllers'
+[0.157s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'custom_interfaces' in 'src/custom_interfaces'
+[0.157s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'mm_behaviors' in 'src/mm_behaviors'
+[0.157s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'mm_bringup' in 'src/mm_bringup'
+[0.157s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'mm_nav' in 'src/mm_nav'
+[0.157s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'bt_concepts' in 'src/bt_concepts'
+[0.157s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'mm_moveit' in 'src/mm_moveit'
+[0.157s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'the_ros_concepts' in 'src/the_ros_concepts'
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.158s] WARNING:colcon.colcon_core.prefix_path.colcon:The path '/home/kafando/Ros2_ws/src/install' in the environment variable COLCON_PREFIX_PATH doesn't exist
+[0.159s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/kafando/Ros2_ws/src/install/osqp-eigen' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.160s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/kafando/Ros2_ws/install
+[0.161s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 51 installed packages in /home/kafando/ws_moveit/install
+[0.162s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/kafando/Cbot_ws/install
+[0.162s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 9 installed packages in /home/kafando/Wstta_bot_ws/install
+[0.163s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 485 installed packages in /opt/ros/jazzy
+[0.164s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'osqp-eigen' build argument 'cmake_args' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'osqp-eigen' build argument 'cmake_target' from command line to 'None'
+[0.219s] Level 5:colcon.colcon_core.verb:set package 'osqp-eigen' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'osqp-eigen' build argument 'cmake_clean_cache' from command line to 'False'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'osqp-eigen' build argument 'cmake_clean_first' from command line to 'False'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'osqp-eigen' build argument 'cmake_force_configure' from command line to 'False'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'osqp-eigen' build argument 'ament_cmake_args' from command line to 'None'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'osqp-eigen' build argument 'catkin_cmake_args' from command line to 'None'
+[0.220s] Level 5:colcon.colcon_core.verb:set package 'osqp-eigen' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.220s] DEBUG:colcon.colcon_core.verb:Building package 'osqp-eigen' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kafando/Ros2_ws/build/osqp-eigen', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kafando/Ros2_ws/install/osqp-eigen', 'merge_install': False, 'path': '/home/kafando/Ros2_ws/src/osqp-eigen', 'symlink_install': False, 'test_result_base': None}
+[0.220s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.221s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.221s] INFO:colcon.colcon_ros.task.cmake.build:Building ROS package in '/home/kafando/Ros2_ws/src/osqp-eigen' with build type 'cmake'
+[0.221s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kafando/Ros2_ws/src/osqp-eigen'
+[0.222s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.222s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.222s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.236s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kafando/Ros2_ws/build/osqp-eigen': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kafando/Ros2_ws/src/osqp-eigen -DCMAKE_INSTALL_PREFIX=/home/kafando/Ros2_ws/install/osqp-eigen
+[0.777s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kafando/Ros2_ws/build/osqp-eigen' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kafando/Ros2_ws/src/osqp-eigen -DCMAKE_INSTALL_PREFIX=/home/kafando/Ros2_ws/install/osqp-eigen
+[0.778s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kafando/Ros2_ws/build/osqp-eigen': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/osqp-eigen -- -j16 -l16
+[2.119s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kafando/Ros2_ws/build/osqp-eigen' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/osqp-eigen -- -j16 -l16
+[2.134s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kafando/Ros2_ws/build/osqp-eigen': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kafando/Ros2_ws/build/osqp-eigen
+[2.144s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kafando/Ros2_ws/build/osqp-eigen' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kafando/Ros2_ws/build/osqp-eigen
+[2.145s] Level 1:colcon.colcon_core.shell:create_environment_hook('osqp-eigen', 'pkg_config_path')
+[2.145s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kafando/Ros2_ws/install/osqp-eigen/share/osqp-eigen/hook/pkg_config_path.ps1'
+[2.145s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kafando/Ros2_ws/install/osqp-eigen/share/osqp-eigen/hook/pkg_config_path.dsv'
+[2.145s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kafando/Ros2_ws/install/osqp-eigen/share/osqp-eigen/hook/pkg_config_path.sh'
+[2.147s] Level 1:colcon.colcon_core.shell:create_environment_hook('osqp-eigen', 'pkg_config_path_multiarch')
+[2.147s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kafando/Ros2_ws/install/osqp-eigen/share/osqp-eigen/hook/pkg_config_path_multiarch.ps1'
+[2.147s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kafando/Ros2_ws/install/osqp-eigen/share/osqp-eigen/hook/pkg_config_path_multiarch.dsv'
+[2.147s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kafando/Ros2_ws/install/osqp-eigen/share/osqp-eigen/hook/pkg_config_path_multiarch.sh'
+[2.147s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(osqp-eigen)
+[2.149s] Level 1:colcon.colcon_core.environment:checking '/home/kafando/Ros2_ws/install/osqp-eigen' for CMake module files
+[2.149s] Level 1:colcon.colcon_core.environment:checking '/home/kafando/Ros2_ws/install/osqp-eigen' for CMake config files
+[2.149s] Level 1:colcon.colcon_core.shell:create_environment_hook('osqp-eigen', 'cmake_prefix_path')
+[2.150s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kafando/Ros2_ws/install/osqp-eigen/share/osqp-eigen/hook/cmake_prefix_path.ps1'
+[2.150s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kafando/Ros2_ws/install/osqp-eigen/share/osqp-eigen/hook/cmake_prefix_path.dsv'
+[2.150s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kafando/Ros2_ws/install/osqp-eigen/share/osqp-eigen/hook/cmake_prefix_path.sh'
+[2.151s] Level 1:colcon.colcon_core.environment:checking '/home/kafando/Ros2_ws/install/osqp-eigen/lib'
+[2.151s] Level 1:colcon.colcon_core.shell:create_environment_hook('osqp-eigen', 'ld_library_path_lib')
+[2.151s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kafando/Ros2_ws/install/osqp-eigen/share/osqp-eigen/hook/ld_library_path_lib.ps1'
+[2.151s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kafando/Ros2_ws/install/osqp-eigen/share/osqp-eigen/hook/ld_library_path_lib.dsv'
+[2.151s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kafando/Ros2_ws/install/osqp-eigen/share/osqp-eigen/hook/ld_library_path_lib.sh'
+[2.151s] Level 1:colcon.colcon_core.environment:checking '/home/kafando/Ros2_ws/install/osqp-eigen/bin'
+[2.151s] Level 1:colcon.colcon_core.environment:checking '/home/kafando/Ros2_ws/install/osqp-eigen/lib/pkgconfig/osqp-eigen.pc'
+[2.152s] Level 1:colcon.colcon_core.environment:checking '/home/kafando/Ros2_ws/install/osqp-eigen/lib/python3.12/site-packages'
+[2.152s] Level 1:colcon.colcon_core.environment:checking '/home/kafando/Ros2_ws/install/osqp-eigen/bin'
+[2.152s] INFO:colcon.colcon_core.shell:Creating package script '/home/kafando/Ros2_ws/install/osqp-eigen/share/osqp-eigen/package.ps1'
+[2.153s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kafando/Ros2_ws/install/osqp-eigen/share/osqp-eigen/package.dsv'
+[2.153s] INFO:colcon.colcon_core.shell:Creating package script '/home/kafando/Ros2_ws/install/osqp-eigen/share/osqp-eigen/package.sh'
+[2.154s] INFO:colcon.colcon_core.shell:Creating package script '/home/kafando/Ros2_ws/install/osqp-eigen/share/osqp-eigen/package.bash'
+[2.154s] INFO:colcon.colcon_core.shell:Creating package script '/home/kafando/Ros2_ws/install/osqp-eigen/share/osqp-eigen/package.zsh'
+[2.155s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kafando/Ros2_ws/install/osqp-eigen/share/colcon-core/packages/osqp-eigen)
+[2.155s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.155s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.155s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.155s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.164s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.164s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.164s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.185s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.186s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kafando/Ros2_ws/install/local_setup.ps1'
+[2.186s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kafando/Ros2_ws/install/_local_setup_util_ps1.py'
+[2.187s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kafando/Ros2_ws/install/setup.ps1'
+[2.190s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kafando/Ros2_ws/install/local_setup.sh'
+[2.190s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kafando/Ros2_ws/install/_local_setup_util_sh.py'
+[2.190s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kafando/Ros2_ws/install/setup.sh'
+[2.192s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kafando/Ros2_ws/install/local_setup.bash'
+[2.193s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kafando/Ros2_ws/install/setup.bash'
+[2.194s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kafando/Ros2_ws/install/local_setup.zsh'
+[2.195s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kafando/Ros2_ws/install/setup.zsh'

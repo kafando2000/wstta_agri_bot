@@ -1,0 +1,9 @@
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus WSTTA::ExecuteArmPlan::[01;32m[KonStart[m[K()[m[K’:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:397:44:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool moveit_cpp::PlanningComponent::[01;32m[Kexecute[m[K(bool)[m[K’ is deprecated: Use MoveItCpp::execute() [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  397 |             [01;35m[Karm_planning_component->execute(true)[m[K;
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+In file included from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_bt_nodes.hpp:35[m[K,
+                 from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:1[m[K:
+[01m[K/home/kafando/ws_moveit/install/moveit_ros_planning/include/moveit_ros_planning/moveit/moveit_cpp/planning_component.hpp:212:51:[m[K [01;36m[Knote: [m[Kdeclared here
+  212 |   [[deprecated("Use MoveItCpp::execute()")]] bool [01;36m[Kexecute[m[K(bool /*blocking */)
+      |                                                   [01;36m[K^~~~~~~[m[K

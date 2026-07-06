@@ -1,0 +1,15 @@
+[ 12%] Built target service_client
+[ 25%] Built target action_client
+[ 37%] Built target publisher_node
+[ 50%] Built target service_server
+[ 62%] Built target subscriber_node
+[ 75%] Built target action_server
+[ 87%] Built target node_to_test_yaml
+[ 93%] [32mBuilding CXX object CMakeFiles/osqp_node.dir/src/osqp_node.cpp.o[0m
+[01m[K/home/kafando/Ros2_ws/src/the_ros_concepts/src/osqp_node.cpp:[m[K In member function ‘[01m[Kvoid OSQPNode::[01;32m[Ksolve_qp_with_linearization[m[K(double, double, double, double, bool)[m[K’:
+[01m[K/home/kafando/Ros2_ws/src/the_ros_concepts/src/osqp_node.cpp:88:15:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+   88 |         X_k = [01;31m[K;[m[K
+      |               [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/osqp_node.dir/build.make:76: CMakeFiles/osqp_node.dir/src/osqp_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:333: CMakeFiles/osqp_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

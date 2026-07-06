@@ -1,0 +1,61 @@
+[0.020s] Invoking command in '/home/kafando/Ros2_ws/build/mm_behaviors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16
+[0.095s] [ 16%] [32mBuilding CXX object CMakeFiles/wstta_robot_bt_node.dir/src/mm_moveit_actions.cpp.o[0m
+[4.006s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus PlanForTheArm::[01;32m[KonStart[m[K()[m[K’:
+[4.007s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:221:32:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmoveit::core::RobotState::setFromIK(const moveit::core::JointModelGroup*&, <brace-enclosed initializer list>, int, double)[m[K’
+[4.007s]   221 |     bool ok = [01;31m[Kstate_->setFromIK(jmg,{{1.0,0.0, 0.0, radius},[m[K
+[4.007s]       |               [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.007s]   222 | [01;31m[K                                      {0.0,1.0, 0.0, 0.0},[m[K
+[4.007s]       |                                       [01;31m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[4.007s]   223 | [01;31m[K                                      {0.0,0.0, 1.0, 0.2},[m[K
+[4.007s]       |                                       [01;31m[K~~~~~~~~~~~~~~~~~~~~[m[K
+[4.007s]   224 | [01;31m[K                                      {0.0,0.0, 0.0, 1.0}},10, 0.1)[m[K;
+[4.007s]       |                                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.007s] In file included from [01m[K/home/kafando/ws_moveit/install/moveit_ros_planning_interface/include/moveit_ros_planning_interface/moveit/move_group_interface/move_group_interface.hpp:41[m[K,
+[4.007s]                  from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:6[m[K,
+[4.007s]                  from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:1[m[K:
+[4.007s] [01m[K/home/kafando/ws_moveit/install/moveit_core/include/moveit_core/moveit/robot_state/robot_state.hpp:930:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool moveit::core::RobotState::[01;32m[KsetFromIK[m[K(const moveit::core::JointModelGroup*, const geometry_msgs::msg::Pose&, double, const moveit::core::GroupStateValidityCallbackFn&, const kinematics::KinematicsQueryOptions&, const kinematics::KinematicsBase::IKCostFn&)[m[K’
+[4.007s]   930 |   bool [01;36m[KsetFromIK[m[K(const JointModelGroup* group, const geometry_msgs::msg::Pose& pose, double timeout = 0.0,
+[4.007s]       |        [01;36m[K^~~~~~~~~[m[K
+[4.007s] [01m[K/home/kafando/ws_moveit/install/moveit_core/include/moveit_core/moveit/robot_state/robot_state.hpp:930:80:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst geometry_msgs::msg::Pose&[m[K’ {aka ‘[01m[Kconst geometry_msgs::msg::Pose_<std::allocator<void> >&[m[K’}
+[4.007s]   930 |   bool setFromIK(const JointModelGroup* group, [01;36m[Kconst geometry_msgs::msg::Pose& pose[m[K, double timeout = 0.0,
+[4.007s]       |                                                [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[4.008s] [01m[K/home/kafando/ws_moveit/install/moveit_core/include/moveit_core/moveit/robot_state/robot_state.hpp:942:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool moveit::core::RobotState::[01;32m[KsetFromIK[m[K(const moveit::core::JointModelGroup*, const geometry_msgs::msg::Pose&, const std::string&, double, const moveit::core::GroupStateValidityCallbackFn&, const kinematics::KinematicsQueryOptions&, const kinematics::KinematicsBase::IKCostFn&)[m[K’
+[4.008s]   942 |   bool [01;36m[KsetFromIK[m[K(const JointModelGroup* group, const geometry_msgs::msg::Pose& pose, const std::string& tip,
+[4.008s]       |        [01;36m[K^~~~~~~~~[m[K
+[4.008s] [01m[K/home/kafando/ws_moveit/install/moveit_core/include/moveit_core/moveit/robot_state/robot_state.hpp:942:80:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst geometry_msgs::msg::Pose&[m[K’ {aka ‘[01m[Kconst geometry_msgs::msg::Pose_<std::allocator<void> >&[m[K’}
+[4.008s]   942 |   bool setFromIK(const JointModelGroup* group, [01;36m[Kconst geometry_msgs::msg::Pose& pose[m[K, const std::string& tip,
+[4.008s]       |                                                [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[4.008s] [01m[K/home/kafando/ws_moveit/install/moveit_core/include/moveit_core/moveit/robot_state/robot_state.hpp:953:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool moveit::core::RobotState::[01;32m[KsetFromIK[m[K(const moveit::core::JointModelGroup*, const Eigen::Isometry3d&, double, const moveit::core::GroupStateValidityCallbackFn&, const kinematics::KinematicsQueryOptions&, const kinematics::KinematicsBase::IKCostFn&)[m[K’
+[4.008s]   953 |   bool [01;36m[KsetFromIK[m[K(const JointModelGroup* group, const Eigen::Isometry3d& pose, double timeout = 0.0,
+[4.008s]       |        [01;36m[K^~~~~~~~~[m[K
+[4.008s] [01m[K/home/kafando/ws_moveit/install/moveit_core/include/moveit_core/moveit/robot_state/robot_state.hpp:953:73:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst Eigen::Isometry3d&[m[K’ {aka ‘[01m[Kconst Eigen::Transform<double, 3, 1>&[m[K’}
+[4.008s]   953 |   bool setFromIK(const JointModelGroup* group, [01;36m[Kconst Eigen::Isometry3d& pose[m[K, double timeout = 0.0,
+[4.008s]       |                                                [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[4.008s] [01m[K/home/kafando/ws_moveit/install/moveit_core/include/moveit_core/moveit/robot_state/robot_state.hpp:964:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool moveit::core::RobotState::[01;32m[KsetFromIK[m[K(const moveit::core::JointModelGroup*, const Eigen::Isometry3d&, const std::string&, double, const moveit::core::GroupStateValidityCallbackFn&, const kinematics::KinematicsQueryOptions&, const kinematics::KinematicsBase::IKCostFn&)[m[K’
+[4.008s]   964 |   bool [01;36m[KsetFromIK[m[K(const JointModelGroup* group, const Eigen::Isometry3d& pose, const std::string& tip,
+[4.008s]       |        [01;36m[K^~~~~~~~~[m[K
+[4.008s] [01m[K/home/kafando/ws_moveit/install/moveit_core/include/moveit_core/moveit/robot_state/robot_state.hpp:964:73:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst Eigen::Isometry3d&[m[K’ {aka ‘[01m[Kconst Eigen::Transform<double, 3, 1>&[m[K’}
+[4.008s]   964 |   bool setFromIK(const JointModelGroup* group, [01;36m[Kconst Eigen::Isometry3d& pose[m[K, const std::string& tip,
+[4.008s]       |                                                [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[4.008s] [01m[K/home/kafando/ws_moveit/install/moveit_core/include/moveit_core/moveit/robot_state/robot_state.hpp:977:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool moveit::core::RobotState::[01;32m[KsetFromIK[m[K(const moveit::core::JointModelGroup*, const Eigen::Isometry3d&, const std::string&, const std::vector<double, std::allocator<double> >&, double, const moveit::core::GroupStateValidityCallbackFn&, const kinematics::KinematicsQueryOptions&, const kinematics::KinematicsBase::IKCostFn&)[m[K’
+[4.008s]   977 |   bool [01;36m[KsetFromIK[m[K(const JointModelGroup* group, const Eigen::Isometry3d& pose, const std::string& tip,
+[4.008s]       |        [01;36m[K^~~~~~~~~[m[K
+[4.008s] [01m[K/home/kafando/ws_moveit/install/moveit_core/include/moveit_core/moveit/robot_state/robot_state.hpp:977:73:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst Eigen::Isometry3d&[m[K’ {aka ‘[01m[Kconst Eigen::Transform<double, 3, 1>&[m[K’}
+[4.008s]   977 |   bool setFromIK(const JointModelGroup* group, [01;36m[Kconst Eigen::Isometry3d& pose[m[K, const std::string& tip,
+[4.008s]       |                                                [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[4.008s] [01m[K/home/kafando/ws_moveit/install/moveit_core/include/moveit_core/moveit/robot_state/robot_state.hpp:992:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool moveit::core::RobotState::[01;32m[KsetFromIK[m[K(const moveit::core::JointModelGroup*, const EigenSTL::vector_Isometry3d&, const std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > >&, double, const moveit::core::GroupStateValidityCallbackFn&, const kinematics::KinematicsQueryOptions&, const kinematics::KinematicsBase::IKCostFn&)[m[K’
+[4.009s]   992 |   bool [01;36m[KsetFromIK[m[K(const JointModelGroup* group, const EigenSTL::vector_Isometry3d& poses,
+[4.009s]       |        [01;36m[K^~~~~~~~~[m[K
+[4.009s] [01m[K/home/kafando/ws_moveit/install/moveit_core/include/moveit_core/moveit/robot_state/robot_state.hpp:992:83:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst EigenSTL::vector_Isometry3d&[m[K’ {aka ‘[01m[Kconst std::vector<Eigen::Transform<double, 3, 1>, Eigen::aligned_allocator<Eigen::Transform<double, 3, 1> > >&[m[K’}
+[4.009s]   992 |   bool setFromIK(const JointModelGroup* group, [01;36m[Kconst EigenSTL::vector_Isometry3d& poses[m[K,
+[4.009s]       |                                                [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[4.009s] [01m[K/home/kafando/ws_moveit/install/moveit_core/include/moveit_core/moveit/robot_state/robot_state.hpp:1008:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool moveit::core::RobotState::[01;32m[KsetFromIK[m[K(const moveit::core::JointModelGroup*, const EigenSTL::vector_Isometry3d&, const std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > >&, const std::vector<std::vector<double, std::allocator<double> > >&, double, const moveit::core::GroupStateValidityCallbackFn&, const kinematics::KinematicsQueryOptions&, const kinematics::KinematicsBase::IKCostFn&)[m[K’
+[4.009s]  1008 |   bool [01;36m[KsetFromIK[m[K(const JointModelGroup* group, const EigenSTL::vector_Isometry3d& poses,
+[4.009s]       |        [01;36m[K^~~~~~~~~[m[K
+[4.009s] [01m[K/home/kafando/ws_moveit/install/moveit_core/include/moveit_core/moveit/robot_state/robot_state.hpp:1008:83:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst EigenSTL::vector_Isometry3d&[m[K’ {aka ‘[01m[Kconst std::vector<Eigen::Transform<double, 3, 1>, Eigen::aligned_allocator<Eigen::Transform<double, 3, 1> > >&[m[K’}
+[4.009s]  1008 |   bool setFromIK(const JointModelGroup* group, [01;36m[Kconst EigenSTL::vector_Isometry3d& poses[m[K,
+[4.009s]       |                                                [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[7.292s] gmake[2]: *** [CMakeFiles/wstta_robot_bt_node.dir/build.make:104: CMakeFiles/wstta_robot_bt_node.dir/src/mm_moveit_actions.cpp.o] Error 1
+[7.292s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wstta_robot_bt_node.dir/all] Error 2
+[7.292s] gmake: *** [Makefile:146: all] Error 2
+[7.295s] Invoked command in '/home/kafando/Ros2_ws/build/mm_behaviors' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16

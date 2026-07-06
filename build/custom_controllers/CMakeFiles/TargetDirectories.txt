@@ -1,0 +1,10 @@
+/home/kafando/Ros2_ws/build/custom_controllers/CMakeFiles/uninstall.dir
+/home/kafando/Ros2_ws/build/custom_controllers/CMakeFiles/custom_controllers_uninstall.dir
+/home/kafando/Ros2_ws/build/custom_controllers/CMakeFiles/sine_law_controller.dir
+/home/kafando/Ros2_ws/build/custom_controllers/CMakeFiles/test.dir
+/home/kafando/Ros2_ws/build/custom_controllers/CMakeFiles/edit_cache.dir
+/home/kafando/Ros2_ws/build/custom_controllers/CMakeFiles/rebuild_cache.dir
+/home/kafando/Ros2_ws/build/custom_controllers/CMakeFiles/list_install_components.dir
+/home/kafando/Ros2_ws/build/custom_controllers/CMakeFiles/install.dir
+/home/kafando/Ros2_ws/build/custom_controllers/CMakeFiles/install/local.dir
+/home/kafando/Ros2_ws/build/custom_controllers/CMakeFiles/install/strip.dir

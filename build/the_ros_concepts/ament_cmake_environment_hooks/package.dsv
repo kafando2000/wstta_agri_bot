@@ -1,0 +1,4 @@
+source;share/the_ros_concepts/local_setup.bash
+source;share/the_ros_concepts/local_setup.dsv
+source;share/the_ros_concepts/local_setup.sh
+source;share/the_ros_concepts/local_setup.zsh

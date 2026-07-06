@@ -1,0 +1,10 @@
+yaml_test:
+  ros__parameters:
+    is_switched: true
+    joints:
+      names:
+        - joint1
+        - joint2
+        - joint3
+        - joint4
+      initials: [1.0, 0.2, 0.5, 0.8]

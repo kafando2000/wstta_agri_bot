@@ -1,0 +1,54 @@
+[0.064s] Invoking command in '/home/kafando/Ros2_ws/build/custom_controllers': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kafando/Ros2_ws/src/custom_controllers -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS=-fsanitize=address -fno-omit-frame-pointer -DCMAKE_INSTALL_PREFIX=/home/kafando/Ros2_ws/install/custom_controllers
+[0.090s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.530s] -- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.581s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.598s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.621s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.647s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.759s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.766s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.913s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.037s] -- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.059s] -- Found controller_interface: 4.44.0 (/opt/ros/jazzy/share/controller_interface/cmake)
+[1.532s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.756s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.756s] -- Configured cppcheck include dirs: 
+[1.756s] -- Configured cppcheck exclude dirs and/or files: 
+[1.757s] -- Added test 'lint_cmake' to check CMake code style
+[1.759s] -- Added test 'uncrustify' to check C / C++ code style
+[1.759s] -- Configured uncrustify additional arguments: 
+[1.759s] -- Added test 'xmllint' to check XML markup files
+[1.761s] -- Configuring done (1.7s)
+[1.806s] -- Generating done (0.0s)
+[1.816s] -- Build files have been written to: /home/kafando/Ros2_ws/build/custom_controllers
+[1.848s] Invoked command in '/home/kafando/Ros2_ws/build/custom_controllers' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kafando/Ros2_ws/src/custom_controllers -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS=-fsanitize=address -fno-omit-frame-pointer -DCMAKE_INSTALL_PREFIX=/home/kafando/Ros2_ws/install/custom_controllers
+[1.850s] Invoking command in '/home/kafando/Ros2_ws/build/custom_controllers': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/custom_controllers -- -j16 -l16
+[2.000s] [ 50%] [32mBuilding CXX object CMakeFiles/sine_law_controller.dir/src/sine_controller.cpp.o[0m
+[34.065s] [100%] [32m[1mLinking CXX shared library libsine_law_controller.so[0m
+[34.996s] [100%] Built target sine_law_controller
+[35.025s] Invoked command in '/home/kafando/Ros2_ws/build/custom_controllers' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/custom_controllers -- -j16 -l16
+[35.027s] Invoking command in '/home/kafando/Ros2_ws/build/custom_controllers': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kafando/Ros2_ws/build/custom_controllers
+[35.049s] -- Install configuration: "Debug"
+[35.049s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/sine_law_controller.xml
+[35.049s] -- Installing: /home/kafando/Ros2_ws/install/custom_controllers/lib/libsine_law_controller.so
+[35.065s] -- Set non-toolchain portion of runtime path of "/home/kafando/Ros2_ws/install/custom_controllers/lib/libsine_law_controller.so" to ""
+[35.065s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers//include
+[35.065s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers//include/custom_controllers
+[35.065s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers//include/custom_controllers/wbc_for_mm_control.hpp
+[35.065s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/ament_index/resource_index/package_run_dependencies/custom_controllers
+[35.066s] -- Installing: /home/kafando/Ros2_ws/install/custom_controllers/share/ament_index/resource_index/parent_prefix_path/custom_controllers
+[35.066s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/environment/ament_prefix_path.sh
+[35.066s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/environment/ament_prefix_path.dsv
+[35.066s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/environment/path.sh
+[35.066s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/environment/path.dsv
+[35.066s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/local_setup.bash
+[35.066s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/local_setup.sh
+[35.066s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/local_setup.zsh
+[35.066s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/local_setup.dsv
+[35.067s] -- Installing: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/package.dsv
+[35.067s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/ament_index/resource_index/packages/custom_controllers
+[35.067s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/ament_index/resource_index/controller_interface__pluginlib__plugin/custom_controllers
+[35.067s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/cmake/custom_controllersConfig.cmake
+[35.067s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/cmake/custom_controllersConfig-version.cmake
+[35.067s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/package.xml
+[35.075s] Invoked command in '/home/kafando/Ros2_ws/build/custom_controllers' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kafando/Ros2_ws/build/custom_controllers

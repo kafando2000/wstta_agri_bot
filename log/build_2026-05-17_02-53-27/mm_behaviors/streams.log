@@ -1,0 +1,60 @@
+[0.030s] Invoking command in '/home/kafando/Ros2_ws/build/mm_behaviors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16
+[0.068s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.355s] -- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.391s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.400s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.414s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.432s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.500s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.505s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.586s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.657s] -- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.672s] -- Found rclcpp_action: 28.1.18 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[0.713s] -- Found behaviortree_cpp: 4.9.0 (/opt/ros/jazzy/share/behaviortree_cpp/cmake)
+[0.715s] -- Found tf2: 0.36.20 (/opt/ros/jazzy/share/tf2/cmake)
+[0.736s] -- Found tf2_ros: 0.36.20 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[0.809s] -- Found tf2_geometry_msgs: 0.36.20 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+[0.813s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[0.816s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.818s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.844s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.846s] -- Found custom_interfaces: 0.0.0 (/home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake)
+[0.880s] -- Found moveit: 2.14.1 (/home/kafando/ws_moveit/install/moveit/share/moveit/cmake)
+[0.880s] -- Found moveit_msgs: 2.7.1 (/home/kafando/ws_moveit/install/moveit_msgs/share/moveit_msgs/cmake)
+[1.085s] -- Found moveit_ros_planning_interface: 2.14.1 (/home/kafando/ws_moveit/install/moveit_ros_planning_interface/share/moveit_ros_planning_interface/cmake)
+[1.097s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread 
+[1.112s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.155s] -- Found parameter_traits: 0.7.1 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[1.162s] -- Found rclcpp_lifecycle: 28.1.18 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[1.197s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem 
+[1.294s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono 
+[1.350s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options 
+[1.377s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread 
+[1.417s] -- Found nav2_common: 1.3.11 (/opt/ros/jazzy/share/nav2_common/cmake)
+[1.417s] -- Found navigation2: 1.3.11 (/opt/ros/jazzy/share/navigation2/cmake)
+[1.417s] -- Found nav2_msgs: 1.3.11 (/opt/ros/jazzy/share/nav2_msgs/cmake)
+[1.555s] [33mCMake Warning at CMakeLists.txt:25 (find_package):
+[1.555s]   By not providing "Findespeak.cmake" in CMAKE_MODULE_PATH this project has
+[1.555s]   asked CMake to find a package configuration file provided by "espeak", but
+[1.555s]   CMake did not find one.
+[1.556s] 
+[1.556s]   Could not find a package configuration file provided by "espeak" with any
+[1.556s]   of the following names:
+[1.556s] 
+[1.556s]     espeakConfig.cmake
+[1.556s]     espeak-config.cmake
+[1.556s] 
+[1.556s]   Add the installation prefix of "espeak" to CMAKE_PREFIX_PATH or set
+[1.556s]   "espeak_DIR" to a directory containing one of the above files.  If "espeak"
+[1.556s]   provides a separate development package or SDK, be sure it has been
+[1.556s]   installed.
+[1.556s] 
+[1.556s] [0m
+[1.577s] [31mCMake Error at CMakeLists.txt:53 (target_link_libraries):
+[1.577s]   Cannot specify link libraries for target "espeak" which is not built by
+[1.577s]   this project.
+[1.577s] 
+[1.577s] [0m
+[1.577s] -- Configuring incomplete, errors occurred!
+[1.590s] gmake: *** [Makefile:375: cmake_check_build_system] Error 1
+[1.592s] Invoked command in '/home/kafando/Ros2_ws/build/mm_behaviors' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16

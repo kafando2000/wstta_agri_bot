@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4">
+  <BehaviorTree ID="JustNavigate">
+    <ReactiveSequence>
+      <CheckBattery name="ForNavigation"
+                    percentage_treshold="25.0"
+                    battery_percentage="{@battery_percentage}"/>
+      <NavigateToPose name="GlobalPathNavigation"
+                      key="in_global_long_path"/>
+    </ReactiveSequence>
+  </BehaviorTree>
+
+  <BehaviorTree ID="TrackObject">
+    <Sequence name="WholeManipulation">
+      <Sequence name="ObJectTracking">
+        <PlanForTheArm name="PlanToTakeObject"
+                       objects_poses_vect="{@objects_poses_vect}"
+                       arm_joints_traject="{@arm_joints_traject}"
+                       plan_key="for_object"
+                       circle_radius="{@circle_radius}"/>
+        <Sequence>
+          <ReactiveSequence name="GoToTakeObject">
+            <CheckBattery name="ForNavigation"
+                          percentage_treshold="25.0"
+                          battery_percentage="{@battery_percentage}"/>
+            <NavigateToPose name="NearObject"
+                            key="in_track_object"/>
+          </ReactiveSequence>
+          <Sequence>
+            <CheckBattery name="ForManipulation"
+                          percentage_treshold="25.0"
+                          battery_percentage="{@battery_percentage}"/>
+            <ExecuteArmPlan arm_joints_traject="{@arm_joints_traject}"/>
+          </Sequence>
+        </Sequence>
+      </Sequence>
+      <Sequence name="DropSequence">
+        <PlanForTheArm name="PlanToDropObject"
+                       objects_poses_vect="{@objects_poses_vect}"
+                       arm_joints_traject="{@arm_joints_traject}"
+                       plan_key="for_drop"
+                       circle_radius="{@circle_radius}"/>
+        <CheckBattery name="ForManipulation"
+                      percentage_treshold="25.0"
+                      battery_percentage="{@battery_percentage}"/>
+        <ExecuteArmPlan arm_joints_traject="{@arm_joints_traject}"/>
+      </Sequence>
+    </Sequence>
+  </BehaviorTree>
+
+  <BehaviorTree ID="main">
+    <WhileDoElse>
+      <CheckGoToInitials is_go_to_initials="false"/>
+      <Sequence name="GoToInitialsBothArmAndBase">
+        <PlanForTheArm name="PlanForArmIniatialPose"
+                       objects_poses_vect="{@objects_poses_vect}"
+                       arm_joints_traject="{@arm_joints_traject}"
+                       plan_key="for_initial"
+                       circle_radius="{@circle_radius}"/>
+        <Sequence>
+          <CheckBattery name="ForManipulation"
+                        percentage_treshold="25.0"
+                        battery_percentage="{@battery_percentage}"/>
+          <ExecuteArmPlan arm_joints_traject="{@arm_joints_traject}"/>
+        </Sequence>
+        <ReactiveSequence>
+          <CheckBattery name="ForNavigation"
+                        percentage_treshold="25.0"
+                        battery_percentage="{@battery_percentage}"/>
+          <NavigateToPose name="ToInitialPose"
+                          key="initial"/>
+        </ReactiveSequence>
+      </Sequence>
+      <ReactiveSequence name="NormalCycleOfObjectPicking">
+        <ForceSuccess>
+          <GetLongPathGoalPose name="GetLongPathGoals"
+                               long_path_waypoints="{@long_path_waypoints}"/>
+        </ForceSuccess>
+        <ForceSuccess>
+          <StackObjectPose objects_poses_vect="{@objects_poses_vect}"/>
+        </ForceSuccess>
+        <ReactiveFallback name="ObjectTrackingOrJustNavigate">
+          <SubTree ID="JustNavigate"
+                   _autoremap="false"/>
+          <SubTree ID="TrackObject"
+                   _autoremap="false"/>
+        </ReactiveFallback>
+      </ReactiveSequence>
+    </WhileDoElse>
+  </BehaviorTree>
+
+  <!-- Description of Node Models (used by Groot) -->
+  <TreeNodesModel>
+    <Condition ID="CheckBattery"
+               editable="true">
+      <input_port name="percentage_treshold"
+                  default="25.0"
+                  type="double"/>
+      <input_port name="battery_percentage"
+                  type="double"/>
+    </Condition>
+    <Condition ID="CheckGoToInitials"
+               editable="true">
+      <input_port name="is_go_to_initials"
+                  default="false"
+                  type="bool"/>
+    </Condition>
+    <Action ID="ExecuteArmPlan"
+            editable="true">
+      <input_port name="arm_joints_traject"/>
+    </Action>
+    <Action ID="GetLongPathGoalPose"
+            editable="true">
+      <output_port name="long_path_waypoints"/>
+    </Action>
+    <Action ID="NavigateToPose"
+            editable="true">
+      <input_port name="key"/>
+    </Action>
+    <Action ID="PlanForTheArm"
+            editable="true">
+      <input_port name="objects_poses_vect"/>
+      <output_port name="arm_joints_traject"/>
+      <output_port name="plan_key"/>
+      <input_port name="circle_radius"
+                  default="0.32"
+                  type="double"/>
+    </Action>
+    <Action ID="StackObjectPose"
+            editable="true">
+      <output_port name="objects_poses_vect"/>
+    </Action>
+  </TreeNodesModel>
+
+</root>

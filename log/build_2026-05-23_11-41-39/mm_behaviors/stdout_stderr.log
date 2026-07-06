@@ -1,0 +1,25 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/wstta_robot_bt_node.dir/src/mm_moveit_actions.cpp.o[0m
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus PlanForTheArm::[01;32m[KonStart[m[K()[m[K’:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:119:10:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kbool tf_found[m[K’
+  119 |     bool [01;31m[Ktf_found[m[K = false;
+      |          [01;31m[K^~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:74:11:[m[K [01;36m[Knote: [m[K‘[01m[Kbool tf_found[m[K’ previously declared here
+   74 |     bool  [01;36m[Ktf_found[m[K = false;
+      |           [01;36m[K^~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:219:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kobject_basefootprint_pose[m[K’ was not declared in this scope
+  219 |     ee_target_pose.position.z = [01;31m[Kobject_basefootprint_pose[m[K.point.z;
+      |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus PlanForTheArm::[01;32m[KonRunning[m[K()[m[K’:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:281:34:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kstatic_cast[m[K’
+  281 |                 if(Poses && std::[01;31m[Kstatic_cast[m[K<int>(Poses->size())>index){
+      |                                  [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:281:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kstatic_cast[m[K’
+  281 |                 if[34m[K([m[KPoses && std[01;31m[K:[m[K:[32m[Kstatic_cast[m[K<int>(Poses->size())>index){
+      |                   [34m[K~[m[K            [01;31m[K^[m[K [32m[K~~~~~~~~~~~[m[K
+      |                                [32m[K)[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:304:42:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  304 |                 if(Poses && [01;35m[KPoses->size()>index[m[K){
+      |                             [01;35m[K~~~~~~~~~~~~~^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/wstta_robot_bt_node.dir/build.make:104: CMakeFiles/wstta_robot_bt_node.dir/src/mm_moveit_actions.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wstta_robot_bt_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,166 @@
+[0.022s] Invoking command in '/home/kafando/Ros2_ws/build/mm_behaviors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16
+[0.117s] [ 16%] [32mBuilding CXX object CMakeFiles/wstta_robot_bt_node.dir/src/mm_bt_node.cpp.o[0m
+[0.117s] [ 33%] [32mBuilding CXX object CMakeFiles/wstta_robot_bt_node.dir/src/mm_nav_actions.cpp.o[0m
+[0.122s] [ 50%] [32mBuilding CXX object CMakeFiles/wstta_robot_bt_node.dir/src/mm_moveit_actions.cpp.o[0m
+[0.124s] [ 66%] [32mBuilding CXX object CMakeFiles/wstta_robot_bt_node.dir/src/condition_nodes.cpp.o[0m
+[0.125s] [ 83%] [32mBuilding CXX object CMakeFiles/wstta_robot_bt_node.dir/src/actions_nodes.cpp.o[0m
+[2.662s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/condition_nodes.cpp:[m[K In member function ‘[01m[Kvoid BatteryChecker::[01;32m[Krecieve_battery_state[m[K(Batterystate)[m[K’:
+[2.662s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/condition_nodes.cpp:20:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.662s]    20 | void BatteryChecker::recieve_battery_state([01;35m[Kconst Batterystate msg[m[K){
+[2.662s]       |                                            [01;35m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.662s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/condition_nodes.cpp:[m[K At global scope:
+[2.662s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/condition_nodes.cpp:35:1:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[KCheckGoToInitials::[01;32m[KCheckGoToInitials[m[K(std::string, const BT::NodeConfig&)[m[K’
+[2.662s]    35 | [01;31m[KCheckGoToInitials[m[K::CheckGoToInitials(std::string name,const BT::NodeConfig& config):ConditionNode(name,config){}
+[2.662s]       | [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.662s] In file included from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/condition_nodes.cpp:1[m[K:
+[2.662s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/condition_nodes.hpp:47:5:[m[K [01;36m[Knote: [m[K‘[01m[KCheckGoToInitials::[01;32m[KCheckGoToInitials[m[K(std::string, const BT::NodeConfig&)[m[K’ previously defined here
+[2.662s]    47 |     [01;36m[KCheckGoToInitials[m[K(std::string name,const BT::NodeConfig& config):ConditionNode(name,config){
+[2.663s]       |     [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[2.719s] In file included from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:5[m[K,
+[2.719s]                  from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:1[m[K:
+[2.719s] [01m[K/home/kafando/ws_moveit/install/moveit_ros_planning_interface/include/moveit_ros_planning_interface/moveit/move_group_interface/move_group_interface.h:51:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+[2.719s]    51 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+[2.719s]       |                                                                             [01;36m[K^[m[K
+[2.974s] In file included from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:5[m[K,
+[2.974s]                  from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/actions_nodes.hpp:6[m[K,
+[2.974s]                  from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/actions_nodes.cpp:1[m[K:
+[2.975s] [01m[K/home/kafando/ws_moveit/install/moveit_ros_planning_interface/include/moveit_ros_planning_interface/moveit/move_group_interface/move_group_interface.h:51:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+[2.975s]    51 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+[2.975s]       |                                                                             [01;36m[K^[m[K
+[2.999s] In file included from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:5[m[K,
+[2.999s]                  from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_nav_actions.hpp:8[m[K,
+[2.999s]                  from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_nav_actions.cpp:1[m[K:
+[2.999s] [01m[K/home/kafando/ws_moveit/install/moveit_ros_planning_interface/include/moveit_ros_planning_interface/moveit/move_group_interface/move_group_interface.h:51:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+[2.999s]    51 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+[2.999s]       |                                                                             [01;36m[K^[m[K
+[3.043s] In file included from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:5[m[K,
+[3.043s]                  from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_bt_node.hpp:9[m[K,
+[3.043s]                  from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_bt_node.cpp:1[m[K:
+[3.043s] [01m[K/home/kafando/ws_moveit/install/moveit_ros_planning_interface/include/moveit_ros_planning_interface/moveit/move_group_interface/move_group_interface.h:51:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+[3.043s]    51 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+[3.043s]       |                                                                             [01;36m[K^[m[K
+[4.092s] gmake[2]: *** [CMakeFiles/wstta_robot_bt_node.dir/build.make:132: CMakeFiles/wstta_robot_bt_node.dir/src/condition_nodes.cpp.o] Error 1
+[4.092s] gmake[2]: *** Waiting for unfinished jobs....
+[4.325s] In file included from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:6[m[K:
+[4.325s] [01m[K/home/kafando/ws_moveit/install/moveit_ros_planning_interface/include/moveit_ros_planning_interface/moveit/planning_scene_interface/planning_scene_interface.h:50:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+[4.325s]    50 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+[4.325s]       |                                                                             [01;36m[K^[m[K
+[4.368s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:95:25:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KPlanForTheArm::[m[K’ on member ‘[01m[Ktick[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[4.368s]    95 |          BT::NodeStatus [01;31m[KPlanForTheArm[m[K::tick() override;
+[4.368s]       |                         [01;31m[K^~~~~~~~~~~~~[m[K
+[4.410s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus PlanForTheArm::[01;32m[Ktick[m[K()[m[K’:
+[4.411s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:156:55:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble moveit::planning_interface::MoveGroupInterface::[01;32m[KcomputeCartesianPath[m[K(const std::vector<geometry_msgs::msg::Pose_<std::allocator<void> > >&, double, double, moveit_msgs::msg::RobotTrajectory&, bool, moveit_msgs::msg::MoveItErrorCodes*)[m[K’ is deprecated: Drop jump_threshold [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[4.411s]   156 |     double fraction = [01;35m[Kmove_group->computeCartesianPath(waypoints, step, jump_th, this->my_plan)[m[K;
+[4.411s]       |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.411s] In file included from [01m[K/home/kafando/ws_moveit/install/moveit_ros_planning_interface/include/moveit_ros_planning_interface/moveit/move_group_interface/move_group_interface.h:52[m[K:
+[4.411s] [01m[K/home/kafando/ws_moveit/install/moveit_ros_planning_interface/include/moveit_ros_planning_interface/moveit/move_group_interface/move_group_interface.hpp:772:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.411s]   772 |   [01;36m[KcomputeCartesianPath[m[K(const std::vector<geometry_msgs::msg::Pose>& waypoints, double eef_step,
+[4.411s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[4.509s] In file included from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:6[m[K:
+[4.509s] [01m[K/home/kafando/ws_moveit/install/moveit_ros_planning_interface/include/moveit_ros_planning_interface/moveit/planning_scene_interface/planning_scene_interface.h:50:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+[4.509s]    50 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+[4.509s]       |                                                                             [01;36m[K^[m[K
+[4.543s] In file included from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:6[m[K:
+[4.543s] [01m[K/home/kafando/ws_moveit/install/moveit_ros_planning_interface/include/moveit_ros_planning_interface/moveit/planning_scene_interface/planning_scene_interface.h:50:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+[4.543s]    50 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+[4.543s]       |                                                                             [01;36m[K^[m[K
+[4.551s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:95:25:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KPlanForTheArm::[m[K’ on member ‘[01m[Ktick[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[4.551s]    95 |          BT::NodeStatus [01;31m[KPlanForTheArm[m[K::tick() override;
+[4.551s]       |                         [01;31m[K^~~~~~~~~~~~~[m[K
+[4.575s] In file included from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:6[m[K:
+[4.575s] [01m[K/home/kafando/ws_moveit/install/moveit_ros_planning_interface/include/moveit_ros_planning_interface/moveit/planning_scene_interface/planning_scene_interface.h:50:77:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: .h header is obsolete. Please use the .hpp header instead.[m[K’
+[4.575s]    50 | #pragma message(".h header is obsolete. Please use the .hpp header instead."[01;36m[K)[m[K
+[4.575s]       |                                                                             [01;36m[K^[m[K
+[4.585s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:95:25:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KPlanForTheArm::[m[K’ on member ‘[01m[Ktick[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[4.585s]    95 |          BT::NodeStatus [01;31m[KPlanForTheArm[m[K::tick() override;
+[4.585s]       |                         [01;31m[K^~~~~~~~~~~~~[m[K
+[4.608s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_nav_actions.hpp:30:30:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KNavigate::[m[K’ on member ‘[01m[KprovidedPorts[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[4.608s]    30 |         static BT::PortsList [01;31m[KNavigate[m[K::providedPorts() {
+[4.608s]       |                              [01;31m[K^~~~~~~~[m[K
+[4.613s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_nav_actions.hpp:42:14:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KNavigate::[m[K’ on member ‘[01m[Kcheck_if_target[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[4.613s]    42 |         bool [01;31m[KNavigate[m[K::check_if_target(TargetPose& t,std::string var_name);
+[4.613s]       |              [01;31m[K^~~~~~~~[m[K
+[4.617s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:95:25:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KPlanForTheArm::[m[K’ on member ‘[01m[Ktick[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[4.617s]    95 |          BT::NodeStatus [01;31m[KPlanForTheArm[m[K::tick() override;
+[4.617s]       |                         [01;31m[K^~~~~~~~~~~~~[m[K
+[4.638s] In file included from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_nav_actions.hpp:8[m[K,
+[4.638s]                  from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_bt_node.hpp:10[m[K:
+[4.638s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:19:6:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kvoid[01;32m[K read_text_in_speak[m[K(std::string)[m[K’
+[4.638s]    19 | void [01;31m[Kread_text_in_speak[m[K(std::string t){
+[4.639s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.639s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:19:6:[m[K [01;36m[Knote: [m[K‘[01m[Kvoid[01;32m[K read_text_in_speak[m[K(std::string)[m[K’ previously defined here
+[4.639s]    19 | void [01;36m[Kread_text_in_speak[m[K(std::string t){
+[4.639s]       |      [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.639s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:39:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct TargetPose[m[K’
+[4.639s]    39 | struct [01;31m[KTargetPose[m[K{
+[4.639s]       |        [01;31m[K^~~~~~~~~~[m[K
+[4.639s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:39:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct TargetPose[m[K’
+[4.639s]    39 | struct [01;36m[KTargetPose[m[K{
+[4.639s]       |        [01;36m[K^~~~~~~~~~[m[K
+[4.639s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:72:5:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint[01;32m[K get_near_pose_index[m[K(std::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >&, Pose3D&)[m[K’
+[4.639s]    72 | int [01;31m[Kget_near_pose_index[m[K(std::vector<Pose3D>& t,Pose3D& robot_pose){
+[4.639s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.639s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:72:5:[m[K [01;36m[Knote: [m[K‘[01m[Kint[01;32m[K get_near_pose_index[m[K(std::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >&, Pose3D&)[m[K’ previously defined here
+[4.639s]    72 | int [01;36m[Kget_near_pose_index[m[K(std::vector<Pose3D>& t,Pose3D& robot_pose){
+[4.639s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.639s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:85:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass PlanForTheArm[m[K’
+[4.639s]    85 | class [01;31m[KPlanForTheArm[m[K : public BT::SyncActionNode{
+[4.640s]       |       [01;31m[K^~~~~~~~~~~~~[m[K
+[4.640s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:85:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass PlanForTheArm[m[K’
+[4.640s]    85 | class [01;36m[KPlanForTheArm[m[K : public BT::SyncActionNode{
+[4.640s]       |       [01;36m[K^~~~~~~~~~~~~[m[K
+[4.640s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:140:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass ExecuteArmPlan[m[K’
+[4.640s]   140 | class [01;31m[KExecuteArmPlan[m[K : public BT::StatefulActionNode{
+[4.640s]       |       [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.640s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:140:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass ExecuteArmPlan[m[K’
+[4.640s]   140 | class [01;36m[KExecuteArmPlan[m[K : public BT::StatefulActionNode{
+[4.640s]       |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[4.640s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_nav_actions.hpp:30:30:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KNavigate::[m[K’ on member ‘[01m[KprovidedPorts[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[4.640s]    30 |         static BT::PortsList [01;31m[KNavigate[m[K::providedPorts() {
+[4.640s]       |                              [01;31m[K^~~~~~~~[m[K
+[4.644s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_nav_actions.hpp:42:14:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KNavigate::[m[K’ on member ‘[01m[Kcheck_if_target[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[4.644s]    42 |         bool [01;31m[KNavigate[m[K::check_if_target(TargetPose& t,std::string var_name);
+[4.644s]       |              [01;31m[K^~~~~~~~[m[K
+[4.651s] In file included from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/actions_nodes.hpp:6[m[K,
+[4.651s]                  from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_bt_node.hpp:11[m[K:
+[4.651s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:19:6:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kvoid[01;32m[K read_text_in_speak[m[K(std::string)[m[K’
+[4.651s]    19 | void [01;31m[Kread_text_in_speak[m[K(std::string t){
+[4.651s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.651s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:19:6:[m[K [01;36m[Knote: [m[K‘[01m[Kvoid[01;32m[K read_text_in_speak[m[K(std::string)[m[K’ previously defined here
+[4.651s]    19 | void [01;36m[Kread_text_in_speak[m[K(std::string t){
+[4.651s]       |      [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.651s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:39:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct TargetPose[m[K’
+[4.651s]    39 | struct [01;31m[KTargetPose[m[K{
+[4.651s]       |        [01;31m[K^~~~~~~~~~[m[K
+[4.651s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:39:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct TargetPose[m[K’
+[4.651s]    39 | struct [01;36m[KTargetPose[m[K{
+[4.651s]       |        [01;36m[K^~~~~~~~~~[m[K
+[4.652s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:72:5:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint[01;32m[K get_near_pose_index[m[K(std::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >&, Pose3D&)[m[K’
+[4.652s]    72 | int [01;31m[Kget_near_pose_index[m[K(std::vector<Pose3D>& t,Pose3D& robot_pose){
+[4.652s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.652s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:72:5:[m[K [01;36m[Knote: [m[K‘[01m[Kint[01;32m[K get_near_pose_index[m[K(std::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >&, Pose3D&)[m[K’ previously defined here
+[4.652s]    72 | int [01;36m[Kget_near_pose_index[m[K(std::vector<Pose3D>& t,Pose3D& robot_pose){
+[4.652s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.652s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:85:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass PlanForTheArm[m[K’
+[4.652s]    85 | class [01;31m[KPlanForTheArm[m[K : public BT::SyncActionNode{
+[4.652s]       |       [01;31m[K^~~~~~~~~~~~~[m[K
+[4.652s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:85:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass PlanForTheArm[m[K’
+[4.652s]    85 | class [01;36m[KPlanForTheArm[m[K : public BT::SyncActionNode{
+[4.652s]       |       [01;36m[K^~~~~~~~~~~~~[m[K
+[4.652s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:140:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass ExecuteArmPlan[m[K’
+[4.652s]   140 | class [01;31m[KExecuteArmPlan[m[K : public BT::StatefulActionNode{
+[4.652s]       |       [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.652s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:140:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass ExecuteArmPlan[m[K’
+[4.652s]   140 | class [01;36m[KExecuteArmPlan[m[K : public BT::StatefulActionNode{
+[4.652s]       |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[4.763s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_bt_node.cpp:[m[K In member function ‘[01m[Kvoid WsttaBtPipelineNode::[01;32m[Kcreate_behavior_tree[m[K()[m[K’:
+[4.763s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_bt_node.cpp:56:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktheta_shift_amp[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.764s]    56 |             double [01;35m[Ktheta_shift_amp[m[K = get_parameter("theta_shift_amplitude").as_double();
+[4.764s]       |                    [01;35m[K^~~~~~~~~~~~~~~[m[K
+[7.486s] gmake[2]: *** [CMakeFiles/wstta_robot_bt_node.dir/build.make:118: CMakeFiles/wstta_robot_bt_node.dir/src/actions_nodes.cpp.o] Error 1
+[7.675s] gmake[2]: *** [CMakeFiles/wstta_robot_bt_node.dir/build.make:104: CMakeFiles/wstta_robot_bt_node.dir/src/mm_moveit_actions.cpp.o] Error 1
+[7.793s] gmake[2]: *** [CMakeFiles/wstta_robot_bt_node.dir/build.make:90: CMakeFiles/wstta_robot_bt_node.dir/src/mm_nav_actions.cpp.o] Error 1
+[7.952s] gmake[2]: *** [CMakeFiles/wstta_robot_bt_node.dir/build.make:76: CMakeFiles/wstta_robot_bt_node.dir/src/mm_bt_node.cpp.o] Error 1
+[7.953s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wstta_robot_bt_node.dir/all] Error 2
+[7.953s] gmake: *** [Makefile:146: all] Error 2
+[7.955s] Invoked command in '/home/kafando/Ros2_ws/build/mm_behaviors' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16

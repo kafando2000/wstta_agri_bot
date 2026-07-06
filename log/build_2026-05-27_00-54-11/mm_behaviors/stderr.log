@@ -1,0 +1,5 @@
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_bt_node.cpp:[m[K In constructor ‘[01m[KWsttaBtPipelineNode::[01;32m[KWsttaBtPipelineNode[m[K(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_bt_node.cpp:27:67:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kconst rcl_interfaces::msg::ParameterDescriptor[m[K’ {aka ‘[01m[Kconst rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >[m[K’} from initializer list would use explicit constructor ‘[01m[Krcl_interfaces::msg::ParameterDescriptor_<ContainerAllocator>::[01;32m[KParameterDescriptor_[m[K(rosidl_runtime_cpp::MessageInitialization) [35m[K[with ContainerAllocator = std::allocator<void>][m[K[m[K’
+   27 |                  [01;35m[Kthis->declare_parameter<std::vector<std::string>>("arm_predefined_states",{})[m[K;
+      |                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_bt_node.cpp:27:67:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit

@@ -1,0 +1,1 @@
+controller_manager;gripper_controllers;gz_ros2_control;rclcpp;ros_gz;ros_gz_bridge;ros_gz_image;ros_gz_sim;ros2_control;ros2_controllers;trajectory_msgs;xacro;joint_state_publisher_gui;robot_state_publisher;robot_localization;w_b_nav2;w_b_description;sdformat_urdf;ament_lint_auto;ament_lint_common

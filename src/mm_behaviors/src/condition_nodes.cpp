@@ -1,7 +1,5 @@
 #include "mm_behaviors/condition_nodes.hpp"
 
-
-
 BatteryChecker::BatteryChecker(std::string name,const BT::NodeConfig& config,const rclcpp::Node::SharedPtr& node)
 :ConditionNode(name,config),node{node}{
         
@@ -18,9 +16,6 @@ BatteryChecker::BatteryChecker(std::string name,const BT::NodeConfig& config,con
     return (this->batterypercentage > this->percentage_treshold);
 }
 
-void BatteryChecker::recieve_battery_state(const Batterystate msg){
-   (void)msg;
-}
 // bt  node tick
 BT::NodeStatus BatteryChecker::tick(){
     getInput("percentage_treshold",this->percentage_treshold);

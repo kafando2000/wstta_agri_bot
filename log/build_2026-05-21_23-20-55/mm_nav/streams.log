@@ -1,0 +1,60 @@
+[0.053s] Invoking command in '/home/kafando/Ros2_ws/build/mm_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kafando/Ros2_ws/src/mm_nav -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/kafando/Ros2_ws/install/mm_nav
+[0.081s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.554s] -- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.611s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.628s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.652s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.678s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.807s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.815s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.969s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.114s] -- Found rclcpp_action: 28.1.18 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[1.187s] -- Found nav2_msgs: 1.3.11 (/opt/ros/jazzy/share/nav2_msgs/cmake)
+[1.466s] -- Found nav2_common: 1.3.11 (/opt/ros/jazzy/share/nav2_common/cmake)
+[1.467s] -- Found navigation2: 1.3.11 (/opt/ros/jazzy/share/navigation2/cmake)
+[1.712s] -- Configuring done (1.6s)
+[1.756s] -- Generating done (0.0s)
+[1.767s] -- Build files have been written to: /home/kafando/Ros2_ws/build/mm_nav
+[1.801s] Invoked command in '/home/kafando/Ros2_ws/build/mm_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kafando/Ros2_ws/src/mm_nav -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/kafando/Ros2_ws/install/mm_nav
+[1.805s] Invoking command in '/home/kafando/Ros2_ws/build/mm_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_nav -- -j16 -l16
+[1.950s] [100%] Built target navigation_client
+[1.983s] Invoked command in '/home/kafando/Ros2_ws/build/mm_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_nav -- -j16 -l16
+[2.012s] Invoking command in '/home/kafando/Ros2_ws/build/mm_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kafando/Ros2_ws/build/mm_nav
+[2.031s] -- Install configuration: "Debug"
+[2.031s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/launch
+[2.032s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/launch/slam_online_async.launch.py
+[2.032s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/launch/slam_nav2.launch.py
+[2.032s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/launch/nav2.launch.py
+[2.032s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/launch/slam_online_sync.launch.py
+[2.032s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/maps
+[2.033s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/maps/frames_2026-05-17_19.20.29.pdf
+[2.033s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/maps/map.pgm
+[2.033s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/maps/map.yaml
+[2.033s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/maps/frames_2026-05-17_19.20.29.gv
+[2.033s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/maps/map2.yaml
+[2.033s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/maps/map2.pgm
+[2.033s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/rviz
+[2.033s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/rviz/nav2_moveit2_view.rviz
+[2.033s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/rviz/nav2_default_view.rviz
+[2.034s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/params
+[2.034s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/params/nav2_params.yaml
+[2.034s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/params/slam_toolbox_async.yaml
+[2.034s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/params/slam_toolbox_sync.yaml
+[2.034s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/params/amcl_params.yaml
+[2.034s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/lib/mm_nav/navigation_client
+[2.034s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/ament_index/resource_index/package_run_dependencies/mm_nav
+[2.034s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/ament_index/resource_index/parent_prefix_path/mm_nav
+[2.034s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/environment/ament_prefix_path.sh
+[2.035s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/environment/ament_prefix_path.dsv
+[2.035s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/environment/path.sh
+[2.035s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/environment/path.dsv
+[2.035s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/local_setup.bash
+[2.035s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/local_setup.sh
+[2.035s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/local_setup.zsh
+[2.035s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/local_setup.dsv
+[2.036s] -- Installing: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/package.dsv
+[2.036s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/ament_index/resource_index/packages/mm_nav
+[2.036s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/cmake/mm_navConfig.cmake
+[2.036s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/cmake/mm_navConfig-version.cmake
+[2.036s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_nav/share/mm_nav/package.xml
+[2.037s] Invoked command in '/home/kafando/Ros2_ws/build/mm_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kafando/Ros2_ws/build/mm_nav

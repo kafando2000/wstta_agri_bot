@@ -1,0 +1,14 @@
+[0.052s] Invoking command in '/home/kafando/Ros2_ws/build/mm_behaviors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16
+[0.251s] [ 16%] [32mBuilding CXX object CMakeFiles/wstta_robot_bt_node.dir/src/mm_moveit_actions.cpp.o[0m
+[10.337s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus PlanForTheArm::[01;32m[KonRunning[m[K()[m[K’:
+[10.337s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:76:20:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid PlanForTheArm::[01;32m[Kread_text_in_speak[m[K(std::string)[m[K’
+[10.338s]    76 |     std::thread t1([01;31m[Kread_text_in_speak[m[K, "tf is found");
+[10.338s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[10.338s] In file included from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:1[m[K:
+[10.338s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:30:15:[m[K [01;36m[Knote: [m[Kdeclared here
+[10.338s]    30 |          void [01;36m[Kread_text_in_speak[m[K(std::string t);
+[10.338s]       |               [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[17.737s] gmake[2]: *** [CMakeFiles/wstta_robot_bt_node.dir/build.make:104: CMakeFiles/wstta_robot_bt_node.dir/src/mm_moveit_actions.cpp.o] Error 1
+[17.738s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wstta_robot_bt_node.dir/all] Error 2
+[17.738s] gmake: *** [Makefile:146: all] Error 2
+[17.741s] Invoked command in '/home/kafando/Ros2_ws/build/mm_behaviors' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16

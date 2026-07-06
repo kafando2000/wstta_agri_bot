@@ -1,0 +1,86 @@
+[0.024s] Invoking command in '/home/kafando/Ros2_ws/build/mm_behaviors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16
+[0.132s] [ 16%] [32mBuilding CXX object CMakeFiles/wstta_bt_node.dir/src/mm_moveit_bt_nodes.cpp.o[0m
+[5.725s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[5.725s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[5.725s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[5.725s]                  from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_bt_nodes.hpp:7[m[K,
+[5.725s]                  from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:1[m[K:
+[5.725s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus WSTTA::PlanForTheArm::[01;32m[KonRunning[m[K()[m[K’:
+[5.725s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:73:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[5.725s]   246 |   RCLCPP_INFO(this->node_ptr_->get_logger(), "(%f,%f,%f),(%f,%f,%f)",([01;35m[Kt3[m[K,t4,t5),(t,t1,t2));
+[5.725s]       |                                                                       [01;35m[K^~[m[K
+[5.725s] 
+[5.725s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:79:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[5.725s]   246 | PP_INFO(this->node_ptr_->get_logger(), "(%f,%f,%f),(%f,%f,%f)",(t3,t4,[01;35m[Kt5[m[K),(t,t1,t2));
+[5.725s]       |                                                                       [01;35m[K^~[m[K
+[5.725s] 
+[5.725s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:84:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[5.725s]   246 | NFO(this->node_ptr_->get_logger(), "(%f,%f,%f),(%f,%f,%f)",(t3,t4,t5),([01;35m[Kt[m[K,t1,t2));
+[5.725s]       |                                                                        [01;35m[K^[m[K
+[5.725s] 
+[5.725s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:89:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[5.725s]   246 | NFO(this->node_ptr_->get_logger(), "(%f,%f,%f),(%f,%f,%f)",(t3,t4,t5),(t,t1,[01;35m[Kt2[m[K));
+[5.725s]       |                                                                             [01;35m[K^~[m[K
+[5.725s] 
+[5.725s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:48:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects a matching ‘[01m[Kdouble[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[5.726s]   246 |     RCLCPP_INFO(this->node_ptr_->get_logger(), [01;35m[K"(%f,%f,%f),(%f,%f,%f)"[m[K,(t3,t4,t5),(t,t1,t2));
+[5.726s]       |                                                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.726s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:57:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[5.726s]   246 |     RCLCPP_INFO(this->node_ptr_->get_logger(), "(%f,%f,[01;36m[K%f[m[K),(%f,%f,%f)",(t3,t4,t5),(t,t1,t2));
+[5.726s]       |                                                        [01;36m[K~^[m[K
+[5.726s]       |                                                         [01;36m[K|[m[K
+[5.726s]       |                                                         [01;36m[Kdouble[m[K
+[5.726s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:48:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects a matching ‘[01m[Kdouble[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[5.726s]   246 |     RCLCPP_INFO(this->node_ptr_->get_logger(), [01;35m[K"(%f,%f,%f),(%f,%f,%f)"[m[K,(t3,t4,t5),(t,t1,t2));
+[5.726s]       |                                                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.726s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:62:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[5.726s]   246 |     RCLCPP_INFO(this->node_ptr_->get_logger(), "(%f,%f,%f),([01;36m[K%f[m[K,%f,%f)",(t3,t4,t5),(t,t1,t2));
+[5.726s]       |                                                             [01;36m[K~^[m[K
+[5.726s]       |                                                              [01;36m[K|[m[K
+[5.726s]       |                                                              [01;36m[Kdouble[m[K
+[5.726s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:48:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects a matching ‘[01m[Kdouble[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[5.726s]   246 |     RCLCPP_INFO(this->node_ptr_->get_logger(), [01;35m[K"(%f,%f,%f),(%f,%f,%f)"[m[K,(t3,t4,t5),(t,t1,t2));
+[5.726s]       |                                                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.726s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:65:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[5.726s]   246 |     RCLCPP_INFO(this->node_ptr_->get_logger(), "(%f,%f,%f),(%f,[01;36m[K%f[m[K,%f)",(t3,t4,t5),(t,t1,t2));
+[5.726s]       |                                                                [01;36m[K~^[m[K
+[5.726s]       |                                                                 [01;36m[K|[m[K
+[5.726s]       |                                                                 [01;36m[Kdouble[m[K
+[5.726s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:48:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects a matching ‘[01m[Kdouble[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[5.726s]   246 |     RCLCPP_INFO(this->node_ptr_->get_logger(), [01;35m[K"(%f,%f,%f),(%f,%f,%f)"[m[K,(t3,t4,t5),(t,t1,t2));
+[5.726s]       |                                                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.726s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:68:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[5.727s]   246 |     RCLCPP_INFO(this->node_ptr_->get_logger(), "(%f,%f,%f),(%f,%f,[01;36m[K%f[m[K)",(t3,t4,t5),(t,t1,t2));
+[5.727s]       |                                                                   [01;36m[K~^[m[K
+[5.727s]       |                                                                    [01;36m[K|[m[K
+[5.727s]       |                                                                    [01;36m[Kdouble[m[K
+[12.894s] [ 33%] [32m[1mLinking CXX executable wstta_bt_node[0m
+[13.473s] [100%] Built target wstta_bt_node
+[13.482s] Invoked command in '/home/kafando/Ros2_ws/build/mm_behaviors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16
+[13.483s] Invoking command in '/home/kafando/Ros2_ws/build/mm_behaviors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kafando/Ros2_ws/build/mm_behaviors
+[13.490s] -- Install configuration: "Debug"
+[13.490s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/xml_tree
+[13.490s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/xml_tree/mm_behaviors.xml
+[13.490s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/launch
+[13.490s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/launch/mm_bt_optimized.launch.py
+[13.490s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/launch/mm_bt_nodes.launch.py
+[13.490s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/config
+[13.490s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/config/bt_parameters.yaml
+[13.490s] -- Installing: /home/kafando/Ros2_ws/install/mm_behaviors/lib/mm_behaviors/wstta_bt_node
+[13.502s] -- Set non-toolchain portion of runtime path of "/home/kafando/Ros2_ws/install/mm_behaviors/lib/mm_behaviors/wstta_bt_node" to ""
+[13.502s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/ament_index/resource_index/package_run_dependencies/mm_behaviors
+[13.502s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/ament_index/resource_index/parent_prefix_path/mm_behaviors
+[13.502s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/environment/ament_prefix_path.sh
+[13.502s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/environment/ament_prefix_path.dsv
+[13.502s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/environment/path.sh
+[13.502s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/environment/path.dsv
+[13.503s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/local_setup.bash
+[13.503s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/local_setup.sh
+[13.503s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/local_setup.zsh
+[13.503s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/local_setup.dsv
+[13.503s] -- Installing: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/package.dsv
+[13.503s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/ament_index/resource_index/packages/mm_behaviors
+[13.503s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/cmake/mm_behaviorsConfig.cmake
+[13.503s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/cmake/mm_behaviorsConfig-version.cmake
+[13.503s] -- Up-to-date: /home/kafando/Ros2_ws/install/mm_behaviors/share/mm_behaviors/package.xml
+[13.504s] Invoked command in '/home/kafando/Ros2_ws/build/mm_behaviors' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kafando/Ros2_ws/build/mm_behaviors

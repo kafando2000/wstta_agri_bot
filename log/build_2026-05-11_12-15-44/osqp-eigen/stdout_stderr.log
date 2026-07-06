@@ -1,0 +1,48 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Setting build type to 'Release' as none was specified.
+[33mCMake Warning (dev) at cmake/OsqpEigenDependencies.cmake:37 (set):
+  Cannot set "OSQP_EIGEN_OSQP_TARGET_TO_LINK": current scope has no parent.
+Call Stack (most recent call first):
+  CMakeLists.txt:75 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/kafando/Ros2_ws/build/osqp-eigen
+[ 80%] [32mBuilding CXX object CMakeFiles/OsqpEigen.dir/src/Solver.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/OsqpEigen.dir/src/Data.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/OsqpEigen.dir/src/Settings.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/OsqpEigen.dir/src/Debug.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libOsqpEigen.so[0m
+[100%] Built target OsqpEigen
+-- Install configuration: "Release"
+-- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/lib/libOsqpEigen.so.0.11.0
+-- Set non-toolchain portion of runtime path of "/home/kafando/Ros2_ws/install/osqp-eigen/lib/libOsqpEigen.so.0.11.0" to "$ORIGIN/:$ORIGIN/../lib:/opt/ros/jazzy/lib"
+-- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/lib/libOsqpEigen.so
+-- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/OsqpEigen.h
+-- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/Constants.hpp
+-- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/SparseMatrixHelper.hpp
+-- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/SparseMatrixHelper.tpp
+-- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/Data.hpp
+-- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/Data.tpp
+-- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/Settings.hpp
+-- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/Solver.hpp
+-- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/Solver.tpp
+-- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/Compat.hpp
+-- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/include/OsqpEigen/Debug.hpp
+-- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/lib/cmake/OsqpEigen/OsqpEigenConfigVersion.cmake
+-- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/lib/cmake/OsqpEigen/OsqpEigenConfig.cmake
+-- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/lib/cmake/OsqpEigen/OsqpEigenTargets.cmake
+-- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/lib/cmake/OsqpEigen/OsqpEigenTargets-release.cmake
+-- Installing: /home/kafando/Ros2_ws/install/osqp-eigen/share/cmake/osqp-eigen/package.xml

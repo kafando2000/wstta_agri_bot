@@ -1,0 +1,10 @@
+[0.020s] Invoking command in '/home/kafando/Ros2_ws/build/mm_behaviors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16
+[0.096s] [ 33%] [32mBuilding CXX object CMakeFiles/wstta_bt_node.dir/src/mm_moveit_bt_nodes.cpp.o[0m
+[0.096s] [ 33%] [32mBuilding CXX object CMakeFiles/wstta_bt_node.dir/src/mm_bt_node.cpp.o[0m
+[0.097s] [ 50%] [32mBuilding CXX object CMakeFiles/wstta_bt_node.dir/src/mm_nav_actions.cpp.o[0m
+[4.611s] gmake[2]: *** [CMakeFiles/wstta_bt_node.dir/build.make:104: CMakeFiles/wstta_bt_node.dir/src/mm_moveit_bt_nodes.cpp.o] Interrupt
+[4.611s] gmake[2]: *** [CMakeFiles/wstta_bt_node.dir/build.make:76: CMakeFiles/wstta_bt_node.dir/src/mm_bt_node.cpp.o] Interrupt
+[4.611s] gmake[2]: *** [CMakeFiles/wstta_bt_node.dir/build.make:90: CMakeFiles/wstta_bt_node.dir/src/mm_nav_actions.cpp.o] Interrupt
+[4.611s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wstta_bt_node.dir/all] Interrupt
+[4.611s] gmake: *** [Makefile:146: all] Interrupt
+[4.646s] Invoked command in '/home/kafando/Ros2_ws/build/mm_behaviors' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16

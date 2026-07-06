@@ -1,0 +1,54 @@
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_bt_nodes.hpp:7[m[K,
+                 from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:1[m[K:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus WSTTA::PlanForTheArm::[01;32m[KonRunning[m[K()[m[K’:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:73:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  246 |   RCLCPP_INFO(this->node_ptr_->get_logger(), "(%f,%f,%f),(%f,%f,%f)",([01;35m[Kt3[m[K,t4,t5),(t,t1,t2));
+      |                                                                       [01;35m[K^~[m[K
+
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:79:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  246 | PP_INFO(this->node_ptr_->get_logger(), "(%f,%f,%f),(%f,%f,%f)",(t3,t4,[01;35m[Kt5[m[K),(t,t1,t2));
+      |                                                                       [01;35m[K^~[m[K
+
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:84:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  246 | NFO(this->node_ptr_->get_logger(), "(%f,%f,%f),(%f,%f,%f)",(t3,t4,t5),([01;35m[Kt[m[K,t1,t2));
+      |                                                                        [01;35m[K^[m[K
+
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:89:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  246 | NFO(this->node_ptr_->get_logger(), "(%f,%f,%f),(%f,%f,%f)",(t3,t4,t5),(t,t1,[01;35m[Kt2[m[K));
+      |                                                                             [01;35m[K^~[m[K
+
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:48:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects a matching ‘[01m[Kdouble[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  246 |     RCLCPP_INFO(this->node_ptr_->get_logger(), [01;35m[K"(%f,%f,%f),(%f,%f,%f)"[m[K,(t3,t4,t5),(t,t1,t2));
+      |                                                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:57:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  246 |     RCLCPP_INFO(this->node_ptr_->get_logger(), "(%f,%f,[01;36m[K%f[m[K),(%f,%f,%f)",(t3,t4,t5),(t,t1,t2));
+      |                                                        [01;36m[K~^[m[K
+      |                                                         [01;36m[K|[m[K
+      |                                                         [01;36m[Kdouble[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:48:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects a matching ‘[01m[Kdouble[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  246 |     RCLCPP_INFO(this->node_ptr_->get_logger(), [01;35m[K"(%f,%f,%f),(%f,%f,%f)"[m[K,(t3,t4,t5),(t,t1,t2));
+      |                                                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:62:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  246 |     RCLCPP_INFO(this->node_ptr_->get_logger(), "(%f,%f,%f),([01;36m[K%f[m[K,%f,%f)",(t3,t4,t5),(t,t1,t2));
+      |                                                             [01;36m[K~^[m[K
+      |                                                              [01;36m[K|[m[K
+      |                                                              [01;36m[Kdouble[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:48:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects a matching ‘[01m[Kdouble[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  246 |     RCLCPP_INFO(this->node_ptr_->get_logger(), [01;35m[K"(%f,%f,%f),(%f,%f,%f)"[m[K,(t3,t4,t5),(t,t1,t2));
+      |                                                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:65:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  246 |     RCLCPP_INFO(this->node_ptr_->get_logger(), "(%f,%f,%f),(%f,[01;36m[K%f[m[K,%f)",(t3,t4,t5),(t,t1,t2));
+      |                                                                [01;36m[K~^[m[K
+      |                                                                 [01;36m[K|[m[K
+      |                                                                 [01;36m[Kdouble[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:48:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects a matching ‘[01m[Kdouble[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  246 |     RCLCPP_INFO(this->node_ptr_->get_logger(), [01;35m[K"(%f,%f,%f),(%f,%f,%f)"[m[K,(t3,t4,t5),(t,t1,t2));
+      |                                                [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:246:68:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  246 |     RCLCPP_INFO(this->node_ptr_->get_logger(), "(%f,%f,%f),(%f,%f,[01;36m[K%f[m[K)",(t3,t4,t5),(t,t1,t2));
+      |                                                                   [01;36m[K~^[m[K
+      |                                                                    [01;36m[K|[m[K
+      |                                                                    [01;36m[Kdouble[m[K

@@ -1,0 +1,286 @@
+[0.085s] Invoking command in '/home/kafando/Ros2_ws/build/custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kafando/Ros2_ws/src/custom_interfaces -DCMAKE_INSTALL_PREFIX=/home/kafando/Ros2_ws/install/custom_interfaces
+[0.115s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.358s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.383s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.459s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.513s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.515s] -- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.568s] -- Found geometry_msgs: 5.3.7 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.322s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[1.674s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.146s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.148s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[2.728s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[2.920s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.923s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.939s] -- Added test 'lint_cmake' to check CMake code style
+[2.940s] -- Added test 'xmllint' to check XML markup files
+[2.944s] -- Configuring done (2.8s)
+[3.039s] -- Generating done (0.1s)
+[3.065s] -- Build files have been written to: /home/kafando/Ros2_ws/build/custom_interfaces
+[3.092s] Invoked command in '/home/kafando/Ros2_ws/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/kafando/Ros2_ws/src/custom_interfaces -DCMAKE_INSTALL_PREFIX=/home/kafando/Ros2_ws/install/custom_interfaces
+[3.095s] Invoking command in '/home/kafando/Ros2_ws/build/custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/custom_interfaces -- -j16 -l16
+[3.208s] [  3%] Built target custom_interfaces__rs
+[3.208s] [  3%] Built target custom_interfaces__rosidl_generator_type_description
+[3.233s] [  3%] Built target ament_cmake_python_copy_custom_interfaces
+[3.260s] [  4%] Built target custom_interfaces__cpp
+[3.271s] [ 26%] Built target custom_interfaces__rosidl_generator_c
+[3.333s] [ 63%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c
+[3.333s] [ 63%] Built target custom_interfaces__rosidl_typesupport_c
+[3.333s] [ 63%] Built target custom_interfaces__rosidl_typesupport_introspection_cpp
+[3.333s] [ 63%] Built target custom_interfaces__rosidl_typesupport_introspection_c
+[3.338s] [ 72%] Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp
+[3.339s] [ 81%] Built target custom_interfaces__rosidl_typesupport_cpp
+[3.393s] [ 81%] Built target custom_interfaces
+[3.441s] [ 83%] Built target custom_interfaces__py
+[3.497s] [ 90%] Built target custom_interfaces__rosidl_generator_py
+[3.552s] [ 96%] Built target custom_interfaces_s__rosidl_typesupport_c
+[3.552s] [ 96%] Built target custom_interfaces_s__rosidl_typesupport_fastrtps_c
+[3.553s] [100%] Built target custom_interfaces_s__rosidl_typesupport_introspection_c
+[3.732s] running egg_info
+[3.782s] writing custom_interfaces.egg-info/PKG-INFO
+[3.783s] writing dependency_links to custom_interfaces.egg-info/dependency_links.txt
+[3.783s] writing top-level names to custom_interfaces.egg-info/top_level.txt
+[3.925s] reading manifest file 'custom_interfaces.egg-info/SOURCES.txt'
+[3.926s] writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'
+[3.998s] [100%] Built target ament_cmake_python_build_custom_interfaces_egg
+[4.019s] Invoked command in '/home/kafando/Ros2_ws/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/custom_interfaces -- -j16 -l16
+[4.021s] Invoking command in '/home/kafando/Ros2_ws/build/custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kafando/Ros2_ws/build/custom_interfaces
+[4.042s] -- Install configuration: "Debug"
+[4.043s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/custom_interfaces
+[4.043s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/msg/CustomMessage.json
+[4.043s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/srv/ConcatStrings.json
+[4.043s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/action/CustomAction.json
+[4.043s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/action/ReachLocation.json
+[4.043s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces
+[4.043s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg
+[4.043s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail
+[4.043s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/custom_message__functions.h
+[4.043s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/custom_message__type_support.h
+[4.043s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/custom_message__type_support.c
+[4.044s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/custom_message__functions.c
+[4.044s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/custom_message__struct.h
+[4.044s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/custom_message__description.c
+[4.044s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/custom_message.h
+[4.044s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_c__visibility_control.h
+[4.044s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv
+[4.044s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail
+[4.044s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/concat_strings__type_support.h
+[4.044s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/concat_strings__type_support.c
+[4.044s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/concat_strings__functions.h
+[4.045s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/concat_strings__functions.c
+[4.045s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/concat_strings__struct.h
+[4.045s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/concat_strings__description.c
+[4.045s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/concat_strings.h
+[4.045s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action
+[4.045s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail
+[4.045s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/custom_action__description.c
+[4.045s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/reach_location__functions.c
+[4.045s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/reach_location__struct.h
+[4.045s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/reach_location__type_support.h
+[4.045s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/custom_action__functions.h
+[4.046s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/reach_location__functions.h
+[4.046s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/reach_location__type_support.c
+[4.046s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/reach_location__description.c
+[4.046s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/custom_action__functions.c
+[4.046s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/custom_action__type_support.c
+[4.046s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/custom_action__type_support.h
+[4.046s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/custom_action__struct.h
+[4.046s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/reach_location.h
+[4.046s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/custom_action.h
+[4.046s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.sh
+[4.047s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/library_path.dsv
+[4.047s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so
+[4.047s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces
+[4.047s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg
+[4.047s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail
+[4.047s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/custom_message__rosidl_typesupport_fastrtps_c.h
+[4.048s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.048s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv
+[4.048s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail
+[4.049s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/concat_strings__rosidl_typesupport_fastrtps_c.h
+[4.049s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action
+[4.049s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail
+[4.049s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/reach_location__rosidl_typesupport_fastrtps_c.h
+[4.049s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/custom_action__rosidl_typesupport_fastrtps_c.h
+[4.049s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so
+[4.050s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces
+[4.050s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg
+[4.050s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail
+[4.050s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/custom_message__type_support.c
+[4.050s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/custom_message__rosidl_typesupport_introspection_c.h
+[4.050s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.051s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv
+[4.051s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail
+[4.051s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/concat_strings__type_support.c
+[4.051s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/concat_strings__rosidl_typesupport_introspection_c.h
+[4.051s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action
+[4.051s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail
+[4.051s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/reach_location__rosidl_typesupport_introspection_c.h
+[4.051s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/custom_action__rosidl_typesupport_introspection_c.h
+[4.051s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/reach_location__type_support.c
+[4.051s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/custom_action__type_support.c
+[4.052s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so
+[4.052s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so
+[4.052s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces
+[4.052s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg
+[4.052s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail
+[4.052s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/custom_message__traits.hpp
+[4.052s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/custom_message__type_support.hpp
+[4.052s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/custom_message__builder.hpp
+[4.052s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/custom_message__struct.hpp
+[4.052s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[4.053s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/custom_message.hpp
+[4.053s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv
+[4.053s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail
+[4.053s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/concat_strings__builder.hpp
+[4.053s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/concat_strings__type_support.hpp
+[4.053s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/concat_strings__struct.hpp
+[4.053s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/concat_strings__traits.hpp
+[4.054s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/concat_strings.hpp
+[4.054s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action
+[4.054s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail
+[4.054s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/reach_location__traits.hpp
+[4.054s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/reach_location__type_support.hpp
+[4.054s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/custom_action__traits.hpp
+[4.054s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/reach_location__builder.hpp
+[4.054s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/reach_location__struct.hpp
+[4.054s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/custom_action__type_support.hpp
+[4.054s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/custom_action__builder.hpp
+[4.054s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/custom_action__struct.hpp
+[4.055s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/reach_location.hpp
+[4.055s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/custom_action.hpp
+[4.055s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces
+[4.055s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg
+[4.055s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail
+[4.055s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/dds_fastrtps
+[4.055s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/custom_message__rosidl_typesupport_fastrtps_cpp.hpp
+[4.055s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.055s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv
+[4.055s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail
+[4.056s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/dds_fastrtps
+[4.056s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/concat_strings__rosidl_typesupport_fastrtps_cpp.hpp
+[4.056s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action
+[4.056s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail
+[4.056s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/reach_location__rosidl_typesupport_fastrtps_cpp.hpp
+[4.056s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/dds_fastrtps
+[4.056s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/custom_action__rosidl_typesupport_fastrtps_cpp.hpp
+[4.056s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[4.056s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces
+[4.056s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg
+[4.057s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail
+[4.057s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/custom_message__rosidl_typesupport_introspection_cpp.hpp
+[4.057s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/custom_message__type_support.cpp
+[4.057s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv
+[4.057s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail
+[4.057s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/concat_strings__type_support.cpp
+[4.057s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/concat_strings__rosidl_typesupport_introspection_cpp.hpp
+[4.057s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action
+[4.057s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail
+[4.058s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/reach_location__type_support.cpp
+[4.058s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/reach_location__rosidl_typesupport_introspection_cpp.hpp
+[4.058s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/custom_action__rosidl_typesupport_introspection_cpp.hpp
+[4.058s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/include/custom_interfaces/custom_interfaces/action/detail/custom_action__type_support.cpp
+[4.058s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so
+[4.058s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so
+[4.058s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.sh
+[4.058s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.dsv
+[4.058s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces-0.0.0-py3.12.egg-info
+[4.058s] -- Installing: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces-0.0.0-py3.12.egg-info/top_level.txt
+[4.059s] -- Installing: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces-0.0.0-py3.12.egg-info/PKG-INFO
+[4.059s] -- Installing: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt
+[4.059s] -- Installing: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt
+[4.059s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces
+[4.059s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[4.059s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/msg
+[4.059s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/msg/__init__.py
+[4.059s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/msg/_custom_message.py
+[4.059s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/msg/_custom_message_s.c
+[4.059s] -- Installing: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/__init__.py
+[4.060s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.so
+[4.060s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[4.060s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/srv
+[4.060s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/srv/_concat_strings_s.c
+[4.060s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/srv/_concat_strings.py
+[4.060s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/srv/__init__.py
+[4.060s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/action
+[4.060s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/action/__init__.py
+[4.060s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/action/_custom_action_s.c
+[4.060s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/action/_reach_location.py
+[4.060s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/action/_reach_location_s.c
+[4.060s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/action/_custom_action.py
+[4.061s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[4.061s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c
+[4.061s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.so
+[4.111s] Listing '/home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces'...
+[4.111s] Compiling '/home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/__init__.py'...
+[4.111s] Listing '/home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/action'...
+[4.111s] Listing '/home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/msg'...
+[4.111s] Listing '/home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/srv'...
+[4.122s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[4.123s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.so
+[4.123s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/python3.12/site-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.so
+[4.123s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so
+[4.123s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/ament_index/resource_index/rust_packages/custom_interfaces
+[4.123s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/rust
+[4.124s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/rust/Cargo.toml
+[4.124s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/rust/src
+[4.124s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/rust/src/msg
+[4.124s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/rust/src/msg/rmw.rs
+[4.124s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/rust/src/srv.rs
+[4.124s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/rust/src/srv
+[4.124s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/rust/src/srv/rmw.rs
+[4.124s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/rust/src/action
+[4.124s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/rust/src/action/rmw.rs
+[4.124s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/rust/src/msg.rs
+[4.124s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/rust/src/lib.rs
+[4.125s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/rust/src/action.rs
+[4.125s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/rust/build.rs
+[4.125s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/msg/CustomMessage.idl
+[4.125s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/srv/ConcatStrings.idl
+[4.125s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/action/CustomAction.idl
+[4.125s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/action/ReachLocation.idl
+[4.125s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/msg/CustomMessage.msg
+[4.126s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/srv/ConcatStrings.srv
+[4.126s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/action/CustomAction.action
+[4.126s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/action/ReachLocation.action
+[4.126s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/ament_index/resource_index/package_run_dependencies/custom_interfaces
+[4.126s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/ament_index/resource_index/parent_prefix_path/custom_interfaces
+[4.126s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.sh
+[4.126s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.dsv
+[4.126s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/path.sh
+[4.126s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/environment/path.dsv
+[4.127s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.bash
+[4.127s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.sh
+[4.127s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.zsh
+[4.127s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/local_setup.dsv
+[4.127s] -- Installing: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/package.dsv
+[4.127s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/ament_index/resource_index/packages/custom_interfaces
+[4.128s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport.cmake
+[4.128s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport-debug.cmake
+[4.128s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[4.128s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport-debug.cmake
+[4.128s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[4.128s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport-debug.cmake
+[4.128s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport.cmake
+[4.128s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport-debug.cmake
+[4.129s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cppExport.cmake
+[4.129s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.129s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport-debug.cmake
+[4.129s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[4.129s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport-debug.cmake
+[4.129s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport.cmake
+[4.129s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport-debug.cmake
+[4.129s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport.cmake
+[4.129s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport-debug.cmake
+[4.129s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake-extras.cmake
+[4.129s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.129s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.130s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[4.130s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[4.130s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.130s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.130s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig.cmake
+[4.130s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig-version.cmake
+[4.130s] -- Up-to-date: /home/kafando/Ros2_ws/install/custom_interfaces/share/custom_interfaces/package.xml
+[4.132s] Invoked command in '/home/kafando/Ros2_ws/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/kafando/Ros2_ws/build/custom_interfaces

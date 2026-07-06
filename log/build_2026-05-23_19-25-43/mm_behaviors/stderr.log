@@ -1,0 +1,32 @@
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus PlanForTheArm::[01;32m[KonStart[m[K()[m[K’:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:212:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_pose[m[K’ was not declared in this scope; did you mean ‘[01m[KTargetPose[m[K’?
+  212 |     [01;31m[Ktarget_pose[m[K.header.frame_id = "base_footprint";
+      |     [01;31m[K^~~~~~~~~~~[m[K
+      |     [32m[KTargetPose[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:213:32:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope
+  213 |     target_pose.header.stamp = [01;31m[Knode[m[K->now();
+      |                                [01;31m[K^~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:216:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::PoseStamped = struct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Korientation[m[K’
+  216 |     ee_target_pose.[01;31m[Korientation[m[K.w = 1;
+      |                    [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:217:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::PoseStamped = struct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Korientation[m[K’
+  217 |     ee_target_pose.[01;31m[Korientation[m[K.x = 0;
+      |                    [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:218:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::PoseStamped = struct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Korientation[m[K’
+  218 |     ee_target_pose.[01;31m[Korientation[m[K.y = 0;
+      |                    [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:219:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::PoseStamped = struct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Korientation[m[K’
+  219 |     ee_target_pose.[01;31m[Korientation[m[K.z =  0;
+      |                    [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:222:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::PoseStamped = struct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition[m[K’
+  222 |     ee_target_pose.[01;31m[Kposition[m[K.x = 0.193;
+      |                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:223:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::PoseStamped = struct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition[m[K’
+  223 |     ee_target_pose.[01;31m[Kposition[m[K.y = 0.032;
+      |                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:224:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing geometry_msgs::msg::PoseStamped = struct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kposition[m[K’
+  224 |     ee_target_pose.[01;31m[Kposition[m[K.z = 0.239;
+      |                    [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/wstta_robot_bt_node.dir/build.make:104: CMakeFiles/wstta_robot_bt_node.dir/src/mm_moveit_actions.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wstta_robot_bt_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,455 @@
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus PlanForTheArm::[01;32m[KonRunning[m[K()[m[K’:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:44:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator+[m[K’ (operand types are ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ and ‘[01m[K<unresolved overloaded function type>[m[K’)
+  253 |                 Poses->erase([01;31m[KPoses->begin()+index[m[K);
+      |                              [01;31m[K~~~~~~~~~~~~~~^~~~~~[m[K
+In file included from [01m[K/usr/include/c++/13/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/13/bits/stl_uninitialized.h:63[m[K,
+                 from [01m[K/usr/include/c++/13/memory:69[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169[m[K,
+                 from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:1[m[K,
+                 from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:1[m[K:
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:1147:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[K__gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container>::[01;32m[Koperator+[m[K(difference_type) const [35m[K[with _Iterator = geometry_msgs::msg::Point_<std::allocator<void> >*; _Container = std::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >; difference_type = long int][m[K[m[K’
+ 1147 |       [01;36m[Koperator[m[K+(difference_type __n) const _GLIBCXX_NOEXCEPT
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:1147:33:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[K__gnu_cxx::__normal_iterator<geometry_msgs::msg::Point_<std::allocator<void> >*, std::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > > >::difference_type[m[K’ {aka ‘[01m[Klong int[m[K’}
+ 1147 |       operator+([01;36m[Kdifference_type __n[m[K) const _GLIBCXX_NOEXCEPT
+      |                 [01;36m[K~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:634:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr std::reverse_iterator<_Iterator> std::[01;32m[Koperator+[m[K(typename reverse_iterator<_Iterator>::difference_type, const reverse_iterator<_Iterator>&)[m[K’
+  634 |     [01;36m[Koperator[m[K+(typename reverse_iterator<_Iterator>::difference_type __n,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:634:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’ and ‘[01m[Kconst char*(const char*, int) noexcept[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’ and ‘[01m[Kchar*(char*, int) noexcept[m[K’
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Iterator[m[K’
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:1808:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr std::move_iterator<_IteratorL> std::[01;32m[Koperator+[m[K(typename move_iterator<_IteratorL>::difference_type, const move_iterator<_IteratorL>&)[m[K’
+ 1808 |     [01;36m[Koperator[m[K+(typename move_iterator<_Iterator>::difference_type __n,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:1808:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’ and ‘[01m[Kconst char*(const char*, int) noexcept[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’ and ‘[01m[Kchar*(char*, int) noexcept[m[K’
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Iterator[m[K’
+In file included from [01m[K/usr/include/c++/13/string:54[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:18[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K:
+[01m[K/usr/include/c++/13/bits/basic_string.h:3553:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+ 3553 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3553:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3571:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(const _CharT*, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+ 3571 |     [01;36m[Koperator[m[K+(const _CharT* __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3571:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[K__gnu_cxx::__normal_iterator<geometry_msgs::msg::Point_<std::allocator<void> >*, std::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > > >[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3590:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(_CharT, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+ 3590 |     [01;36m[Koperator[m[K+(_CharT __lhs, const basic_string<_CharT,_Traits,_Alloc>& __rhs)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3590:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’ and ‘[01m[Kconst char*(const char*, int) noexcept[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’ and ‘[01m[Kchar*(char*, int) noexcept[m[K’
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Traits[m[K’
+[01m[K/usr/include/c++/13/bits/basic_string.h:3607:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)[m[K’
+ 3607 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3607:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3625:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)[m[K’
+ 3625 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3625:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3637:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+ 3637 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3637:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3644:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, __cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K’
+ 3644 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3644:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3651:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, __cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K’
+ 3651 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3651:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3674:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(const _CharT*, __cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K’
+ 3674 |     [01;36m[Koperator[m[K+(const _CharT* __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3674:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[K__gnu_cxx::__normal_iterator<geometry_msgs::msg::Point_<std::allocator<void> >*, std::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > > >[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3681:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(_CharT, __cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K’
+ 3681 |     [01;36m[Koperator[m[K+(_CharT __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3681:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’ and ‘[01m[Kconst char*(const char*, int) noexcept[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’ and ‘[01m[Kchar*(char*, int) noexcept[m[K’
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Traits[m[K’
+[01m[K/usr/include/c++/13/bits/basic_string.h:3688:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const _CharT*)[m[K’
+ 3688 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3688:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3695:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, _CharT)[m[K’
+ 3695 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3695:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+In file included from [01m[K/usr/include/c++/13/valarray:605[m[K,
+                 from [01m[K/opt/ros/jazzy/include/behaviortree_cpp/contrib/json.hpp:170[m[K,
+                 from [01m[K/opt/ros/jazzy/include/behaviortree_cpp/blackboard.h:4[m[K,
+                 from [01m[K/opt/ros/jazzy/include/behaviortree_cpp/tree_node.h:17[m[K,
+                 from [01m[K/opt/ros/jazzy/include/behaviortree_cpp/leaf_node.h:17[m[K,
+                 from [01m[K/opt/ros/jazzy/include/behaviortree_cpp/action_node.h:17[m[K,
+                 from [01m[K/opt/ros/jazzy/include/behaviortree_cpp/behavior_tree.h:16[m[K,
+                 from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:2[m[K:
+[01m[K/usr/include/c++/13/bits/valarray_after.h:405:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Dom1, class _Dom2> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Expr, std::_Expr, _Dom1, _Dom2>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::[01;32m[Koperator+[m[K(const _Expr<_Dom1, typename _Dom1::value_type>&, const _Expr<_Dom2, typename _Dom2::value_type>&)[m[K’
+  405 |     [01;36m[K_DEFINE_EXPR_BINARY_OPERATOR[m[K(+, struct std::__plus)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/valarray_after.h:405:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::_Expr<_Dom1, typename _Dom1::value_type>[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/valarray_after.h:405:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Expr, std::_Constant, _Dom, typename _Dom::value_type>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::[01;32m[Koperator+[m[K(const _Expr<_Dom1, typename _Dom1::value_type>&, const typename _Dom::value_type&)[m[K’
+  405 |     [01;36m[K_DEFINE_EXPR_BINARY_OPERATOR[m[K(+, struct std::__plus)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/valarray_after.h:405:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::_Expr<_Dom1, typename _Dom1::value_type>[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/valarray_after.h:405:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Constant, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::[01;32m[Koperator+[m[K(const typename _Dom::value_type&, const _Expr<_Dom1, typename _Dom1::value_type>&)[m[K’
+  405 |     [01;36m[K_DEFINE_EXPR_BINARY_OPERATOR[m[K(+, struct std::__plus)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/valarray_after.h:405:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::_Expr<_Dom1, typename _Dom1::value_type>[m[K’ and ‘[01m[Kconst char*(const char*, int) noexcept[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::_Expr<_Dom1, typename _Dom1::value_type>[m[K’ and ‘[01m[Kchar*(char*, int) noexcept[m[K’
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Dom[m[K’
+[01m[K/usr/include/c++/13/bits/valarray_after.h:405:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Expr, std::_ValArray, _Dom, typename _Dom::value_type>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::[01;32m[Koperator+[m[K(const _Expr<_Dom1, typename _Dom1::value_type>&, const valarray<typename _Dom::value_type>&)[m[K’
+  405 |     [01;36m[K_DEFINE_EXPR_BINARY_OPERATOR[m[K(+, struct std::__plus)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/valarray_after.h:405:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::_Expr<_Dom1, typename _Dom1::value_type>[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/valarray_after.h:405:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_ValArray, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::[01;32m[Koperator+[m[K(const valarray<typename _Dom::value_type>&, const _Expr<_Dom1, typename _Dom1::value_type>&)[m[K’
+  405 |     [01;36m[K_DEFINE_EXPR_BINARY_OPERATOR[m[K(+, struct std::__plus)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/valarray_after.h:405:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::_Expr<_Dom1, typename _Dom1::value_type>[m[K’ and ‘[01m[Kconst char*(const char*, int) noexcept[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::_Expr<_Dom1, typename _Dom1::value_type>[m[K’ and ‘[01m[Kchar*(char*, int) noexcept[m[K’
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Dom[m[K’
+[01m[K/usr/include/c++/13/valarray:1196:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::_Expr<std::__detail::_BinClos<std::__plus, std::_ValArray, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::[01;32m[Koperator+[m[K(const valarray<_Tp>&, const valarray<_Tp>&)[m[K’
+ 1196 | [01;36m[K_DEFINE_BINARY_OPERATOR[m[K(+, __plus)
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/valarray:1196:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::valarray<_Tp>[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/valarray:1196:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::_Expr<std::__detail::_BinClos<std::__plus, std::_ValArray, std::_Constant, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::[01;32m[Koperator+[m[K(const valarray<_Tp>&, const typename valarray<_Tp>::value_type&)[m[K’
+ 1196 | [01;36m[K_DEFINE_BINARY_OPERATOR[m[K(+, __plus)
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/valarray:1196:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::valarray<_Tp>[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/valarray:1196:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Constant, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::[01;32m[Koperator+[m[K(const typename valarray<_Tp>::value_type&, const valarray<_Tp>&)[m[K’
+ 1196 | [01;36m[K_DEFINE_BINARY_OPERATOR[m[K(+, __plus)
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/valarray:1196:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::valarray<_Tp>[m[K’ and ‘[01m[Kconst char*(const char*, int) noexcept[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::valarray<_Tp>[m[K’ and ‘[01m[Kchar*(char*, int) noexcept[m[K’
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Tp[m[K’
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:50[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Geometry:11[m[K,
+                 from [01m[K/home/kafando/ws_moveit/install/moveit_core/include/moveit_core/moveit/robot_model/joint_model.hpp:46[m[K,
+                 from [01m[K/home/kafando/ws_moveit/install/moveit_core/include/moveit_core/moveit/robot_model/joint_model_group.hpp:40[m[K,
+                 from [01m[K/home/kafando/ws_moveit/install/moveit_core/include/moveit_core/moveit/robot_model/robot_model.hpp:45[m[K,
+                 from [01m[K/home/kafando/ws_moveit/install/moveit_core/include/moveit_core/moveit/robot_state/robot_state.hpp:40[m[K,
+                 from [01m[K/home/kafando/ws_moveit/install/moveit_ros_planning_interface/include/moveit_ros_planning_interface/moveit/move_group_interface/move_group_interface.hpp:41[m[K,
+                 from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:6[m[K:
+[01m[K/usr/include/c++/13/complex:335:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::[01;32m[Koperator+[m[K(const complex<_Tp>&, const complex<_Tp>&)[m[K’
+  335 |     [01;36m[Koperator[m[K+(const complex<_Tp>& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:335:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/complex:344:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::[01;32m[Koperator+[m[K(const complex<_Tp>&, const _Tp&)[m[K’
+  344 |     [01;36m[Koperator[m[K+(const complex<_Tp>& __x, const _Tp& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:344:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/complex:353:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::complex<_Tp> std::[01;32m[Koperator+[m[K(const _Tp&, const complex<_Tp>&) [35m[K[with _Tp = __gnu_cxx::__normal_iterator<geometry_msgs::msg::Point_<allocator<void> >*, vector<geometry_msgs::msg::Point_<allocator<void> >, allocator<geometry_msgs::msg::Point_<allocator<void> > > > >][m[K[m[K’
+  353 |     [01;36m[Koperator[m[K+(const _Tp& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:353:51:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kconst std::complex<__gnu_cxx::__normal_iterator<geometry_msgs::msg::Point_<std::allocator<void> >*, std::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > > > >&[m[K’
+  353 |     operator+(const _Tp& __x, [01;36m[Kconst complex<_Tp>& __y[m[K)
+      |                               [01;36m[K~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/13/complex:454:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::[01;32m[Koperator+[m[K(const complex<_Tp>&)[m[K’
+  454 |     [01;36m[Koperator[m[K+(const complex<_Tp>& __x)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:454:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:1342:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator, class _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::[01;32m[Koperator+[m[K(typename __normal_iterator<_Iterator, _Container>::difference_type, const __normal_iterator<_Iterator, _Container>&)[m[K’
+ 1342 |     [01;36m[Koperator[m[K+(typename __normal_iterator<_Iterator, _Container>::difference_type
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:1342:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst __gnu_cxx::__normal_iterator<_Iterator, _Container>[m[K’ and ‘[01m[Kconst char*(const char*, int) noexcept[m[K’
+  253 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst __gnu_cxx::__normal_iterator<_Iterator, _Container>[m[K’ and ‘[01m[Kchar*(char*, int) noexcept[m[K’
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:253:45:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Iterator[m[K’
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:44:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator+[m[K’ (operand types are ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ and ‘[01m[K<unresolved overloaded function type>[m[K’)
+  273 |                 Poses->erase([01;31m[KPoses->begin()+index[m[K);
+      |                              [01;31m[K~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:1147:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[K__gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container>::[01;32m[Koperator+[m[K(difference_type) const [35m[K[with _Iterator = geometry_msgs::msg::Point_<std::allocator<void> >*; _Container = std::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >; difference_type = long int][m[K[m[K’
+ 1147 |       [01;36m[Koperator[m[K+(difference_type __n) const _GLIBCXX_NOEXCEPT
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:1147:33:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[K__gnu_cxx::__normal_iterator<geometry_msgs::msg::Point_<std::allocator<void> >*, std::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > > >::difference_type[m[K’ {aka ‘[01m[Klong int[m[K’}
+ 1147 |       operator+([01;36m[Kdifference_type __n[m[K) const _GLIBCXX_NOEXCEPT
+      |                 [01;36m[K~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:634:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr std::reverse_iterator<_Iterator> std::[01;32m[Koperator+[m[K(typename reverse_iterator<_Iterator>::difference_type, const reverse_iterator<_Iterator>&)[m[K’
+  634 |     [01;36m[Koperator[m[K+(typename reverse_iterator<_Iterator>::difference_type __n,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:634:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’ and ‘[01m[Kconst char*(const char*, int) noexcept[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’ and ‘[01m[Kchar*(char*, int) noexcept[m[K’
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Iterator[m[K’
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:1808:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator> constexpr std::move_iterator<_IteratorL> std::[01;32m[Koperator+[m[K(typename move_iterator<_IteratorL>::difference_type, const move_iterator<_IteratorL>&)[m[K’
+ 1808 |     [01;36m[Koperator[m[K+(typename move_iterator<_Iterator>::difference_type __n,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:1808:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’ and ‘[01m[Kconst char*(const char*, int) noexcept[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’ and ‘[01m[Kchar*(char*, int) noexcept[m[K’
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Iterator[m[K’
+[01m[K/usr/include/c++/13/bits/basic_string.h:3553:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+ 3553 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3553:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3571:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(const _CharT*, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+ 3571 |     [01;36m[Koperator[m[K+(const _CharT* __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3571:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[K__gnu_cxx::__normal_iterator<geometry_msgs::msg::Point_<std::allocator<void> >*, std::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > > >[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3590:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(_CharT, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+ 3590 |     [01;36m[Koperator[m[K+(_CharT __lhs, const basic_string<_CharT,_Traits,_Alloc>& __rhs)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3590:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’ and ‘[01m[Kconst char*(const char*, int) noexcept[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’ and ‘[01m[Kchar*(char*, int) noexcept[m[K’
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Traits[m[K’
+[01m[K/usr/include/c++/13/bits/basic_string.h:3607:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)[m[K’
+ 3607 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3607:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3625:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)[m[K’
+ 3625 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3625:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3637:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const __cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+ 3637 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3637:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3644:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(const __cxx11::basic_string<_CharT, _Traits, _Allocator>&, __cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K’
+ 3644 |     [01;36m[Koperator[m[K+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3644:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3651:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, __cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K’
+ 3651 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3651:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3674:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(const _CharT*, __cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K’
+ 3674 |     [01;36m[Koperator[m[K+(const _CharT* __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3674:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[K__gnu_cxx::__normal_iterator<geometry_msgs::msg::Point_<std::allocator<void> >*, std::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > > >[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3681:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(_CharT, __cxx11::basic_string<_CharT, _Traits, _Allocator>&&)[m[K’
+ 3681 |     [01;36m[Koperator[m[K+(_CharT __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3681:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’ and ‘[01m[Kconst char*(const char*, int) noexcept[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’ and ‘[01m[Kchar*(char*, int) noexcept[m[K’
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Traits[m[K’
+[01m[K/usr/include/c++/13/bits/basic_string.h:3688:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, const _CharT*)[m[K’
+ 3688 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3688:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3695:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Allocator> std::[01;32m[Koperator+[m[K(__cxx11::basic_string<_CharT, _Traits, _Allocator>&&, _CharT)[m[K’
+ 3695 |     [01;36m[Koperator[m[K+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/basic_string.h:3695:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Allocator>[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/valarray_after.h:405:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Dom1, class _Dom2> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Expr, std::_Expr, _Dom1, _Dom2>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::[01;32m[Koperator+[m[K(const _Expr<_Dom1, typename _Dom1::value_type>&, const _Expr<_Dom2, typename _Dom2::value_type>&)[m[K’
+  405 |     [01;36m[K_DEFINE_EXPR_BINARY_OPERATOR[m[K(+, struct std::__plus)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/valarray_after.h:405:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::_Expr<_Dom1, typename _Dom1::value_type>[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/valarray_after.h:405:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Expr, std::_Constant, _Dom, typename _Dom::value_type>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::[01;32m[Koperator+[m[K(const _Expr<_Dom1, typename _Dom1::value_type>&, const typename _Dom::value_type&)[m[K’
+  405 |     [01;36m[K_DEFINE_EXPR_BINARY_OPERATOR[m[K(+, struct std::__plus)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/valarray_after.h:405:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::_Expr<_Dom1, typename _Dom1::value_type>[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/valarray_after.h:405:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Constant, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::[01;32m[Koperator+[m[K(const typename _Dom::value_type&, const _Expr<_Dom1, typename _Dom1::value_type>&)[m[K’
+  405 |     [01;36m[K_DEFINE_EXPR_BINARY_OPERATOR[m[K(+, struct std::__plus)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/valarray_after.h:405:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::_Expr<_Dom1, typename _Dom1::value_type>[m[K’ and ‘[01m[Kconst char*(const char*, int) noexcept[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::_Expr<_Dom1, typename _Dom1::value_type>[m[K’ and ‘[01m[Kchar*(char*, int) noexcept[m[K’
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Dom[m[K’
+[01m[K/usr/include/c++/13/bits/valarray_after.h:405:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Expr, std::_ValArray, _Dom, typename _Dom::value_type>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::[01;32m[Koperator+[m[K(const _Expr<_Dom1, typename _Dom1::value_type>&, const valarray<typename _Dom::value_type>&)[m[K’
+  405 |     [01;36m[K_DEFINE_EXPR_BINARY_OPERATOR[m[K(+, struct std::__plus)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/valarray_after.h:405:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::_Expr<_Dom1, typename _Dom1::value_type>[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/valarray_after.h:405:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Dom> std::_Expr<std::__detail::_BinClos<std::__plus, std::_ValArray, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__plus, typename _Dom1::value_type>::result_type> std::[01;32m[Koperator+[m[K(const valarray<typename _Dom::value_type>&, const _Expr<_Dom1, typename _Dom1::value_type>&)[m[K’
+  405 |     [01;36m[K_DEFINE_EXPR_BINARY_OPERATOR[m[K(+, struct std::__plus)
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/valarray_after.h:405:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::_Expr<_Dom1, typename _Dom1::value_type>[m[K’ and ‘[01m[Kconst char*(const char*, int) noexcept[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::_Expr<_Dom1, typename _Dom1::value_type>[m[K’ and ‘[01m[Kchar*(char*, int) noexcept[m[K’
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Dom[m[K’
+[01m[K/usr/include/c++/13/valarray:1196:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::_Expr<std::__detail::_BinClos<std::__plus, std::_ValArray, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::[01;32m[Koperator+[m[K(const valarray<_Tp>&, const valarray<_Tp>&)[m[K’
+ 1196 | [01;36m[K_DEFINE_BINARY_OPERATOR[m[K(+, __plus)
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/valarray:1196:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::valarray<_Tp>[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/valarray:1196:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::_Expr<std::__detail::_BinClos<std::__plus, std::_ValArray, std::_Constant, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::[01;32m[Koperator+[m[K(const valarray<_Tp>&, const typename valarray<_Tp>::value_type&)[m[K’
+ 1196 | [01;36m[K_DEFINE_BINARY_OPERATOR[m[K(+, __plus)
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/valarray:1196:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::valarray<_Tp>[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/valarray:1196:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::_Expr<std::__detail::_BinClos<std::__plus, std::_Constant, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__plus, _Tp>::result_type> std::[01;32m[Koperator+[m[K(const typename valarray<_Tp>::value_type&, const valarray<_Tp>&)[m[K’
+ 1196 | [01;36m[K_DEFINE_BINARY_OPERATOR[m[K(+, __plus)
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/13/valarray:1196:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::valarray<_Tp>[m[K’ and ‘[01m[Kconst char*(const char*, int) noexcept[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::valarray<_Tp>[m[K’ and ‘[01m[Kchar*(char*, int) noexcept[m[K’
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Tp[m[K’
+[01m[K/usr/include/c++/13/complex:335:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::[01;32m[Koperator+[m[K(const complex<_Tp>&, const complex<_Tp>&)[m[K’
+  335 |     [01;36m[Koperator[m[K+(const complex<_Tp>& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:335:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/complex:344:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::[01;32m[Koperator+[m[K(const complex<_Tp>&, const _Tp&)[m[K’
+  344 |     [01;36m[Koperator[m[K+(const complex<_Tp>& __x, const _Tp& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:344:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/complex:353:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::complex<_Tp> std::[01;32m[Koperator+[m[K(const _Tp&, const complex<_Tp>&) [35m[K[with _Tp = __gnu_cxx::__normal_iterator<geometry_msgs::msg::Point_<allocator<void> >*, vector<geometry_msgs::msg::Point_<allocator<void> >, allocator<geometry_msgs::msg::Point_<allocator<void> > > > >][m[K[m[K’
+  353 |     [01;36m[Koperator[m[K+(const _Tp& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:353:51:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kconst std::complex<__gnu_cxx::__normal_iterator<geometry_msgs::msg::Point_<std::allocator<void> >*, std::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > > > >&[m[K’
+  353 |     operator+(const _Tp& __x, [01;36m[Kconst complex<_Tp>& __y[m[K)
+      |                               [01;36m[K~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/13/complex:454:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::[01;32m[Koperator+[m[K(const complex<_Tp>&)[m[K’
+  454 |     [01;36m[Koperator[m[K+(const complex<_Tp>& __x)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/complex:454:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector<geometry_msgs::msg::Point_<std::allocator<void> >, std::allocator<geometry_msgs::msg::Point_<std::allocator<void> > > >::iterator[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:1342:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator, class _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::[01;32m[Koperator+[m[K(typename __normal_iterator<_Iterator, _Container>::difference_type, const __normal_iterator<_Iterator, _Container>&)[m[K’
+ 1342 |     [01;36m[Koperator[m[K+(typename __normal_iterator<_Iterator, _Container>::difference_type
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/13/bits/stl_iterator.h:1342:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst __gnu_cxx::__normal_iterator<_Iterator, _Container>[m[K’ and ‘[01m[Kconst char*(const char*, int) noexcept[m[K’
+  273 |                 Poses->erase(Poses->begin()+[01;36m[Kindex[m[K);
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst __gnu_cxx::__normal_iterator<_Iterator, _Container>[m[K’ and ‘[01m[Kchar*(char*, int) noexcept[m[K’
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:273:45:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Iterator[m[K’
+gmake[2]: *** [CMakeFiles/wstta_robot_bt_node.dir/build.make:104: CMakeFiles/wstta_robot_bt_node.dir/src/mm_moveit_actions.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wstta_robot_bt_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

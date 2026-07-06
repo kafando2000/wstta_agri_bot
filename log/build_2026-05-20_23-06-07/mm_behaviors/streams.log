@@ -1,0 +1,19 @@
+[0.020s] Invoking command in '/home/kafando/Ros2_ws/build/mm_behaviors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16
+[0.099s] [ 16%] [32mBuilding CXX object CMakeFiles/wstta_robot_bt_node.dir/src/mm_bt_node.cpp.o[0m
+[5.049s] In file included from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_bt_node.hpp:5[m[K,
+[5.050s]                  from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_bt_node.cpp:1[m[K:
+[5.050s] /opt/ros/jazzy/include/behaviortree_cpp/bt_factory.h: In instantiation of ‘[01m[Kvoid BT::BehaviorTreeFactory::[01;32m[KregisterNodeType[m[K(const std::string&, ExtraArgs ...) [35m[K[with T = JustNavigateChecker; ExtraArgs = {}; std::string = std::__cxx11::basic_string<char>][m[K[m[K’:
+[5.050s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_bt_node.cpp:100:58:[m[K   required from here
+[5.050s] [01m[K/opt/ros/jazzy/include/behaviortree_cpp/bt_factory.h:412:24:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: [registerNode]: since you have a static method providedPorts(),
+[5.050s] you MUST add a constructor with signature:
+[5.050s] (const std::string&, const NodeConfig&)
+[5.050s] 
+[5.050s]   411 |       static_assert(![01;31m[K(has_static_ports_list && !param_constructable[m[K
+[5.050s]       |                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.050s]   412 | [01;31m[K                       && sizeof...(ExtraArgs) == 0)[m[K,
+[5.050s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.050s] [01m[K/opt/ros/jazzy/include/behaviortree_cpp/bt_factory.h:412:24:[m[K [01;36m[Knote: [m[K‘[01m[K(((!(bool)has_static_ports_list) || ((bool)param_constructable)) || (0 != 0))[m[K’ evaluates to false
+[7.284s] gmake[2]: *** [CMakeFiles/wstta_robot_bt_node.dir/build.make:76: CMakeFiles/wstta_robot_bt_node.dir/src/mm_bt_node.cpp.o] Error 1
+[7.285s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wstta_robot_bt_node.dir/all] Error 2
+[7.285s] gmake: *** [Makefile:146: all] Error 2
+[7.287s] Invoked command in '/home/kafando/Ros2_ws/build/mm_behaviors' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16

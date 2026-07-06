@@ -1,0 +1,46 @@
+In file included from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_nav_actions.hpp:8[m[K,
+                 from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_bt_node.hpp:10[m[K,
+                 from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_bt_node.cpp:1[m[K:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:19:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct TargetPose[m[K’
+   19 | struct [01;31m[KTargetPose[m[K{
+      |        [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_bt_node.hpp:9[m[K:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:19:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct TargetPose[m[K’
+   19 | struct [01;36m[KTargetPose[m[K{
+      |        [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:52:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass PlanForTheArm[m[K’
+   52 | class [01;31m[KPlanForTheArm[m[K : public BT::SyncActionNode{
+      |       [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:52:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass PlanForTheArm[m[K’
+   52 | class [01;36m[KPlanForTheArm[m[K : public BT::SyncActionNode{
+      |       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:121:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass ExecuteArmPlan[m[K’
+  121 | class [01;31m[KExecuteArmPlan[m[K : public BT::StatefulActionNode{
+      |       [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:121:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass ExecuteArmPlan[m[K’
+  121 | class [01;36m[KExecuteArmPlan[m[K : public BT::StatefulActionNode{
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/actions_nodes.hpp:6[m[K,
+                 from [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_bt_node.hpp:11[m[K:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:19:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct TargetPose[m[K’
+   19 | struct [01;31m[KTargetPose[m[K{
+      |        [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:19:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct TargetPose[m[K’
+   19 | struct [01;36m[KTargetPose[m[K{
+      |        [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:52:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass PlanForTheArm[m[K’
+   52 | class [01;31m[KPlanForTheArm[m[K : public BT::SyncActionNode{
+      |       [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:52:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass PlanForTheArm[m[K’
+   52 | class [01;36m[KPlanForTheArm[m[K : public BT::SyncActionNode{
+      |       [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:121:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass ExecuteArmPlan[m[K’
+  121 | class [01;31m[KExecuteArmPlan[m[K : public BT::StatefulActionNode{
+      |       [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/include/mm_behaviors/mm_moveit_actions.hpp:121:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass ExecuteArmPlan[m[K’
+  121 | class [01;36m[KExecuteArmPlan[m[K : public BT::StatefulActionNode{
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/wstta_robot_bt_node.dir/build.make:76: CMakeFiles/wstta_robot_bt_node.dir/src/mm_bt_node.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wstta_robot_bt_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

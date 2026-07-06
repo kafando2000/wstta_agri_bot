@@ -17,9 +17,6 @@
 #include "geometry_msgs/msg/point_stamped.hpp"
 using Pose3D = geometry_msgs::msg::Point;
 
-
-
-
 class  Navigate : public BT::StatefulActionNode{
     public:
         using NavigateToPose = nav2_msgs::action::NavigateToPose;

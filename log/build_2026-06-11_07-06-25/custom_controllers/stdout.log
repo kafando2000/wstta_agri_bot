@@ -1,0 +1,26 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/sine_law_controller.dir/src/sine_controller.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libsine_law_controller.so[0m
+[100%] Built target sine_law_controller
+-- Install configuration: "Debug"
+-- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/sine_law_controller.xml
+-- Installing: /home/kafando/Ros2_ws/install/custom_controllers/lib/libsine_law_controller.so
+-- Set non-toolchain portion of runtime path of "/home/kafando/Ros2_ws/install/custom_controllers/lib/libsine_law_controller.so" to ""
+-- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers//include
+-- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers//include/custom_controllers
+-- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers//include/custom_controllers/wbc_for_mm_control.hpp
+-- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/ament_index/resource_index/package_run_dependencies/custom_controllers
+-- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/ament_index/resource_index/parent_prefix_path/custom_controllers
+-- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/environment/ament_prefix_path.sh
+-- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/environment/path.sh
+-- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/environment/path.dsv
+-- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/local_setup.bash
+-- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/local_setup.sh
+-- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/local_setup.zsh
+-- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/local_setup.dsv
+-- Installing: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/package.dsv
+-- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/ament_index/resource_index/packages/custom_controllers
+-- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/ament_index/resource_index/controller_interface__pluginlib__plugin/custom_controllers
+-- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/cmake/custom_controllersConfig.cmake
+-- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/cmake/custom_controllersConfig-version.cmake
+-- Up-to-date: /home/kafando/Ros2_ws/install/custom_controllers/share/custom_controllers/package.xml

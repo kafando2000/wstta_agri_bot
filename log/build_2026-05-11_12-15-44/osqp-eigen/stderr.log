@@ -1,0 +1,6 @@
+[33mCMake Warning (dev) at cmake/OsqpEigenDependencies.cmake:37 (set):
+  Cannot set "OSQP_EIGEN_OSQP_TARGET_TO_LINK": current scope has no parent.
+Call Stack (most recent call first):
+  CMakeLists.txt:75 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m

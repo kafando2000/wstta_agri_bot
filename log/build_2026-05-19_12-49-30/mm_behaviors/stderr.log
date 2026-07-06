@@ -1,0 +1,8 @@
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_bt_node.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_bt_node.cpp:147:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::executors::MultiThreadedExecutor[m[K’ has no member named ‘[01m[Kpin[m[K’; did you mean ‘[01m[Kspin[m[K’?
+  147 |     exec.[01;31m[Kpin[m[K();
+      |          [01;31m[K^~~[m[K
+      |          [32m[Kspin[m[K
+gmake[2]: *** [CMakeFiles/wstta_robot_bt_node.dir/build.make:76: CMakeFiles/wstta_robot_bt_node.dir/src/mm_bt_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wstta_robot_bt_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

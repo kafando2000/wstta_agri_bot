@@ -1,0 +1,45 @@
+[ 12%] [32mBuilding CXX object CMakeFiles/numb_checker.dir/src/numb_checker.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/bt_action.dir/src/bt_actions.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/reach_location_server.dir/src/reach_location_server.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/first_tree.dir/src/first_tree.cpp.o[0m
+[ 62%] [32m[1mLinking CXX executable first_tree[0m
+[ 62%] Built target first_tree
+[ 75%] [32m[1mLinking CXX executable reach_location_server[0m
+[ 75%] Built target reach_location_server
+[ 87%] [32m[1mLinking CXX executable bt_action[0m
+[100%] [32m[1mLinking CXX executable numb_checker[0m
+[100%] Built target bt_action
+[100%] Built target numb_checker
+-- Install configuration: "Debug"
+-- Installing: /home/kafando/Ros2_ws/install/bt_concepts/lib/bt_concepts/first_tree
+-- Set non-toolchain portion of runtime path of "/home/kafando/Ros2_ws/install/bt_concepts/lib/bt_concepts/first_tree" to ""
+-- Installing: /home/kafando/Ros2_ws/install/bt_concepts/lib/bt_concepts/numb_checker
+-- Set non-toolchain portion of runtime path of "/home/kafando/Ros2_ws/install/bt_concepts/lib/bt_concepts/numb_checker" to ""
+-- Installing: /home/kafando/Ros2_ws/install/bt_concepts/lib/bt_concepts/bt_action
+-- Set non-toolchain portion of runtime path of "/home/kafando/Ros2_ws/install/bt_concepts/lib/bt_concepts/bt_action" to ""
+-- Installing: /home/kafando/Ros2_ws/install/bt_concepts/lib/bt_concepts/reach_location_server
+-- Set non-toolchain portion of runtime path of "/home/kafando/Ros2_ws/install/bt_concepts/lib/bt_concepts/reach_location_server" to ""
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/bt_concepts//trees
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/bt_concepts//trees/full_robot_ex_pipeline
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/bt_concepts//trees/numb_checker.xml
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/bt_concepts//trees/first_tree.xml
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/bt_concepts//trees/reach_location_x_y.xml
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/bt_concepts//launch
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/bt_concepts//launch/bt_ros2_actions.launch.py
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/bt_concepts//launch/number_checker.launch.py
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/bt_concepts//launch/first_bt.launch.py
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/ament_index/resource_index/package_run_dependencies/bt_concepts
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/ament_index/resource_index/parent_prefix_path/bt_concepts
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/bt_concepts/environment/ament_prefix_path.sh
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/bt_concepts/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/bt_concepts/environment/path.sh
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/bt_concepts/environment/path.dsv
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/bt_concepts/local_setup.bash
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/bt_concepts/local_setup.sh
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/bt_concepts/local_setup.zsh
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/bt_concepts/local_setup.dsv
+-- Installing: /home/kafando/Ros2_ws/install/bt_concepts/share/bt_concepts/package.dsv
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/ament_index/resource_index/packages/bt_concepts
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/bt_concepts/cmake/bt_conceptsConfig.cmake
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/bt_concepts/cmake/bt_conceptsConfig-version.cmake
+-- Up-to-date: /home/kafando/Ros2_ws/install/bt_concepts/share/bt_concepts/package.xml

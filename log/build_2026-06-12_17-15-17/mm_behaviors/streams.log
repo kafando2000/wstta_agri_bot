@@ -1,0 +1,22 @@
+[0.020s] Invoking command in '/home/kafando/Ros2_ws/build/mm_behaviors': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16
+[0.107s] [ 16%] [32mBuilding CXX object CMakeFiles/wstta_bt_node.dir/src/mm_bt_node.cpp.o[0m
+[0.110s] [ 33%] [32mBuilding CXX object CMakeFiles/wstta_bt_node.dir/src/mm_moveit_bt_nodes.cpp.o[0m
+[6.197s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:[m[K In constructor ‘[01m[KWSTTA::ExecuteArmPlan::[01;32m[KExecuteArmPlan[m[K(const std::string&, const BT::NodeConfig&, const rclcpp::Node::SharedPtr&, const std::shared_ptr<moveit_cpp::MoveItCpp>&)[m[K’:
+[6.197s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:372:9:[m[K [01;31m[Kerror: [m[Kbinding reference of type ‘[01m[Krclcpp::Node::SharedPtr&[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::Node>&[m[K’} to ‘[01m[Kconst rclcpp::Node::SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<rclcpp::Node>[m[K’} discards qualifiers
+[6.197s]   372 |         [01;31m[Knode_ptr_{node_ptr}[m[K,moveit_cpp_ptr{moveit_cpp_ptr}
+[6.197s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[6.197s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:372:29:[m[K [01;31m[Kerror: [m[Kbinding reference of type ‘[01m[Kstd::shared_ptr<moveit_cpp::MoveItCpp>&[m[K’ to ‘[01m[Kconst std::shared_ptr<moveit_cpp::MoveItCpp>[m[K’ discards qualifiers
+[6.197s]   372 |         node_ptr_{node_ptr},[01;31m[Kmoveit_cpp_ptr{moveit_cpp_ptr}[m[K
+[6.197s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.200s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:[m[K In constructor ‘[01m[KWSTTA::PlanExecForGripper::[01;32m[KPlanExecForGripper[m[K(const std::string&, const BT::NodeConfig&, const rclcpp::Node::SharedPtr&, const std::shared_ptr<moveit_cpp::MoveItCpp>&)[m[K’:
+[6.201s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:438:9:[m[K [01;31m[Kerror: [m[Kbinding reference of type ‘[01m[Krclcpp::Node::SharedPtr&[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::Node>&[m[K’} to ‘[01m[Kconst rclcpp::Node::SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<rclcpp::Node>[m[K’} discards qualifiers
+[6.201s]   438 |         [01;31m[Knode_ptr_{node_ptr}[m[K,moveit_cpp_ptr{moveit_cpp_ptr}
+[6.201s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[6.201s] [01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:438:29:[m[K [01;31m[Kerror: [m[Kbinding reference of type ‘[01m[Kstd::shared_ptr<moveit_cpp::MoveItCpp>&[m[K’ to ‘[01m[Kconst std::shared_ptr<moveit_cpp::MoveItCpp>[m[K’ discards qualifiers
+[6.201s]   438 |         node_ptr_{node_ptr},[01;31m[Kmoveit_cpp_ptr{moveit_cpp_ptr}[m[K
+[6.201s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.866s] gmake[2]: *** [CMakeFiles/wstta_bt_node.dir/build.make:104: CMakeFiles/wstta_bt_node.dir/src/mm_moveit_bt_nodes.cpp.o] Error 1
+[9.867s] gmake[2]: *** Waiting for unfinished jobs....
+[14.824s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wstta_bt_node.dir/all] Error 2
+[14.824s] gmake: *** [Makefile:146: all] Error 2
+[14.826s] Invoked command in '/home/kafando/Ros2_ws/build/mm_behaviors' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kafando/ws_moveit/install/moveit_configs_utils:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/kafando/Ros2_ws/build/mm_behaviors -- -j16 -l16

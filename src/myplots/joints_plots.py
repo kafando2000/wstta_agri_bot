@@ -81,8 +81,8 @@ e_total = 0.0
 for  ti in process_times :
     ti_consumed_e = 0.0
     for joint in joint_power:
-        ti_consumed_e = ((joint_power[joint])[i])
-    e_total = e_total + np.abs(ti_consumed_e*dt)
+        ti_consumed_e = ti_consumed_e + max(0.0,(joint_power[joint])[i])
+    e_total = e_total + ti_consumed_e*dt
     total_power.append(ti_consumed_e)
     i = i + 1
 print(e_total)

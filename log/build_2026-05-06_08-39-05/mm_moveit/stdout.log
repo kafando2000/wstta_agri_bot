@@ -1,0 +1,56 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/kafando/Ros2_ws/build/mm_moveit
+-- Install configuration: ""
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/ament_index/resource_index/package_run_dependencies/mm_moveit
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/ament_index/resource_index/parent_prefix_path/mm_moveit
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/environment/ament_prefix_path.sh
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/environment/ament_prefix_path.dsv
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/environment/path.sh
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/environment/path.dsv
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/local_setup.bash
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/local_setup.sh
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/local_setup.zsh
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/local_setup.dsv
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/package.dsv
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/ament_index/resource_index/packages/mm_moveit
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/cmake/mm_moveitConfig.cmake
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/cmake/mm_moveitConfig-version.cmake
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/package.xml
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/launch
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/launch/demo.launch.py
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/launch/spawn_controllers.launch.py
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/launch/setup_assistant.launch.py
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/launch/static_virtual_joint_tfs.launch.py
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/launch/rsp.launch.py
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/launch/move_group.launch.py
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/launch/moveit_rviz.launch.py
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/launch/warehouse_db.launch.py
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/launch/view.launch.py
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/launch/move_gazebo.launch.py
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/config
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/config/WSTTA_ROBOT.urdf.xacro
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/config/WSTTA_ROBOT.ros2_control.xacro
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/config/moveit.rviz
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/config/joint_limits.yaml
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/config/initial_positions.yaml
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/config/moveit_controllers.yaml
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/config/pilz_cartesian_limits.yaml
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/config/sensors_3d.yaml
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/config/WSTTA_ROBOT.srdf
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/config/kinematics.yaml
+-- Installing: /home/kafando/Ros2_ws/install/mm_moveit/share/mm_moveit/.setup_assistant
