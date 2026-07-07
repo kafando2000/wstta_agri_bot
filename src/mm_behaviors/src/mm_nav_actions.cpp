@@ -2,6 +2,20 @@
 #include <tf2/LinearMath/Quaternion.h>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 
+ int Navigate::get_near_pose_index(std::vector<Pose3D>& t,Pose3D& robot_pose){
+            int index = 0;
+            TargetPose rob{robot_pose};
+            double min = (rob-t.at(0)).norm();
+            for(auto k:t){
+                auto dist = (rob-k).norm();
+                if(min > dist){
+                    min = dist;
+                    ++index;
+                }
+            }
+            return index;
+}
+
 bool Navigate::check_if_target(TargetPose& t,std::string var_name){
    
     if(getInput<TargetPose>(var_name,t)){
@@ -25,6 +39,7 @@ BT::NodeStatus Navigate::onStart() {
     send_goal_options.result_callback = std::bind(&Navigate::result_callback, this, _1);
     client_ptr_ = rclcpp_action::create_client<NavigateToPose>(node_ptr_, "/navigate_to_pose");
     navigation_frame = this->node_ptr_->get_parameter("navigation_frame").as_string();
+    base_frame = this->node_ptr_->get_parameter("base_frame").as_string();
     
     if(!getInput<std::string>("key",key))
         return BT::NodeStatus::FAILURE;
@@ -80,7 +95,7 @@ BT::NodeStatus Navigate::onStart() {
                 // loook for transforms
                 while ( !tf_found ) {    
                     try {
-                    transformStamped = tf_buffer_->lookupTransform(navigation_frame, "base_footprint", tf2::TimePointZero);
+                    transformStamped = tf_buffer_->lookupTransform(navigation_frame, base_frame, tf2::TimePointZero);
                         tf_found = true;
                     } catch (const tf2::TransformException & ex) {
                     
@@ -102,7 +117,8 @@ BT::NodeStatus Navigate::onStart() {
                 object_map_pose.point.x = object_pose.x;
                 object_map_pose.point.y = object_pose.y;
                 object_map_pose.point.z = object_pose.z;
-                theta = atan2((object_pose.y-robot_pose_in_map.y),(object_pose.x-robot_pose_in_map.x))+shift_theta;
+                // compute the goal pose for navigation
+                theta = atan2((object_pose.y-robot_pose_in_map.y),(object_pose.x-robot_pose_in_map.x)) + shift_theta;
                 target_pose.position.x = object_map_pose.point.x - radius*cos(theta);
                 target_pose.position.y = object_map_pose.point.y - radius*sin(theta);
                 target_pose.position.z = robot_pose_in_map.z;

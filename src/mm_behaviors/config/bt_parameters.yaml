@@ -13,4 +13,5 @@ wstta_bt_node:
     #define poses where robot can unload when container is full
     unload_poses: [9.0,8.0,0.0,0.0]
     circle_radius: 0.315000
+    base_frame: base_footprint
     #tree_xml_file : "$(find-pkg-share mm_behaviors)/xml_tree/mm_behaviors.xml"

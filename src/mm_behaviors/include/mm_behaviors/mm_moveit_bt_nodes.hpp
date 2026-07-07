@@ -150,21 +150,21 @@ private:
     moveit::core::MoveItErrorCode status_; /// status of the plan
     /// @}
     
-    /// plan key here is one defined state name : it will be among the <<group_predefined_states>>  otherwise 
+    /// @brief plan key here is one defined state name : it will be among the <<group_predefined_states>>  otherwise 
     /// it's to track an object with the plan_key = "for_object"
     std::string plan_key_;
-    /// stores moveIt planning group states defined in srdf file 
+    /// @brief stores moveIt planning group states defined in srdf file 
     /// it is given by the parameters  yaml file
     std::vector<std::string> arm_predefined_states;
-    /// stores the first five objects poses(if less than five just the whole) given by 
-    /// BT port objects_poses_vect
+    /// @brief stores the first five objects poses(if less than five just the whole) given by 
+    ////BT port objects_poses_vect
     std::vector<Pose3D> Objects_poses;
-    /// info about the object( index in vector and pose)
+    /// @brief info about the object( index in vector and pose)
     PlanObjectInfo plan_object_info_;
     
-    /// can be obtained from robot model
+    /// @brief  is obtained from robot model
     std::string planning_frame ;
-    /// defined in yaml file if not it is just map (it is the frame in which the objects poses are defined)
+    /// @brief defined in yaml file if not it is just map (it is the frame in which the objects poses are defined)
     std::string navigation_frame;
     /// it gives info about plan_key search if it is found or not
     bool found_key;
@@ -236,26 +236,26 @@ class ExecuteArmPlan : public BT::StatefulActionNode{
     private:
         /// @brief Coordinator node (ROS 2 node)
         rclcpp::Node::SharedPtr node_ptr_;
-        /// the moveit plan trajectory
+        /// @brief the moveit plan trajectory
         robot_trajectory::RobotTrajectoryPtr my_plan;
-        /// MoveItCpp instance
+        /// @brief MoveItCpp instance
         std::shared_ptr<moveit_cpp::MoveItCpp> moveit_cpp_ptr;
-        /// robot arm plamning component
+        /// @brief robot arm plamning component
         std::shared_ptr<moveit_cpp::PlanningComponent> arm_planning_component;
-        /// controllers forn the arm trajectory execution
+        /// @brief controllers forn the arm trajectory execution
         const std::vector<std::string> CONTROLLERS = {"arm_controller"};
-        /// store the value of the BT port exec_key
+        /// @brief store the value of the BT port exec_key
         std::string exec_key;
         /// @brief  controller manager execution status
         moveit_controller_manager::ExecutionStatus status;
-        /// a future for the  controller manager execution status
+        /// @brief a future for the  controller manager execution status
         std::future<moveit_controller_manager::ExecutionStatus> execution_future_;
         /// @brief MoveIt trajectory execution manager
         trajectory_execution_manager::TrajectoryExecutionManagerPtr manager;
-        /// in lack of level sensor for the container
+        /// @brief in lack of level sensor for the container
         /// it is used for simulating the filling state of the container
         int products_counter;
-        ///  products max number to consider container is full
+        /// @brief products max number to consider container is full
         int products_max_number;
         
 
