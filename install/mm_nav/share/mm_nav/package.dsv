@@ -1,8 +1,0 @@
-source;share/mm_nav/hook/cmake_prefix_path.ps1
-source;share/mm_nav/hook/cmake_prefix_path.dsv
-source;share/mm_nav/hook/cmake_prefix_path.sh
-source;share/mm_nav/local_setup.bash
-source;share/mm_nav/local_setup.dsv
-source;share/mm_nav/local_setup.ps1
-source;share/mm_nav/local_setup.sh
-source;share/mm_nav/local_setup.zsh
