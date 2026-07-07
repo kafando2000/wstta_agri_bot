@@ -1,9 +1,0 @@
-/home/kafando/Ros2_ws/build/mm_bringup/CMakeFiles/uninstall.dir
-/home/kafando/Ros2_ws/build/mm_bringup/CMakeFiles/mm_bringup_uninstall.dir
-/home/kafando/Ros2_ws/build/mm_bringup/CMakeFiles/test.dir
-/home/kafando/Ros2_ws/build/mm_bringup/CMakeFiles/edit_cache.dir
-/home/kafando/Ros2_ws/build/mm_bringup/CMakeFiles/rebuild_cache.dir
-/home/kafando/Ros2_ws/build/mm_bringup/CMakeFiles/list_install_components.dir
-/home/kafando/Ros2_ws/build/mm_bringup/CMakeFiles/install.dir
-/home/kafando/Ros2_ws/build/mm_bringup/CMakeFiles/install/local.dir
-/home/kafando/Ros2_ws/build/mm_bringup/CMakeFiles/install/strip.dir

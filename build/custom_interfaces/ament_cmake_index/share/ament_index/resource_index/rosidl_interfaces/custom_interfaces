@@ -1,8 +1,0 @@
-action/CustomAction.action
-action/CustomAction.idl
-action/ReachLocation.action
-action/ReachLocation.idl
-msg/CustomMessage.idl
-msg/CustomMessage.msg
-srv/ConcatStrings.idl
-srv/ConcatStrings.srv
