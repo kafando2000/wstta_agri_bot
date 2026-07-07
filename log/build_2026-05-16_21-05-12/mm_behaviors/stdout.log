@@ -1,5 +1,0 @@
-[ 16%] [32mBuilding CXX object CMakeFiles/wstta_robot_bt_node.dir/src/mm_bt_node.cpp.o[0m
-[ 33%] [32mBuilding CXX object CMakeFiles/wstta_robot_bt_node.dir/src/mm_nav_actions.cpp.o[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/wstta_robot_bt_node.dir/src/mm_moveit_actions.cpp.o[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/wstta_robot_bt_node.dir/src/actions_nodes.cpp.o[0m
-[ 83%] [32mBuilding CXX object CMakeFiles/wstta_robot_bt_node.dir/src/condition_nodes.cpp.o[0m

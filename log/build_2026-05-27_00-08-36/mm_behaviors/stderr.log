@@ -1,8 +1,0 @@
-[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus WSTTA::ExecuteArmPlan::[01;32m[KonStart[m[K()[m[K’:
-[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:295:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kblocking[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
-  295 |     bool [01;35m[Kblocking[m[K = false;
-      |          [01;35m[K^~~~~~~~[m[K
-[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus WSTTA::PlanForTheArm::[01;32m[KonRunning[m[K()[m[K’:
-[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:255:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
-  255 | [01;35m[K}[m[K
-      | [01;35m[K^[m[K

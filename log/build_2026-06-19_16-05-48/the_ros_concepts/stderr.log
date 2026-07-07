@@ -1,7 +1,0 @@
-[01m[K/home/kafando/Ros2_ws/src/the_ros_concepts/src/cpp_publisher.cpp:[m[K In member function ‘[01m[Kvoid PublisherNode::[01;32m[Kpublish_messages[m[K()[m[K’:
-[01m[K/home/kafando/Ros2_ws/src/the_ros_concepts/src/cpp_publisher.cpp:53:26:[m[K [01;35m[Kwarning: [m[K‘[01m[Kcustom_number_param[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
-   53 |         [01;35m[Kcustom_msg.myint = custom_number_param[m[K;  // Use parameter value for number
-      |         [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
-[01m[K/home/kafando/Ros2_ws/src/the_ros_concepts/src/cpp_publisher.cpp:41:13:[m[K [01;36m[Knote: [m[K‘[01m[Kcustom_number_param[m[K’ was declared here
-   41 |         int [01;36m[Kcustom_number_param[m[K;
-      |             [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K

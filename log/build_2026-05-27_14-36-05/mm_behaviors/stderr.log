@@ -1,7 +1,0 @@
-[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_nav_actions.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus Navigate::[01;32m[KonStart[m[K()[m[K’:
-[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_nav_actions.cpp:57:17:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
-   57 |                 [01;35m[Kif[m[K (!this->check_if_target(this->target_pose,"base_long_path_pose"))
-      |                 [01;35m[K^~[m[K
-[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_nav_actions.cpp:59:21:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
-   59 |                     [01;36m[Kreturn[m[K BT::NodeStatus::FAILURE;
-      |                     [01;36m[K^~~~~~[m[K

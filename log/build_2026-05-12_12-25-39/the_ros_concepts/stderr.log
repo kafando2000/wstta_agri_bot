@@ -1,4 +1,0 @@
-[01m[K/home/kafando/Ros2_ws/src/the_ros_concepts/src/osqp_node.cpp:[m[K In constructor ‘[01m[KOSQPNode::[01;32m[KOSQPNode[m[K(double, double, double, double, bool)[m[K’:
-[01m[K/home/kafando/Ros2_ws/src/the_ros_concepts/src/osqp_node.cpp:7:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klinearize_with_polygons[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
-    7 |   OSQPNode(double x_robot,double y_robot,double x_object,double y_object,[01;35m[Kbool linearize_with_polygons = false[m[K)
-      |                                                                          [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K

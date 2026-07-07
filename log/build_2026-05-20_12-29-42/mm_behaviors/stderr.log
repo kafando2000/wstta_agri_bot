@@ -1,4 +1,0 @@
-[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_bt_node.cpp:[m[K In member function ‘[01m[Kvoid WsttaBtPipelineNode::[01;32m[Kcreate_behavior_tree[m[K()[m[K’:
-[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_bt_node.cpp:103:24:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbase_unload_poses[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
-  103 |             TargetPose [01;35m[Kbase_unload_poses[m[K = TargetPose(unload_poses.at(0),unload_poses.at(1),
-      |                        [01;35m[K^~~~~~~~~~~~~~~~~[m[K

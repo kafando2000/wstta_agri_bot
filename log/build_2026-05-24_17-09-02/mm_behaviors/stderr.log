@@ -1,9 +1,0 @@
-[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus PlanForTheArm::[01;32m[KonStart[m[K()[m[K’:
-[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:245:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<moveit::planning_interface::MoveGroupInterface, __gnu_cxx::_S_atomic, false, false>::element_type = class moveit::planning_interface::MoveGroupInterface[m[K’ {aka ‘[01m[Kclass moveit::planning_interface::MoveGroupInterface[m[K’} has no member named ‘[01m[KSetJointValueTarget[m[K’; did you mean ‘[01m[KsetJointValueTarget[m[K’?
-  245 |     move_group->[01;31m[KSetJointValueTarget[m[K(ee_target_pose,"grasping_frame");
-      |                 [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
-      |                 [32m[KsetJointValueTarget[m[K
-gmake[2]: *** [CMakeFiles/wstta_robot_bt_node.dir/build.make:104: CMakeFiles/wstta_robot_bt_node.dir/src/mm_moveit_actions.cpp.o] Error 1
-gmake[2]: *** Waiting for unfinished jobs....
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wstta_robot_bt_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

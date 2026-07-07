@@ -1,6 +1,0 @@
-/usr/bin/ld: CMakeFiles/wstta_bt_node.dir/src/mm_bt_node.cpp.o: in function `main':
-/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_bt_node.cpp:278:(.text+0x268): undefined reference to `ompl::msg::setLogLevel(ompl::msg::LogLevel)'
-collect2: error: ld returned 1 exit status
-gmake[2]: *** [CMakeFiles/wstta_bt_node.dir/build.make:455: wstta_bt_node] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wstta_bt_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

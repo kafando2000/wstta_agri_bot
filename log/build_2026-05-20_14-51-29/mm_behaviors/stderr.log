@@ -1,4 +1,0 @@
-[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_nav_actions.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus Navigate::[01;32m[KonStart[m[K()[m[K’:
-[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_nav_actions.cpp:25:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kt[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
-   25 |     if(bool [01;35m[Kt[m[K = getInput<bool>("is_container_full").value()){
-      |             [01;35m[K^[m[K

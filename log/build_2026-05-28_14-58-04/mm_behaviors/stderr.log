@@ -1,9 +1,0 @@
-[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus WSTTA::PlanForTheArm::[01;32m[KonRunning[m[K()[m[K’:
-[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_bt_nodes.cpp:206:56:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kgeometry_msgs::msg::Quaternion[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::Quaternion_<std::allocator<void> >[m[K’} to ‘[01m[Kgeometry_msgs::msg::Quaternion_<std::allocator<void> >::_w_type[m[K’ {aka ‘[01m[Kdouble[m[K’} in assignment
-  206 |     ee_target_pose_near.pose.orientation.w = [01;31m[Ktf2::toMsg(q2)[m[K;
-      |                                              [01;31m[K~~~~~~~~~~^~~~[m[K
-      |                                                        [01;31m[K|[m[K
-      |                                                        [01;31m[Kgeometry_msgs::msg::Quaternion {aka geometry_msgs::msg::Quaternion_<std::allocator<void> >}[m[K
-gmake[2]: *** [CMakeFiles/wstta_bt_node.dir/build.make:104: CMakeFiles/wstta_bt_node.dir/src/mm_moveit_bt_nodes.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wstta_bt_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

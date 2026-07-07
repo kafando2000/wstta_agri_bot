@@ -1,4 +1,0 @@
-[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus PlanForTheArm::[01;32m[KonStart[m[K()[m[K’:
-[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:183:37:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvirtual_joint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
-  183 |     const moveit::core::JointModel* [01;35m[Kvirtual_joint[m[K = state_->getJointModel("virtual_joint");
-      |                                     [01;35m[K^~~~~~~~~~~~~[m[K

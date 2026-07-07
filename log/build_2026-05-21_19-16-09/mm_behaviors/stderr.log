@@ -1,8 +1,0 @@
-[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus PlanForTheArm::[01;32m[KonStart[m[K()[m[K’:
-[01m[K/home/kafando/Ros2_ws/src/mm_behaviors/src/mm_moveit_actions.cpp:232:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kraduis[m[K’ was not declared in this scope; did you mean ‘[01m[Kradius[m[K’?
-  232 |     move_group->setPositionTarget([01;31m[Kraduis[m[K, 0, 0.2);
-      |                                   [01;31m[K^~~~~~[m[K
-      |                                   [32m[Kradius[m[K
-gmake[2]: *** [CMakeFiles/wstta_robot_bt_node.dir/build.make:104: CMakeFiles/wstta_robot_bt_node.dir/src/mm_moveit_actions.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/wstta_robot_bt_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

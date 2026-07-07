@@ -1,8 +1,0 @@
-[ 12%] Built target service_client
-[ 25%] Built target subscriber_node
-[ 31%] [32mBuilding CXX object CMakeFiles/osqp_node.dir/src/osqp_node.cpp.o[0m
-[ 43%] Built target action_client
-[ 56%] Built target node_to_test_yaml
-[ 68%] Built target publisher_node
-[ 81%] Built target service_server
-[ 93%] Built target action_server
