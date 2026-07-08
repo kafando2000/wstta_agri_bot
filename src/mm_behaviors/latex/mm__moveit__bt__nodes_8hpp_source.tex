@@ -1,0 +1,178 @@
+\doxysection{mm\+\_\+moveit\+\_\+bt\+\_\+nodes.\+hpp}
+\hypertarget{mm__moveit__bt__nodes_8hpp_source}{}\label{mm__moveit__bt__nodes_8hpp_source}\index{include/mm\_behaviors/mm\_moveit\_bt\_nodes.hpp@{include/mm\_behaviors/mm\_moveit\_bt\_nodes.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ MM\_MOVEIT\_BT\_NODES\_HPP}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ MM\_MOVEIT\_BT\_NODES\_HPP}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}rclcpp/rclcpp.hpp"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}behaviortree\_cpp/behavior\_tree.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}tf2\_geometry\_msgs/tf2\_geometry\_msgs.hpp"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}geometry\_msgs/msg/transform\_stamped.hpp"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <geometry\_msgs/msg/point.hpp>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <moveit/move\_group\_interface/move\_group\_interface.hpp>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <moveit/planning\_scene\_interface/planning\_scene\_interface.hpp>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <rclcpp\_action/rclcpp\_action.hpp>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <moveit\_msgs/action/move\_group.hpp>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}tf2/exceptions.h"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <tf2/LinearMath/Quaternion.hpp>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <tf2/LinearMath/Matrix3x3.h>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}tf2\_ros/transform\_listener.h"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}tf2\_ros/buffer.h"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}tf2\_eigen/tf2\_eigen.hpp"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <moveit/robot\_state/conversions.hpp>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}geometry\_msgs/msg/point\_stamped.hpp"{}}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ "{}mm\_behaviors/utils.hpp"{}}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <espeak/speak\_lib.h>}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ "{}moveit/robot\_model\_loader/robot\_model\_loader.hpp"{}}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <moveit/robot\_trajectory/robot\_trajectory.hpp>}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ <moveit/trajectory\_processing/time\_optimal\_trajectory\_generation.hpp>}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}moveit/robot\_model/robot\_model.hpp"{}}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ "{}moveit/robot\_state/robot\_state.hpp"{}}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ <moveit/kinematic\_constraints/utils.hpp>}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#include\ <moveit\_msgs/msg/constraints.hpp>}}
+\DoxyCodeLine{00032\ \textcolor{comment}{//\ MoveitCpp}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#include\ "{}moveit/moveit\_cpp/moveit\_cpp.hpp"{}}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#include\ "{}moveit/moveit\_cpp/planning\_component.hpp"{}}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#include\ "{}geometry\_msgs/msg/point\_stamped.hpp"{}}}
+\DoxyCodeLine{00036\ \textcolor{comment}{//\#include\ "{}visualization/moveit\_visual\_tools.h"{}}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceWSTTA}{WSTTA}}\{}
+\DoxyCodeLine{00046\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classWSTTA_1_1PlanForTheArm}{PlanForTheArm}}\ :\ \textcolor{keyword}{public}\ BT::StatefulActionNode\{}
+\DoxyCodeLine{00047\ \ \ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{classWSTTA_1_1PlanForTheArm}{PlanForTheArm}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keyword}{const}\ BT::NodeConfig\&\ config,\ \textcolor{keyword}{const}\ rclcpp::Node::SharedPtr\&\ node\_ptr,}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::shared\_ptr<moveit\_cpp::MoveItCpp>\&\ moveit\_cpp\_ptr);}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00069\ \ \ \ \ BT::NodeStatus\ \mbox{\hyperlink{classWSTTA_1_1PlanForTheArm_abf23e5157925b4e941e1ef8e84ccc70d}{onStart}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00076\ \ \ \ \ BT::NodeStatus\ \mbox{\hyperlink{classWSTTA_1_1PlanForTheArm_a2cd8c9529396fb7400e986f1525a060a}{onRunning}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWSTTA_1_1PlanForTheArm_ae5c03bbe7b6d740f8d2a97b7a76e795d}{onHalted}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classWSTTA_1_1PlanForTheArm_af8e07cd4957905913ceb74c104dacaef}{get\_plan\_object\_info}}();}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keyword}{static}\ BT::PortsList\ \mbox{\hyperlink{classWSTTA_1_1PlanForTheArm_a8e16086b15234f45081e13cb3c6cdfb0}{providedPorts}}()\{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\{}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ BT::InputPort<std::string>(\textcolor{stringliteral}{"{}plan\_key"{}}),}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ BT::InputPort<std::vector<Pose3D>>(\textcolor{stringliteral}{"{}objects\_poses\_vect"{}}),}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ BT::InputPort<double>(\textcolor{stringliteral}{"{}circle\_radius"{}}),}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ BT::BidirectionalPort<double>(\textcolor{stringliteral}{"{}theta\_shift"{}}),}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ BT::InputPort<bool>(\textcolor{stringliteral}{"{}is\_container\_full"{}}),}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ BT::BidirectionalPort<PlanObjectInfo>(\textcolor{stringliteral}{"{}plan\_object\_info"{}}),}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ BT::OutputPort<std::shared\_ptr<robot\_trajectory::RobotTrajectory>>(\textcolor{stringliteral}{"{}arm\_joints\_traject"{}}),\};}
+\DoxyCodeLine{00129\ \ \ \ \ \}}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{classWSTTA_1_1PlanForTheArm_acf5e7cc9399a84d9a85fd36809296f3a}{PLANNING\_ARM\_GROUP\_NAME}}\ =\ \textcolor{stringliteral}{"{}arm"{}};}
+\DoxyCodeLine{00134\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00136\ \ \ \ \ rclcpp::Node::SharedPtr\ node\_ptr\_;}
+\DoxyCodeLine{00139\ \ \ \ \ std::unique\_ptr<tf2\_ros::Buffer>\ tf\_buffer\_;\ }
+\DoxyCodeLine{00140\ \ \ \ \ std::shared\_ptr<tf2\_ros::TransformListener>\ tf\_listener\_;\ }
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00145\ \ \ \ \ std::shared\_ptr<moveit::core::RobotState>\ state\_;\ }
+\DoxyCodeLine{00146\ \ \ \ \ moveit::core::RobotModelConstPtr\ robot\_model\_;\ }
+\DoxyCodeLine{00147\ \ \ \ \ std::shared\_ptr<moveit\_cpp::MoveItCpp>\ moveit\_cpp\_ptr;\ }
+\DoxyCodeLine{00148\ \ \ \ \ std::shared\_ptr<moveit\_cpp::PlanningComponent>\ arm\_planning\_component;\ }
+\DoxyCodeLine{00149\ \ \ \ \ planning\_interface::MotionPlanResponse\ plan\_solution;\ }
+\DoxyCodeLine{00150\ \ \ \ \ moveit::core::MoveItErrorCode\ status\_;\ }
+\DoxyCodeLine{00152\ \ \ \ \ }
+\DoxyCodeLine{00155\ \ \ \ \ std::string\ plan\_key\_;}
+\DoxyCodeLine{00158\ \ \ \ \ std::vector<std::string>\ arm\_predefined\_states;}
+\DoxyCodeLine{00161\ \ \ \ \ std::vector<Pose3D>\ Objects\_poses;}
+\DoxyCodeLine{00163\ \ \ \ \ \mbox{\hyperlink{structPlanObjectInfo}{PlanObjectInfo}}\ plan\_object\_info\_;}
+\DoxyCodeLine{00164\ \ \ \ \ }
+\DoxyCodeLine{00166\ \ \ \ \ std::string\ planning\_frame\ ;}
+\DoxyCodeLine{00168\ \ \ \ \ std::string\ navigation\_frame;}
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordtype}{bool}\ found\_key;}
+\DoxyCodeLine{00171\ \};}
+\DoxyCodeLine{00179\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classWSTTA_1_1ExecuteArmPlan}{ExecuteArmPlan}}\ :\ \textcolor{keyword}{public}\ BT::StatefulActionNode\{}
+\DoxyCodeLine{00180\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classWSTTA_1_1ExecuteArmPlan}{ExecuteArmPlan}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keyword}{const}\ BT::NodeConfig\&\ config,\ \textcolor{keyword}{const}\ rclcpp::Node::SharedPtr\&\ node\_ptr,}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::shared\_ptr<moveit\_cpp::MoveItCpp>\&\ moveit\_cpp\_ptr);}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ for\ debug\ purpose}}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ read\_text\_in\_speak(std::string\ t);}
+\DoxyCodeLine{00193\ }
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ BT::NodeStatus\ \mbox{\hyperlink{classWSTTA_1_1ExecuteArmPlan_ab78b2d80f4c5c7addd359181e42dd946}{onStart}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ BT::NodeStatus\ \mbox{\hyperlink{classWSTTA_1_1ExecuteArmPlan_a760b787f6850e0e8088928dce944b615}{onRunning}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWSTTA_1_1ExecuteArmPlan_a31fff78ab830bf32e123047ca37b805c}{onHalted}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ BT::PortsList\ \mbox{\hyperlink{classWSTTA_1_1ExecuteArmPlan_a7543087b43e1d17dbf6ec0f7d0a57449}{providedPorts}}()\{}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\{}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BT::InputPort<robot\_trajectory::RobotTrajectoryPtr>(\textcolor{stringliteral}{"{}arm\_joints\_traject"{}}),}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BT::BidirectionalPort<bool>(\textcolor{stringliteral}{"{}is\_container\_full"{}}),}
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BT::InputPort<std::string>(\textcolor{stringliteral}{"{}exec\_key"{}}),}
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BT::BidirectionalPort<bool>(\textcolor{stringliteral}{"{}is\_exec\_gripper"{}}),}
+\DoxyCodeLine{00230\ }
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00232\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00233\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{classWSTTA_1_1ExecuteArmPlan_a5c78a55f6611726c23571a0989408483}{PLANNING\_ARM\_GROUP\_NAME}}\ =\ \textcolor{stringliteral}{"{}arm"{}};}
+\DoxyCodeLine{00236\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ rclcpp::Node::SharedPtr\ node\_ptr\_;}
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ robot\_trajectory::RobotTrajectoryPtr\ my\_plan;}
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ std::shared\_ptr<moveit\_cpp::MoveItCpp>\ moveit\_cpp\_ptr;}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ std::shared\_ptr<moveit\_cpp::PlanningComponent>\ arm\_planning\_component;}
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::string>\ CONTROLLERS\ =\ \{\textcolor{stringliteral}{"{}arm\_controller"{}}\};}
+\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ std::string\ exec\_key;}
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ moveit\_controller\_manager::ExecutionStatus\ status;}
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ std::future<moveit\_controller\_manager::ExecutionStatus>\ execution\_future\_;}
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ trajectory\_execution\_manager::TrajectoryExecutionManagerPtr\ manager;}
+\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ products\_counter;}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ products\_max\_number;}
+\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00261\ }
+\DoxyCodeLine{00262\ }
+\DoxyCodeLine{00263\ \};}
+\DoxyCodeLine{00264\ }
+\DoxyCodeLine{00272\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classWSTTA_1_1PlanExecForGripper}{PlanExecForGripper}}\ :\ \textcolor{keyword}{public}\ BT::StatefulActionNode\{}
+\DoxyCodeLine{00273\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00282\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classWSTTA_1_1PlanExecForGripper}{PlanExecForGripper}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keyword}{const}\ BT::NodeConfig\&\ config,\ \textcolor{keyword}{const}\ rclcpp::Node::SharedPtr\&\ node\_ptr,}
+\DoxyCodeLine{00283\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::shared\_ptr<moveit\_cpp::MoveItCpp>\&\ moveit\_cpp\_ptr);}
+\DoxyCodeLine{00284\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00285\ }
+\DoxyCodeLine{00286\ }
+\DoxyCodeLine{00287\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ for\ debug\ purpose}}
+\DoxyCodeLine{00288\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ read\_text\_in\_speak(std::string\ t);}
+\DoxyCodeLine{00289\ }
+\DoxyCodeLine{00297\ \ \ \ \ \ \ \ \ BT::NodeStatus\ \mbox{\hyperlink{classWSTTA_1_1PlanExecForGripper_a0a28185b100dafe0d04eb55796909ceb}{onStart}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00305\ \ \ \ \ \ \ \ \ BT::NodeStatus\ \mbox{\hyperlink{classWSTTA_1_1PlanExecForGripper_a3ba993169eadca6bf60697e21a158dff}{onRunning}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00310\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWSTTA_1_1PlanExecForGripper_a3e3667a3632e7318d78d7be09d7644de}{onHalted}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00311\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00312\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ BT::PortsList\ \mbox{\hyperlink{classWSTTA_1_1PlanExecForGripper_a4eaa9d57a7f396150c05f3cc292b5157}{providedPorts}}()\{}
+\DoxyCodeLine{00313\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\{}
+\DoxyCodeLine{00320\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BT::BidirectionalPort<bool>(\textcolor{stringliteral}{"{}is\_grasped"{}}),}
+\DoxyCodeLine{00327\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BT::InputPort<std::string>(\textcolor{stringliteral}{"{}plan\_key"{}}),}
+\DoxyCodeLine{00329\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BT::BidirectionalPort<bool>(\textcolor{stringliteral}{"{}is\_exec\_gripper"{}}),}
+\DoxyCodeLine{00330\ }
+\DoxyCodeLine{00331\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00332\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00333\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00335\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{classWSTTA_1_1PlanExecForGripper_affef789fbc7d0811092a7e3cd1360e87}{PLANNING\_EE\_GROUP\_NAME}}\ =\ \textcolor{stringliteral}{"{}ee\_group"{}};}
+\DoxyCodeLine{00336\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00338\ \ \ \ \ \ \ \ \ rclcpp::Node::SharedPtr\ node\_ptr\_;}
+\DoxyCodeLine{00340\ \ \ \ \ \ \ \ \ planning\_interface::MotionPlanResponse\ my\_plan;}
+\DoxyCodeLine{00342\ \ \ \ \ \ \ \ \ std::shared\_ptr<moveit\_cpp::MoveItCpp>\ moveit\_cpp\_ptr;\(\backslash\)}
+\DoxyCodeLine{00344\ \ \ \ \ \ \ \ \ std::shared\_ptr<moveit\_cpp::PlanningComponent>\ ee\_planning\_component;}
+\DoxyCodeLine{00346\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::string>\ CONTROLLERS\ =\ \{\textcolor{stringliteral}{"{}mm\_gripper\_controller"{}}\};}
+\DoxyCodeLine{00353\ \ \ \ \ \ \ \ \ std::string\ plan\_key\_;}
+\DoxyCodeLine{00356\ \ \ \ \ \ \ \ \ moveit\_controller\_manager::ExecutionStatus\ status;\ }
+\DoxyCodeLine{00357\ \ \ \ \ \ \ \ \ std::future<moveit\_controller\_manager::ExecutionStatus>\ execution\_future\_;\ }
+\DoxyCodeLine{00358\ \ \ \ \ \ \ \ \ trajectory\_execution\_manager::TrajectoryExecutionManagerPtr\ manager;}
+\DoxyCodeLine{00360\ }
+\DoxyCodeLine{00364\ \ \ \ \ \ \ \ \ std::vector<std::string>\ ee\_predefined\_states;}
+\DoxyCodeLine{00365\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00366\ }
+\DoxyCodeLine{00367\ }
+\DoxyCodeLine{00368\ \};}
+\DoxyCodeLine{00369\ }
+\DoxyCodeLine{00370\ }
+\DoxyCodeLine{00371\ }
+\DoxyCodeLine{00372\ }
+\DoxyCodeLine{00373\ \}\ }
+\DoxyCodeLine{00374\ }
+\DoxyCodeLine{00375\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00376\ }
+\DoxyCodeLine{00377\ }
+\DoxyCodeLine{00378\ }
+
+\end{DoxyCode}

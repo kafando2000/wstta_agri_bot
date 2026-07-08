@@ -1,0 +1,5 @@
+<map id="Navigate" name="Navigate">
+<area shape="rect" id="Node000001" title="class for planning and executing robot base motion it inherits from BT::StatefulActionNode instantiat..." alt="" coords="51,79,132,104"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,177,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,44,94,79,89,79,89,44"/>
+</map>

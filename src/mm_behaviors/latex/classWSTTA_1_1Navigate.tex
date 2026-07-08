@@ -1,0 +1,148 @@
+\doxysection{WSTTA\+::Navigate Class Reference}
+\hypertarget{classWSTTA_1_1Navigate}{}\label{classWSTTA_1_1Navigate}\index{WSTTA::Navigate@{WSTTA::Navigate}}
+
+
+class for planning and executing robot base motion it inherits from BT\+::\+Stateful\+Action\+Node instantiates a Nav2 navigate\+\_\+to\+\_\+pose action client takes the robot near the object before arm motion planning and execution  
+
+
+
+
+{\ttfamily \#include $<$mm\+\_\+nav\+\_\+actions.\+hpp$>$}
+
+
+
+Inheritance diagram for WSTTA\+::Navigate\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{classWSTTA_1_1Navigate__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for WSTTA\+::Navigate\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{classWSTTA_1_1Navigate__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classWSTTA_1_1Navigate_a353bb55135d203a4b9c7cf2cdd310f2a}\label{classWSTTA_1_1Navigate_a353bb55135d203a4b9c7cf2cdd310f2a} 
+using {\bfseries Navigate\+To\+Pose} = nav2\+\_\+msgs\+::action\+::\+Navigate\+To\+Pose
+\item 
+\Hypertarget{classWSTTA_1_1Navigate_ad067ad576ac34eb7373fd54fdf50cfef}\label{classWSTTA_1_1Navigate_ad067ad576ac34eb7373fd54fdf50cfef} 
+using {\bfseries Goal\+Handle\+Nav} = rclcpp\+\_\+action\+::\+Client\+Goal\+Handle$<$ Navigate\+To\+Pose $>$
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWSTTA_1_1Navigate_af52d976b754761e252a95098b471b110}{Navigate}} (const std\+::string \&name, const BT\+::\+Node\+Config \&config, const rclcpp\+::\+Node\+::\+Shared\+Ptr \&node\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\Hypertarget{classWSTTA_1_1Navigate_a7598ca2a49dac036789a324789699f4a}\label{classWSTTA_1_1Navigate_a7598ca2a49dac036789a324789699f4a} 
+int {\bfseries get\+\_\+near\+\_\+pose\+\_\+index} (std\+::vector$<$ Pose3D $>$ \&t, Pose3D \&robot\+\_\+pose)
+\begin{DoxyCompactList}\small\item\em process objects\textquotesingle{} stations poses to pick the nearest station \end{DoxyCompactList}\item 
+BT\+::\+Node\+Status \mbox{\hyperlink{classWSTTA_1_1Navigate_ac8b22274a8ea73185aec4de5caba322c}{on\+Start}} () override
+\begin{DoxyCompactList}\small\item\em BT overridden it contains the logic of \+: selecting the correct planning key, obtaining the object or station pose planning the for the planning key. \end{DoxyCompactList}\item 
+\Hypertarget{classWSTTA_1_1Navigate_ac1111b10386556e6c9b3b196b4299aa9}\label{classWSTTA_1_1Navigate_ac1111b10386556e6c9b3b196b4299aa9} 
+BT\+::\+Node\+Status {\bfseries on\+Running} () override
+\begin{DoxyCompactList}\small\item\em BT overridden checks the state of the execution started by. \end{DoxyCompactList}\item 
+\Hypertarget{classWSTTA_1_1Navigate_a86e7a427fc5670bf67796c0257726217}\label{classWSTTA_1_1Navigate_a86e7a427fc5670bf67796c0257726217} 
+void {\bfseries on\+Halted} () override
+\begin{DoxyCompactList}\small\item\em frees ressources if necessary \end{DoxyCompactList}\item 
+\Hypertarget{classWSTTA_1_1Navigate_a9c1c8939445aa3bfc636936894f6f2a5}\label{classWSTTA_1_1Navigate_a9c1c8939445aa3bfc636936894f6f2a5} 
+void {\bfseries result\+\_\+callback} (const Goal\+Handle\+Nav\+::\+Wrapped\+Result \&result)
+\begin{DoxyCompactList}\small\item\em Action client callbacks to receive the result of execution. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classWSTTA_1_1Navigate_a97c31364803a415bc767a86e68109e3a}{check\+\_\+if\+\_\+target}} (\mbox{\hyperlink{structTargetPose}{Target\+Pose}} \&t, std\+::string var\+\_\+name)
+\begin{DoxyCompactList}\small\item\em checks the if the target can be obtained from the blackboard port name that is given by \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static BT\+::\+Ports\+List \mbox{\hyperlink{classWSTTA_1_1Navigate_a0e825cb8d8a54501fa15d024fd689b77}{provided\+Ports}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class for planning and executing robot base motion it inherits from BT\+::\+Stateful\+Action\+Node instantiates a Nav2 navigate\+\_\+to\+\_\+pose action client takes the robot near the object before arm motion planning and execution 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classWSTTA_1_1Navigate_af52d976b754761e252a95098b471b110}\label{classWSTTA_1_1Navigate_af52d976b754761e252a95098b471b110} 
+\index{WSTTA::Navigate@{WSTTA::Navigate}!Navigate@{Navigate}}
+\index{Navigate@{Navigate}!WSTTA::Navigate@{WSTTA::Navigate}}
+\doxysubsubsection{\texorpdfstring{Navigate()}{Navigate()}}
+{\footnotesize\ttfamily WSTTA\+::\+Navigate\+::\+Navigate (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const BT\+::\+Node\+Config \&}]{config,  }\item[{const rclcpp\+::\+Node\+::\+Shared\+Ptr \&}]{node\+\_\+ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the Instance in the tree \\
+\hline
+{\em config} & BT Node configuration for accessing Black\+Board ports \\
+\hline
+{\em node\+\_\+ptr} & Shared\+Ptr of ROS 2 node that coordinates the whole tree tick \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classWSTTA_1_1Navigate_a97c31364803a415bc767a86e68109e3a}\label{classWSTTA_1_1Navigate_a97c31364803a415bc767a86e68109e3a} 
+\index{WSTTA::Navigate@{WSTTA::Navigate}!check\_if\_target@{check\_if\_target}}
+\index{check\_if\_target@{check\_if\_target}!WSTTA::Navigate@{WSTTA::Navigate}}
+\doxysubsubsection{\texorpdfstring{check\_if\_target()}{check\_if\_target()}}
+{\footnotesize\ttfamily bool WSTTA\+::\+Navigate\+::check\+\_\+if\+\_\+target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTargetPose}{Target\+Pose}} \&}]{t,  }\item[{std\+::string}]{var\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+checks the if the target can be obtained from the blackboard port name that is given by 
+
+
+\begin{DoxyParams}{Parameters}
+{\em var\+\_\+name} & and if possible then store the pose of the target in\\
+\hline
+{\em t} & to be later used for Nav2 planning \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classWSTTA_1_1Navigate_ac8b22274a8ea73185aec4de5caba322c}\label{classWSTTA_1_1Navigate_ac8b22274a8ea73185aec4de5caba322c} 
+\index{WSTTA::Navigate@{WSTTA::Navigate}!onStart@{onStart}}
+\index{onStart@{onStart}!WSTTA::Navigate@{WSTTA::Navigate}}
+\doxysubsubsection{\texorpdfstring{onStart()}{onStart()}}
+{\footnotesize\ttfamily BT\+::\+Node\+Status WSTTA\+::\+Navigate\+::on\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+BT overridden it contains the logic of \+: selecting the correct planning key, obtaining the object or station pose planning the for the planning key. 
+
+\begin{DoxyReturn}{Returns}
+BT\+::\+RUNNING if trajectory execution started correctly 
+
+BT\+::\+FAILURE otherwise
+
+BT\+::\+SUCCESS if goal execution was successful 
+
+BT\+::\+FAILURE otherwise 
+\end{DoxyReturn}
+\Hypertarget{classWSTTA_1_1Navigate_a0e825cb8d8a54501fa15d024fd689b77}\label{classWSTTA_1_1Navigate_a0e825cb8d8a54501fa15d024fd689b77} 
+\index{WSTTA::Navigate@{WSTTA::Navigate}!providedPorts@{providedPorts}}
+\index{providedPorts@{providedPorts}!WSTTA::Navigate@{WSTTA::Navigate}}
+\doxysubsubsection{\texorpdfstring{providedPorts()}{providedPorts()}}
+{\footnotesize\ttfamily static BT\+::\+Ports\+List WSTTA\+::\+Navigate\+::provided\+Ports (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+BT Input Port that gives the key of the current instance of the class the plan key represents, here, a name of the robot base poses either predefined or special key which is "{}in\+\_\+track\+\_\+object"{} which indicates to plan to near current object pose one can add more key that has a pose to which to plan
+
+BT Bidirectional port containing container status
+
+BT Input Port that gives the poses of the objects(station).
+
+BT Input Port that gives the radius of circle for good manipulation so that the robot can stop conveniently after navigation near the object
+
+poses of the station of unloading.
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/mm\+\_\+behaviors/mm\+\_\+nav\+\_\+actions.\+hpp\item 
+src/mm\+\_\+nav\+\_\+actions.\+cpp\end{DoxyCompactItemize}

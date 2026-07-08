@@ -1,12 +1,12 @@
 #include "mm_behaviors/condition_nodes.hpp"
-
+namespace WSTTA{
 BatteryChecker::BatteryChecker(std::string name,const BT::NodeConfig& config,const rclcpp::Node::SharedPtr& node)
 :ConditionNode(name,config),node{node}{
         
        
 }
 
- bool BatteryChecker::battery_is_ok(){
+bool BatteryChecker::battery_is_ok(){
    /*  auto qos_profile = rclcpp::QoS(rclcpp::KeepLast(10))    // History QoS (Keep last 10 messages)
                                .reliable()                      // Reliability QoS (reliable communication)
                                .transient_local(); 
@@ -89,3 +89,4 @@ bool JustNavigateChecker::is_just_navigate(){
            
 
 }
+}// end of namespace WSTTA

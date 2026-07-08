@@ -1,0 +1,102 @@
+\doxysection{WSTTA\+::Container\+Checker Class Reference}
+\hypertarget{classWSTTA_1_1ContainerChecker}{}\label{classWSTTA_1_1ContainerChecker}\index{WSTTA::ContainerChecker@{WSTTA::ContainerChecker}}
+
+
+class to check container state \+: it reads sensor state from the Black\+Board to check if the container is full or not  
+
+
+
+
+{\ttfamily \#include $<$condition\+\_\+nodes.\+hpp$>$}
+
+
+
+Inheritance diagram for WSTTA\+::Container\+Checker\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classWSTTA_1_1ContainerChecker__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for WSTTA\+::Container\+Checker\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classWSTTA_1_1ContainerChecker__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWSTTA_1_1ContainerChecker_ae714f1943f3722ca099fdff0af093326}{Container\+Checker}} (std\+::string name, const BT\+::\+Node\+Config \&config, const rclcpp\+::\+Node\+::\+Shared\+Ptr \&node)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+BT\+::\+Node\+Status \mbox{\hyperlink{classWSTTA_1_1ContainerChecker_a806106f58b25217004a6a954fe38b3c2}{tick}} () override
+\begin{DoxyCompactList}\small\item\em BT overridden function. \end{DoxyCompactList}\item 
+\Hypertarget{classWSTTA_1_1ContainerChecker_a4551d6eeebd3d4fc6c999fd1067dd5ad}\label{classWSTTA_1_1ContainerChecker_a4551d6eeebd3d4fc6c999fd1067dd5ad} 
+void {\bfseries play\+\_\+sound} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classWSTTA_1_1ContainerChecker_ab0281210486328f90c261336281e1456}\label{classWSTTA_1_1ContainerChecker_ab0281210486328f90c261336281e1456} 
+static BT\+::\+Ports\+List {\bfseries provided\+Ports} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class to check container state \+: it reads sensor state from the Black\+Board to check if the container is full or not 
+
+\begin{DoxyAuthor}{Authors}
+KAFANDO THOMAS 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classWSTTA_1_1ContainerChecker_ae714f1943f3722ca099fdff0af093326}\label{classWSTTA_1_1ContainerChecker_ae714f1943f3722ca099fdff0af093326} 
+\index{WSTTA::ContainerChecker@{WSTTA::ContainerChecker}!ContainerChecker@{ContainerChecker}}
+\index{ContainerChecker@{ContainerChecker}!WSTTA::ContainerChecker@{WSTTA::ContainerChecker}}
+\doxysubsubsection{\texorpdfstring{ContainerChecker()}{ContainerChecker()}}
+{\footnotesize\ttfamily WSTTA\+::\+Container\+Checker\+::\+Container\+Checker (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{const BT\+::\+Node\+Config \&}]{config,  }\item[{const rclcpp\+::\+Node\+::\+Shared\+Ptr \&}]{node }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the Instance in the tree \\
+\hline
+{\em config} & BT Node configuration for accessing Black\+Board ports \\
+\hline
+{\em node} & Shared\+Ptr ROS 2 node that coordinates the whole tree tick \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classWSTTA_1_1ContainerChecker_a806106f58b25217004a6a954fe38b3c2}\label{classWSTTA_1_1ContainerChecker_a806106f58b25217004a6a954fe38b3c2} 
+\index{WSTTA::ContainerChecker@{WSTTA::ContainerChecker}!tick@{tick}}
+\index{tick@{tick}!WSTTA::ContainerChecker@{WSTTA::ContainerChecker}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily BT\+::\+Node\+Status WSTTA\+::\+Container\+Checker\+::tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+BT overridden function. 
+
+\begin{DoxyReturn}{Returns}
+BT\+::\+SUCCESSS if
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em is\+\_\+container\+\_\+full} & is true \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/mm\+\_\+behaviors/condition\+\_\+nodes.\+hpp\item 
+src/condition\+\_\+nodes.\+cpp\end{DoxyCompactItemize}

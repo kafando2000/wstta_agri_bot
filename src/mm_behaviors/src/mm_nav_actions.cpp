@@ -1,8 +1,8 @@
 #include "mm_behaviors/mm_nav_actions.hpp"
 #include <tf2/LinearMath/Quaternion.h>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
-
- int Navigate::get_near_pose_index(std::vector<Pose3D>& t,Pose3D& robot_pose){
+namespace WSTTA{
+int Navigate::get_near_pose_index(std::vector<Pose3D>& t,Pose3D& robot_pose){
             int index = 0;
             TargetPose rob{robot_pose};
             double min = (rob-t.at(0)).norm();
@@ -225,3 +225,4 @@ void Navigate::onHalted(){
     }
 
 }
+}// end of namespace WSTTA

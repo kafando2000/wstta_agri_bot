@@ -13,7 +13,7 @@
 #include "behaviortree_cpp/loggers/groot2_publisher.h"
 #include <espeak/speak_lib.h>
 using namespace std::chrono_literals;
-
+namespace WSTTA{
 /**
  * @brief Ros2 Node class that coordinates the BT nodes execution
  * and also ressources acquisition
@@ -50,10 +50,7 @@ class WsttaBtPipelineNode : public rclcpp::Node {
          */
         void create_behavior_tree(); 
         /// @brief simulates battery decharge
-        void battery_state_listener() {
-            global_bb->set("battery_percentage",bat);
-            bat = bat*exp(-0.00003);
-        }
+        void battery_state_listener();
     
 
         /// @brief Configuration parameters file path
@@ -76,5 +73,5 @@ class WsttaBtPipelineNode : public rclcpp::Node {
 
 
 };
-
+}// end of namespace WSTTA
 int main(int argc, char **argv);

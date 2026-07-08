@@ -1,0 +1,53 @@
+\doxysection{Plan\+For\+The\+Arm Class Reference}
+\hypertarget{classPlanForTheArm}{}\label{classPlanForTheArm}\index{PlanForTheArm@{PlanForTheArm}}
+
+
+Inheritance diagram for Plan\+For\+The\+Arm\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{classPlanForTheArm__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Plan\+For\+The\+Arm\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{classPlanForTheArm__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classPlanForTheArm_a8535c6708bb3d67fca680bf15b12f04e}\label{classPlanForTheArm_a8535c6708bb3d67fca680bf15b12f04e} 
+{\bfseries Plan\+For\+The\+Arm} (const std\+::string \&name, const BT\+::\+Node\+Config \&config, rclcpp\+::\+Node\+::\+Shared\+Ptr node\+\_\+ptr, const std\+::shared\+\_\+ptr$<$ moveit\+::planning\+\_\+interface\+::\+Move\+Group\+Interface $>$ \&move\+\_\+group)
+\item 
+\Hypertarget{classPlanForTheArm_abf23e5157925b4e941e1ef8e84ccc70d}\label{classPlanForTheArm_abf23e5157925b4e941e1ef8e84ccc70d} 
+BT\+::\+Node\+Status {\bfseries on\+Start} () override
+\item 
+\Hypertarget{classPlanForTheArm_a2cd8c9529396fb7400e986f1525a060a}\label{classPlanForTheArm_a2cd8c9529396fb7400e986f1525a060a} 
+BT\+::\+Node\+Status {\bfseries on\+Running} () override
+\item 
+\Hypertarget{classPlanForTheArm_ae5c03bbe7b6d740f8d2a97b7a76e795d}\label{classPlanForTheArm_ae5c03bbe7b6d740f8d2a97b7a76e795d} 
+void {\bfseries on\+Halted} () override
+\item 
+\Hypertarget{classPlanForTheArm_a214022598e3b337d195e888beb904f3e}\label{classPlanForTheArm_a214022598e3b337d195e888beb904f3e} 
+int {\bfseries get\+\_\+near\+\_\+pose\+\_\+index} (std\+::vector$<$ Pose3D $>$ \&t, Pose3D \&robot\+\_\+pose)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classPlanForTheArm_a82341e068c741912835212ae01621071}\label{classPlanForTheArm_a82341e068c741912835212ae01621071} 
+static void {\bfseries read\+\_\+text\+\_\+in\+\_\+speak} (std\+::string t)
+\item 
+\Hypertarget{classPlanForTheArm_a4d5104df69df9338a6c9852930a9d34f}\label{classPlanForTheArm_a4d5104df69df9338a6c9852930a9d34f} 
+static BT\+::\+Ports\+List {\bfseries provided\+Ports} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/mm\+\_\+behaviors/mm\+\_\+moveit\+\_\+actions.\+hpp\item 
+src/mm\+\_\+moveit\+\_\+actions.\+cpp\end{DoxyCompactItemize}

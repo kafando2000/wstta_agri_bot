@@ -16,6 +16,7 @@
 #include <moveit/robot_state/conversions.hpp>
 #include "geometry_msgs/msg/point_stamped.hpp"
 using Pose3D = geometry_msgs::msg::Point;
+namespace WSTTA{
 /**
  * @brief class for planning and executing robot base motion
  *  it inherits from BT::StatefulActionNode 
@@ -164,4 +165,5 @@ class  Navigate : public BT::StatefulActionNode{
         GoalHandleNav::SharedPtr client_goal_handle;
 
 };
+}// end of namespace WSTTA
 

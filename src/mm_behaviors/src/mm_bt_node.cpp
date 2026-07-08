@@ -1,5 +1,6 @@
 #include "mm_behaviors/mm_bt_node.hpp"
 using namespace std::chrono_literals;
+namespace WSTTA{
 // constructor
 WsttaBtPipelineNode::WsttaBtPipelineNode(const rclcpp::NodeOptions & options) : Node("wstta_bt_node",options) {
     callback_group_ = this->create_callback_group(
@@ -94,12 +95,12 @@ void WsttaBtPipelineNode::create_behavior_tree() {
 
     BT::BehaviorTreeFactory factory;
     tree_xml_file_ = this->get_parameter("tree_xml_file").as_string();
-    factory.registerNodeType<WSTTA::PlanForTheArm>("PlanForTheArm",shared_from_this(),moveit_cpp_ptr);
+    factory.registerNodeType<PlanForTheArm>("PlanForTheArm",shared_from_this(),moveit_cpp_ptr);
     factory.registerNodeType<Navigate>("NavigateToPose", shared_from_this());
     factory.registerNodeType<BatteryChecker>("CheckBattery", shared_from_this());
     factory.registerNodeType<CheckGoToInitials>("CheckGoToInitials",shared_from_this());
-    factory.registerNodeType<WSTTA::ExecuteArmPlan>("ExecuteArmPlan", shared_from_this(),moveit_cpp_ptr);
-    factory.registerNodeType<WSTTA::PlanExecForGripper>("PlanExecForGripper", shared_from_this(),moveit_cpp_ptr);
+    factory.registerNodeType<ExecuteArmPlan>("ExecuteArmPlan", shared_from_this(),moveit_cpp_ptr);
+    factory.registerNodeType<PlanExecForGripper>("PlanExecForGripper", shared_from_this(),moveit_cpp_ptr);
     // factory.registerNodeType<StackObjectPose>("StackObjectPose", shared_from_this());
     factory.registerNodeType<ContainerChecker>("ContainerChecker", shared_from_this());
     factory.registerNodeType<JustNavigateChecker>("JustNavigateChecker",shared_from_this());
@@ -178,11 +179,11 @@ void WsttaBtPipelineNode::create_behavior_tree() {
     publisher_ptr_ = std::make_unique<BT::Groot2Publisher>(tree_, 1668);
 }   
 // battery simulation
-void WsttaBtPipelineNode::battery_state_listener() {
+void WsttaBtPipelineNode::battery_state_listener(){
     global_bb->set("battery_percentage",bat);
     bat = bat*exp(-0.0000003);
 }
-
+}// end of namespace WSTTA
 int main(int argc, char **argv)
 {
     rclcpp::init(argc, argv);
@@ -190,7 +191,7 @@ int main(int argc, char **argv)
      // parameters being sent down by the Python launch file
     rclcpp::NodeOptions node_options;
     node_options.automatically_declare_parameters_from_overrides(true);
-    auto const node = std::make_shared<WsttaBtPipelineNode>(node_options);
+    auto const node = std::make_shared<WSTTA::WsttaBtPipelineNode>(node_options);
     rclcpp::executors::SingleThreadedExecutor executor;
     executor.add_node(node);
     

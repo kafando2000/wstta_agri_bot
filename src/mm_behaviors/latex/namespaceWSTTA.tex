@@ -1,0 +1,32 @@
+\doxysection{WSTTA Namespace Reference}
+\hypertarget{namespaceWSTTA}{}\label{namespaceWSTTA}\index{WSTTA@{WSTTA}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classWSTTA_1_1BatteryChecker}{Battery\+Checker}}
+\begin{DoxyCompactList}\small\item\em class to check battery state \+: it reads battery state from the Black\+Board and decides where okay or not \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classWSTTA_1_1CheckGoToInitials}{Check\+Go\+To\+Initials}}
+\begin{DoxyCompactList}\small\item\em class to check if the robot must go back to initial state. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classWSTTA_1_1ContainerChecker}{Container\+Checker}}
+\begin{DoxyCompactList}\small\item\em class to check container state \+: it reads sensor state from the Black\+Board to check if the container is full or not \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classWSTTA_1_1ExecuteArmPlan}{Execute\+Arm\+Plan}}
+\begin{DoxyCompactList}\small\item\em class for planning robot arm motion it inherits from BT\+::\+Stateful\+Action\+Node it uses move\+It\+Cpp api for more performance it just plans and send the result of the plan to the it for the move\+It group "{}arm"{} \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classWSTTA_1_1JustNavigateChecker}{Just\+Navigate\+Checker}}
+\begin{DoxyCompactList}\small\item\em class to check if the robot must go back to initial state. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classWSTTA_1_1Navigate}{Navigate}}
+\begin{DoxyCompactList}\small\item\em class for planning and executing robot base motion it inherits from BT\+::\+Stateful\+Action\+Node instantiates a Nav2 navigate\+\_\+to\+\_\+pose action client takes the robot near the object before arm motion planning and execution \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classWSTTA_1_1PlanExecForGripper}{Plan\+Exec\+For\+Gripper}}
+\begin{DoxyCompactList}\small\item\em class for panning and executing robot gripper motion it inherits from BT\+::\+Stateful\+Action\+Node it uses move\+It\+Cpp api for more performance it is for the move\+It group "{}ee\+\_\+group"{} \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classWSTTA_1_1PlanForTheArm}{Plan\+For\+The\+Arm}}
+\begin{DoxyCompactList}\small\item\em class for executing robot arm motion it inherit from BT\+::\+Stateful\+Action\+Node it uses move\+It\+Cpp api for more performance it just takes the result of the plan from the it is for the move\+It group "{}arm"{} \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classWSTTA_1_1WsttaBtPipelineNode}{Wstta\+Bt\+Pipeline\+Node}}
+\begin{DoxyCompactList}\small\item\em Ros2 Node class that coordinates the BT nodes execution and also ressources acquisition it is shared with all the BT nodes accross the BT tree used for the robot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Authors}
+KAFANDO THOMAS (\href{mailto:thomass.kaf20@gmail.com}{\texttt{ thomass.\+kaf20@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2026 
+\end{DoxyDate}

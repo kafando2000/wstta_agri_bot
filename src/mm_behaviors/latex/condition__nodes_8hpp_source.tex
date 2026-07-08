@@ -1,0 +1,94 @@
+\doxysection{condition\+\_\+nodes.\+hpp}
+\hypertarget{condition__nodes_8hpp_source}{}\label{condition__nodes_8hpp_source}\index{include/mm\_behaviors/condition\_nodes.hpp@{include/mm\_behaviors/condition\_nodes.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include<chrono>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <cstdlib>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}rclcpp/rclcpp.hpp"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}rclcpp\_action/rclcpp\_action.hpp"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}nav2\_msgs/action/navigate\_to\_pose.hpp"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}behaviortree\_cpp/behavior\_tree.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}yaml-\/cpp/yaml.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}sensor\_msgs/sensor\_msgs/msg/battery\_state.hpp"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}mm\_behaviors/utils.hpp"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ namespace\ }std::chrono\_literals;}
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ \ }Batterystate\ =\ sensor\_msgs::msg::BatteryState;}
+\DoxyCodeLine{00017\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceWSTTA}{WSTTA}}\{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classWSTTA_1_1BatteryChecker}{BatteryChecker}}:\textcolor{keyword}{public}\ BT::ConditionNode\{}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{classWSTTA_1_1BatteryChecker}{BatteryChecker}}(std::string\ name,\textcolor{keyword}{const}\ BT::NodeConfig\&\ config,\textcolor{keyword}{const}\ rclcpp::Node::SharedPtr\&\ node);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classWSTTA_1_1BatteryChecker_af9fab249c9cfd7b92a054737a76e8a29}{battery\_is\_ok}}();}
+\DoxyCodeLine{00044\ \ \ \ \ BT::NodeStatus\ tick()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00045\ \ \ \ \ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{static}\ BT::PortsList\ providedPorts()\ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ BT::InputPort<double>(\textcolor{stringliteral}{"{}percentage\_treshold"{}}),}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ BT::InputPort<double>(\textcolor{stringliteral}{"{}battery\_percentage"{}})\};}
+\DoxyCodeLine{00050\ \ \ \ \ \}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ play\_sound()}
+\DoxyCodeLine{00053\ \ \ \ \ \{\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ system(\textcolor{stringliteral}{"{}aplay\ /home/user/ros2\_ws/src/my\_pkg/sounds/alert.wav"{}});}
+\DoxyCodeLine{00055\ \ \ \ \ \}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00059\ \ \ \ \ rclcpp::Node::SharedPtr\ node;}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{double}\ percentage\_treshold;\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{double}\ batterypercentage;\ }
+\DoxyCodeLine{00065\ \};}
+\DoxyCodeLine{00071\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classWSTTA_1_1ContainerChecker}{ContainerChecker}}:\textcolor{keyword}{public}\ BT::ConditionNode\{}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{classWSTTA_1_1ContainerChecker}{ContainerChecker}}(std::string\ name,\textcolor{keyword}{const}\ BT::NodeConfig\&\ config,\textcolor{keyword}{const}\ rclcpp::Node::SharedPtr\&\ node);}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00085\ \ \ \ \ BT::NodeStatus\ \mbox{\hyperlink{classWSTTA_1_1ContainerChecker_a806106f58b25217004a6a954fe38b3c2}{tick}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00086\ \ \ \ \ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keyword}{static}\ BT::PortsList\ providedPorts()\ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{BT::InputPort<bool>(\textcolor{stringliteral}{"{}is\_container\_full"{}})\};}
+\DoxyCodeLine{00089\ \ \ \ \ \}}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ play\_sound()}
+\DoxyCodeLine{00092\ \ \ \ \ \{\ }
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ system(\textcolor{stringliteral}{"{}espeak\ the\ container\ is\ full\ !"{}});}
+\DoxyCodeLine{00094\ \ \ \ \ \}}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00098\ \ \ \ \ rclcpp::Node::SharedPtr\ node;}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{bool}\ is\_container\_full;}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \};}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00111\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classWSTTA_1_1CheckGoToInitials}{CheckGoToInitials}}:\textcolor{keyword}{public}\ BT::ConditionNode\{}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00119\ \ \ \ \ \mbox{\hyperlink{classWSTTA_1_1CheckGoToInitials}{CheckGoToInitials}}(std::string\ name,\textcolor{keyword}{const}\ BT::NodeConfig\&\ config,\textcolor{keyword}{const}\ rclcpp::Node::SharedPtr\&\ node);}
+\DoxyCodeLine{00124\ \ \ \ \ BT::NodeStatus\ \mbox{\hyperlink{classWSTTA_1_1CheckGoToInitials_ae09a250a107209d97380c63a9bd684aa}{tick}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00125\ \ \ \ \ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keyword}{static}\ BT::PortsList\ \mbox{\hyperlink{classWSTTA_1_1CheckGoToInitials_a1857ff4b7464cd45f205dacc6c433bc8}{providedPorts}}()\ \{}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{\ }
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ BT::InputPort<bool>(\textcolor{stringliteral}{"{}is\_go\_to\_initials"{}})\};}
+\DoxyCodeLine{00130\ \ \ \ \ \}}
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ is\_go\_to\_initials;}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ rclcpp::Node::SharedPtr\ node;}
+\DoxyCodeLine{00136\ \};}
+\DoxyCodeLine{00142\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classWSTTA_1_1JustNavigateChecker}{JustNavigateChecker}}:\textcolor{keyword}{public}\ BT::ConditionNode\{}
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00150\ \ \ \ \ \mbox{\hyperlink{classWSTTA_1_1JustNavigateChecker}{JustNavigateChecker}}(std::string\ name,\textcolor{keyword}{const}\ BT::NodeConfig\&\ config,\textcolor{keyword}{const}\ rclcpp::Node::SharedPtr\&\ node);}
+\DoxyCodeLine{00156\ \ \ \ \ BT::NodeStatus\ \mbox{\hyperlink{classWSTTA_1_1JustNavigateChecker_ab11edae57802280d02809307fed914dd}{tick}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keywordtype}{bool}\ is\_just\_navigate();}
+\DoxyCodeLine{00158\ \ \ \ \ }
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keyword}{static}\ BT::PortsList\ \mbox{\hyperlink{classWSTTA_1_1JustNavigateChecker_a804c4465c4802666f160c78d5883f40a}{providedPorts}}()\ \{}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{\ }
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ BT::InputPort<std::vector<Pose3D>>(\textcolor{stringliteral}{"{}objects\_poses\_vect"{}}),}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ BT::InputPort<bool>(\textcolor{stringliteral}{"{}is\_container\_full"{}})\};}
+\DoxyCodeLine{00165\ \ \ \ \ \}}
+\DoxyCodeLine{00166\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ rclcpp::Node::SharedPtr\ node;}
+\DoxyCodeLine{00169\ \};}
+\DoxyCodeLine{00170\ \}\ \textcolor{comment}{//\ end\ of\ namespace\ WSTTA}}
+\DoxyCodeLine{00171\ }
+
+\end{DoxyCode}

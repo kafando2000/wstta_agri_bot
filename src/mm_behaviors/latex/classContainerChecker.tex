@@ -1,0 +1,104 @@
+\doxysection{Container\+Checker Class Reference}
+\hypertarget{classContainerChecker}{}\label{classContainerChecker}\index{ContainerChecker@{ContainerChecker}}
+
+
+class to check container state \+: it reads sensor state from the Black\+Board to check if the container is full or not  
+
+
+
+
+{\ttfamily \#include $<$condition\+\_\+nodes.\+hpp$>$}
+
+
+
+Inheritance diagram for Container\+Checker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classContainerChecker__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Container\+Checker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classContainerChecker__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classContainerChecker_af4253dbcbf4de0a8b5475cb3ac62cab1}{Container\+Checker}} (std\+::string name, const BT\+::\+Node\+Config \&config, const rclcpp\+::\+Node\+::\+Shared\+Ptr \&node)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+BT\+::\+Node\+Status \mbox{\hyperlink{classContainerChecker_a242cdb699486856131c98a980b23e749}{tick}} () override
+\begin{DoxyCompactList}\small\item\em BT overridden function. \end{DoxyCompactList}\item 
+\Hypertarget{classContainerChecker_a9b9c9a590d9ae3efe340dd948e2bb598}\label{classContainerChecker_a9b9c9a590d9ae3efe340dd948e2bb598} 
+void {\bfseries play\+\_\+sound} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classContainerChecker_a07deff637f05c468a7d8aead4fac5451}\label{classContainerChecker_a07deff637f05c468a7d8aead4fac5451} 
+static BT\+::\+Ports\+List {\bfseries provided\+Ports} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class to check container state \+: it reads sensor state from the Black\+Board to check if the container is full or not 
+
+\begin{DoxyAuthor}{Authors}
+KAFANDO THOMAS 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classContainerChecker_af4253dbcbf4de0a8b5475cb3ac62cab1}\label{classContainerChecker_af4253dbcbf4de0a8b5475cb3ac62cab1} 
+\index{ContainerChecker@{ContainerChecker}!ContainerChecker@{ContainerChecker}}
+\index{ContainerChecker@{ContainerChecker}!ContainerChecker@{ContainerChecker}}
+\doxysubsubsection{\texorpdfstring{ContainerChecker()}{ContainerChecker()}}
+{\footnotesize\ttfamily Container\+Checker\+::\+Container\+Checker (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{const BT\+::\+Node\+Config \&}]{config,  }\item[{const rclcpp\+::\+Node\+::\+Shared\+Ptr \&}]{node }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the Instance in the tree \\
+\hline
+{\em config} & BT Node configuration for accessing Black\+Board ports \\
+\hline
+{\em node} & Shared\+Ptr ROS 2 node that coordinates the whole tree tick \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classContainerChecker_a242cdb699486856131c98a980b23e749}\label{classContainerChecker_a242cdb699486856131c98a980b23e749} 
+\index{ContainerChecker@{ContainerChecker}!tick@{tick}}
+\index{tick@{tick}!ContainerChecker@{ContainerChecker}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily BT\+::\+Node\+Status Container\+Checker\+::tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+BT overridden function. 
+
+\begin{DoxyReturn}{Returns}
+BT\+::\+SUCCESSS if
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em is\+\_\+container\+\_\+full} & is true \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/mm\+\_\+behaviors/condition\+\_\+nodes.\+hpp\item 
+src/condition\+\_\+nodes.\+cpp\end{DoxyCompactItemize}

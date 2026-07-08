@@ -11,6 +11,11 @@
 using namespace std::chrono_literals;
 using  Batterystate = sensor_msgs::msg::BatteryState;
 /**
+ * @authors KAFANDO THOMAS (thomass.kaf20@gmail.com)
+ * @date 2026
+ */
+namespace WSTTA{
+/**
  * @authors KAFANDO THOMAS
  * @brief class to check battery state : it reads battery state from the BlackBoard 
  * and decides where okay or not
@@ -29,7 +34,7 @@ class BatteryChecker:public BT::ConditionNode{
      * @brief function to read battery state from blackboard and the thresold for specific node
      * in fact, the battery treshold sufficient for navigation for a little task exectuion can't be the same
      * @return true if @param percentage_treshold <  @param batterypercentage
-     *  */
+    */
     bool battery_is_ok();
     /** 
      * @brief BT overridden function.
@@ -89,9 +94,9 @@ class ContainerChecker:public BT::ConditionNode{
     }
 
     private:
-    /// ROS 2 node SharedPtr to point to the BT coordinator
+    ///  @brief ROS 2 node SharedPtr to point to the BT coordinator
     rclcpp::Node::SharedPtr node;
-    /// stores the the blackboard port is_container_full
+    ///  @brief stores the the blackboard port is_container_full
     bool is_container_full;
 
 
@@ -114,7 +119,7 @@ class CheckGoToInitials:public BT::ConditionNode{
     CheckGoToInitials(std::string name,const BT::NodeConfig& config,const rclcpp::Node::SharedPtr& node);
     /** 
      * @brief BT overridden function.
-     * @return BT::SUCCESSS  if  @param is_go_to_initials is true
+     * @return BT::SUCCESSS  if member is_go_to_initials is true
     */
     BT::NodeStatus tick() override;
     
@@ -124,9 +129,9 @@ class CheckGoToInitials:public BT::ConditionNode{
             BT::InputPort<bool>("is_go_to_initials")};
     }
     private:
-        /// store the blackboard port is_go_to_initials
+        /// @brief store the blackboard port is_go_to_initials
         bool is_go_to_initials;
-        /// ROS 2 node SharedPtr to point to the BT coordinator
+        ///  @brief ROS 2 node SharedPtr to point to the BT coordinator
         rclcpp::Node::SharedPtr node;
 };
 /**
@@ -153,13 +158,14 @@ class JustNavigateChecker:public BT::ConditionNode{
     
     static BT::PortsList providedPorts() {
         return { 
-            /// blackboard port containing the station poses(objects poses for minimal app)
+            /// @brief blackboard port containing the station poses(objects poses for minimal app)
             BT::InputPort<std::vector<Pose3D>>("objects_poses_vect"),
-            /// blackboard port giving the sensor measure of the level (full or not) of objects in the container
+            ///  @brief blackboard port giving the sensor measure of the level (full or not) of objects in the container
             BT::InputPort<bool>("is_container_full")};
     }
     private:
-        /// ROS 2 node SharedPtr to point to the BT coordinator
+        /// @brief ROS 2 node SharedPtr to point to the BT coordinator
         rclcpp::Node::SharedPtr node;
 };
+} // end of namespace WSTTA
 

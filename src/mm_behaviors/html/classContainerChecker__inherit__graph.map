@@ -1,0 +1,5 @@
+<map id="ContainerChecker" name="ContainerChecker">
+<area shape="rect" id="Node000001" title="class to check container state : it reads sensor state from the BlackBoard to check if the container ..." alt="" coords="8,79,145,104"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,148,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,44,79,79,74,79,74,44"/>
+</map>

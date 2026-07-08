@@ -1,0 +1,103 @@
+\doxysection{WSTTA\+::Wstta\+Bt\+Pipeline\+Node Class Reference}
+\hypertarget{classWSTTA_1_1WsttaBtPipelineNode}{}\label{classWSTTA_1_1WsttaBtPipelineNode}\index{WSTTA::WsttaBtPipelineNode@{WSTTA::WsttaBtPipelineNode}}
+
+
+Ros2 Node class that coordinates the BT nodes execution and also ressources acquisition it is shared with all the BT nodes accross the BT tree used for the robot.  
+
+
+
+
+{\ttfamily \#include $<$mm\+\_\+bt\+\_\+node.\+hpp$>$}
+
+
+
+Inheritance diagram for WSTTA\+::Wstta\+Bt\+Pipeline\+Node\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classWSTTA_1_1WsttaBtPipelineNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for WSTTA\+::Wstta\+Bt\+Pipeline\+Node\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classWSTTA_1_1WsttaBtPipelineNode__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWSTTA_1_1WsttaBtPipelineNode_a3c00f521b12458528e4d19272615e102}{Wstta\+Bt\+Pipeline\+Node}} (const rclcpp\+::\+Node\+Options \&options)
+\begin{DoxyCompactList}\small\item\em constructor with \end{DoxyCompactList}\item 
+\Hypertarget{classWSTTA_1_1WsttaBtPipelineNode_a0fee23b55d4813cfbe3be0eb3c50ff40}\label{classWSTTA_1_1WsttaBtPipelineNode_a0fee23b55d4813cfbe3be0eb3c50ff40} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Wstta\+Bt\+Pipeline\+Node} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+\Hypertarget{classWSTTA_1_1WsttaBtPipelineNode_a758d3ea7046fe9733f24fa03e220259a}\label{classWSTTA_1_1WsttaBtPipelineNode_a758d3ea7046fe9733f24fa03e220259a} 
+void {\bfseries tick\+\_\+function} ()
+\begin{DoxyCompactList}\small\item\em tick function for the behavior tree controls the signal pass frequency \end{DoxyCompactList}\item 
+\Hypertarget{classWSTTA_1_1WsttaBtPipelineNode_a6395126009400c9061777c73db6a1d82}\label{classWSTTA_1_1WsttaBtPipelineNode_a6395126009400c9061777c73db6a1d82} 
+void {\bfseries read\+\_\+text\+\_\+in\+\_\+speak} (std\+::string t)
+\begin{DoxyCompactList}\small\item\em used for debug \end{DoxyCompactList}\item 
+\Hypertarget{classWSTTA_1_1WsttaBtPipelineNode_ae1ae7d044f84471be9eb83b703b31bc5}\label{classWSTTA_1_1WsttaBtPipelineNode_ae1ae7d044f84471be9eb83b703b31bc5} 
+void {\bfseries create\+\_\+behavior\+\_\+tree} ()
+\begin{DoxyCompactList}\small\item\em creates the BT tree initialize necessary variables in the blackboard instantiates the BT nodes uses global blackboard \end{DoxyCompactList}\item 
+\Hypertarget{classWSTTA_1_1WsttaBtPipelineNode_a8bd45600b2214cd02f0ab9ea75c1a15b}\label{classWSTTA_1_1WsttaBtPipelineNode_a8bd45600b2214cd02f0ab9ea75c1a15b} 
+void {\bfseries battery\+\_\+state\+\_\+listener} ()
+\begin{DoxyCompactList}\small\item\em simulates battery decharge \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classWSTTA_1_1WsttaBtPipelineNode_abd30227353b527e6b94ef654363299df}\label{classWSTTA_1_1WsttaBtPipelineNode_abd30227353b527e6b94ef654363299df} 
+std\+::string {\bfseries tree\+\_\+xml\+\_\+file\+\_\+}
+\begin{DoxyCompactList}\small\item\em Configuration parameters file path. \end{DoxyCompactList}\item 
+\Hypertarget{classWSTTA_1_1WsttaBtPipelineNode_ae14a51fc67d62fbd98f0923c420bd045}\label{classWSTTA_1_1WsttaBtPipelineNode_ae14a51fc67d62fbd98f0923c420bd045} 
+std\+::shared\+\_\+ptr$<$ moveit\+\_\+cpp\+::\+Move\+It\+Cpp $>$ {\bfseries moveit\+\_\+cpp\+\_\+ptr}
+\begin{DoxyCompactList}\small\item\em move\+It\+Cpp Instance to be shared with BT manipulation nodes \end{DoxyCompactList}\item 
+\Hypertarget{classWSTTA_1_1WsttaBtPipelineNode_a6a4119294fe529aca38855334a8c27fc}\label{classWSTTA_1_1WsttaBtPipelineNode_a6a4119294fe529aca38855334a8c27fc} 
+rclcpp\+::\+Callback\+Group\+::\+Shared\+Ptr {\bfseries callback\+\_\+group\+\_\+}
+\begin{DoxyCompactList}\small\item\em ROS 2 callback group which will be Reentrant to enable other program to run concurrently with the BT tree tick. \end{DoxyCompactList}\item 
+\Hypertarget{classWSTTA_1_1WsttaBtPipelineNode_a51e7bf436fce5f901cd2d882ed14e6c8}\label{classWSTTA_1_1WsttaBtPipelineNode_a51e7bf436fce5f901cd2d882ed14e6c8} 
+BT\+::\+Tree {\bfseries tree\+\_\+}
+\begin{DoxyCompactList}\small\item\em BT tree. \end{DoxyCompactList}\item 
+\Hypertarget{classWSTTA_1_1WsttaBtPipelineNode_a269dc6d1b95440e22f910a08e1c53f33}\label{classWSTTA_1_1WsttaBtPipelineNode_a269dc6d1b95440e22f910a08e1c53f33} 
+std\+::unique\+\_\+ptr$<$ BT\+::\+Groot2\+Publisher $>$ {\bfseries publisher\+\_\+ptr\+\_\+}
+\begin{DoxyCompactList}\small\item\em BT publisher for real time monitoring (if any premium version acquired) \end{DoxyCompactList}\item 
+\Hypertarget{classWSTTA_1_1WsttaBtPipelineNode_ae8f5348aa993ac3db8b0ece66a049e2b}\label{classWSTTA_1_1WsttaBtPipelineNode_ae8f5348aa993ac3db8b0ece66a049e2b} 
+BT\+::\+Blackboard\+::\+Ptr {\bfseries global\+\_\+bb}
+\begin{DoxyCompactList}\small\item\em global blackboard used for global supervision \end{DoxyCompactList}\item 
+\Hypertarget{classWSTTA_1_1WsttaBtPipelineNode_a5e8654a58a074f9ec2f9468f50252668}\label{classWSTTA_1_1WsttaBtPipelineNode_a5e8654a58a074f9ec2f9468f50252668} 
+double {\bfseries bat}
+\begin{DoxyCompactList}\small\item\em battery state \end{DoxyCompactList}\item 
+\Hypertarget{classWSTTA_1_1WsttaBtPipelineNode_ab093222dd15894e6a60d26ffc5b3bda1}\label{classWSTTA_1_1WsttaBtPipelineNode_ab093222dd15894e6a60d26ffc5b3bda1} 
+bool {\bfseries first\+\_\+}
+\begin{DoxyCompactList}\small\item\em check if first execution of tick function or not \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ros2 Node class that coordinates the BT nodes execution and also ressources acquisition it is shared with all the BT nodes accross the BT tree used for the robot. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classWSTTA_1_1WsttaBtPipelineNode_a3c00f521b12458528e4d19272615e102}\label{classWSTTA_1_1WsttaBtPipelineNode_a3c00f521b12458528e4d19272615e102} 
+\index{WSTTA::WsttaBtPipelineNode@{WSTTA::WsttaBtPipelineNode}!WsttaBtPipelineNode@{WsttaBtPipelineNode}}
+\index{WsttaBtPipelineNode@{WsttaBtPipelineNode}!WSTTA::WsttaBtPipelineNode@{WSTTA::WsttaBtPipelineNode}}
+\doxysubsubsection{\texorpdfstring{WsttaBtPipelineNode()}{WsttaBtPipelineNode()}}
+{\footnotesize\ttfamily WSTTA\+::\+Wstta\+Bt\+Pipeline\+Node\+::\+Wstta\+Bt\+Pipeline\+Node (\begin{DoxyParamCaption}\item[{const rclcpp\+::\+Node\+Options \&}]{options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+constructor with 
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & declares the parameters needed for the nodes \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/mm\+\_\+behaviors/mm\+\_\+bt\+\_\+node.\+hpp\item 
+src/mm\+\_\+bt\+\_\+node.\+cpp\end{DoxyCompactItemize}
