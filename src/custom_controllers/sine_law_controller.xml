@@ -1,7 +1,0 @@
-<library path='sine_law_controller'>
-    <class name="sine_law_controller/SineLawController" type="sine_law_controller::SineLawController" base_class_type="controller_interface::ControllerInterface">
-    <description>
-         The joint controller commands a group of joints in a given interface
-    </description>
-    </class>
-</library>
