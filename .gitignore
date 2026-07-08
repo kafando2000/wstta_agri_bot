@@ -25,3 +25,6 @@ bld/
 *.env
 *.json
 
+build/
+install/
+log/
