@@ -199,7 +199,7 @@ xdg-open docs/html/index.html
 5. **Known limitations / TODO:**
    - **Perception pipeline is not yet well-designed** — the object detection/pose estimation used by `mm_perception` is not robust enough to reliably pick objects in all conditions. This is one of the main areas needing improvement before real-world deployment.
    - **Pose estimation on uneven outdoor terrain** — the robot relies on a **depth camera** and **GPS** for outdoor localization and object/container detection. On uneven terrain, both are affected: the depth camera's estimate of object pose shifts with the robot's tilt, and GPS alone lacks the precision needed for fine manipulation targets. A more robust approach (e.g. IMU/GPS fusion, terrain-aware calibration, or adding a secondary sensor) would be needed to handle this reliably.
-   - *(add any other unfinished edge cases, hardcoded thresholds, or missing recovery behaviors here)*
+     
 6. Use **Groot2** to load the BT XML and visually inspect/edit the tree instead of editing the XML by hand where possible.
 
 ## Author
