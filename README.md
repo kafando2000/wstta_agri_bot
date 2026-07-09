@@ -204,7 +204,7 @@ xdg-open docs/html/index.html
 
 ## Author
 
-Thomas Kafando — WSTTA AGRI BOT, Master's final internship project (2026)
+THOMAS KAFANDO (thomass.kaf20@gmail.com) — WSTTA AGRI BOT, Master's final internship project (2026)
 
 ## License
 
