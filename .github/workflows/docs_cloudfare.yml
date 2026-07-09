@@ -7,7 +7,7 @@ on:
       - 'src/mm_behaviors/include/**'
       - 'src/mm_behaviors/src/**'
       - 'src/mm_behaviors/Doxyfile'
-      - '.github/workflows/docs-cloudflare.yml'
+      - '.github/workflows/docs_cloudflare.yml'
   workflow_dispatch: {}
 
 jobs:
