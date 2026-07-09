@@ -177,7 +177,7 @@ Every arm execution and every navigation call in the tree is gated by a `CheckBa
 
 Class-level documentation, including all ports, parameters, and inheritance diagrams, is generated with Doxygen and published at:
 
-👉 **https://kafando2000.github.io/mm_behaviors/**
+👉 **https://wstta-agri-docs.wstta-all.workers.dev/**
 
 To regenerate locally:
 ```bash
