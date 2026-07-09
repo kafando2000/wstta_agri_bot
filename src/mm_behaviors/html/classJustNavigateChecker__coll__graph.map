@@ -1,5 +1,0 @@
-<map id="JustNavigateChecker" name="JustNavigateChecker">
-<area shape="rect" id="Node000001" title="class to check if the robot must go back to initial state." alt="" coords="5,79,163,104"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="13,5,155,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,44,87,79,81,79,81,44"/>
-</map>

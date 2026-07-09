@@ -1,5 +1,0 @@
-<map id="BatteryChecker" name="BatteryChecker">
-<area shape="rect" id="Node000001" title="class to check battery state : it reads battery state from the BlackBoard and decides where okay or n..." alt="" coords="15,79,138,104"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,148,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,44,79,79,74,79,74,44"/>
-</map>
