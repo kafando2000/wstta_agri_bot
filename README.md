@@ -3,7 +3,7 @@
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-2980B9.svg)](./LICENSE)
 [![ROS 2](https://img.shields.io/badge/ROS%202-Jazzy-2980B9.svg)](https://docs.ros.org/en/jazzy/)
 [![BehaviorTree.CPP](https://img.shields.io/badge/BehaviorTree.CPP-v4-2980B9.svg)](https://www.behaviortree.dev/)
-[![Docs](https://img.shields.io/badge/docs-Doxygen-brightgreen.svg)](https://kafando2000.github.io/mm_behaviors/)
+[![Docs](https://img.shields.io/badge/docs-Doxygen-brightgreen.svg)](https://wstta-agri-docs.wstta-all.workers.dev/)
 
 Part of the **WSTTA AGRI BOT** project — an autonomous mobile manipulator for agricultural tasks (navigation, object picking, and container unloading).
 
