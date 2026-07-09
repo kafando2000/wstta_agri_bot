@@ -41,5 +41,5 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: mm-behaviors-docs
+          projectName: wstta-agri-docs
           directory: src/mm_behaviors/docs/html
