@@ -197,8 +197,8 @@ xdg-open docs/html/index.html
    - Register the node in `mm_bt_node.cpp` alongside the existing registrations
    - Add the node's ID and ports to the `<TreeNodesModel>` section of the BT XML so it shows correctly in Groot
 5. **Known limitations / TODO:**
-   - **Perception pipeline is not yet well-designed** — the object detection/pose estimation used by `mm_perception` is not robust enough to reliably pick objects in all conditions. This is one of the main areas needing improvement before real-world deployment.
-   - **Pose estimation on uneven outdoor terrain** — the robot relies on a **depth camera** and **GPS** for outdoor localization and object/container detection. On uneven terrain, both are affected: the depth camera's estimate of object pose shifts with the robot's tilt, and GPS alone lacks the precision needed for fine manipulation targets. A more robust approach (e.g. IMU/GPS fusion, terrain-aware calibration, or adding a secondary sensor) would be needed to handle this reliably.
+   - **Perception pipeline is not yet well-designed** 
+   - **Pose estimation on uneven outdoor terrain** — the robot should on a **depth camera and/or 3D LiDAR** and **GPS** for outdoor localization and object/container detection.
      
 6. Use **Groot2** to load the BT XML and visually inspect/edit the tree instead of editing the XML by hand where possible.
 
