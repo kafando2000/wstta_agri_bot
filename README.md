@@ -16,12 +16,12 @@ Part of the **WSTTA AGRI BOT** project — an autonomous mobile manipulator for 
 
 | Package | Role |
 |---|---|
-| **`mm_behaviors`** | **Behavior Tree implementation + full-system launch scripts — this package** |
+| **`mm_behaviors`** | **Behavior Tree implementation + full-system launch scripts** |
 | `mm_bringup` | Robot description: URDF files, meshes, and the simulation world |
-| `mm_nav` | Navigation stack (path planning, Nav2 integration) |
-| `mm_moveit` | Arm motion planning and execution (MoveIt2 integration) |
-| `mm_perception` | Object/container detection and pose estimation |
-| `custom_interfaces` | Shared custom ROS 2 messages/services/actions used across packages |
+| `mm_nav` | Navigation stack (path planning, Nav2 integration) setup |
+| `mm_moveit` | Arm motion with MoveIt2 integration setup|
+| `mm_perception` | Object/station detection and pose estimation |
+| `custom_interfaces` | not actually used in the project, but for concept pre-testing purposes |
 
 `mm_behaviors` implements the high-level orchestration logic (the behavior tree and its custom nodes) and also owns the top-level launch scripts that bring up the full system — simulation (Gazebo), navigation, MoveIt2, and the tree itself. It reads sensor/perception state (battery, container, object poses) from the blackboard and triggers navigation and manipulation packages via their respective interfaces, without containing any low-level control logic itself. The robot's physical description (URDF/meshes/world) lives in `mm_bringup` and is used by the simulation launch, not by this package directly.
 
@@ -29,14 +29,14 @@ Part of the **WSTTA AGRI BOT** project — an autonomous mobile manipulator for 
 
 - ROS 2 **Jazzy**
 - [BehaviorTree.CPP v4](https://www.behaviortree.dev/)
-- `mm_nav`, `mm_moveit`, `mm_perception`, `custom_interfaces` (built in the same workspace)
+- Nav2, MoveIt 2
 - Doxygen + Graphviz (optional, for regenerating API documentation)
 
 ## Simulation (Gazebo)
 
 The full-system launch scripts (`launch_robot.bash` / `launch_all_nav_gz_moveit.bash`) start the robot in **Gazebo Harmonic** (paired with ROS 2 Jazzy), using the world and robot description (URDF/meshes) defined in `mm_bringup`.
 
-- **Sensors:** the robot is designed for **outdoor use** and relies on a **depth camera** (for object/container perception and obstacle detection) and **GPS** (for outdoor localization, where indoor solutions like AMCL/SLAM are less reliable). Both are simulated via Gazebo plugins in the world/robot description from `mm_bringup`.
+- **Sensors:** the robot is designed for **outdoor use** and currently relies on  **2D LiDAR** and **IMU and Encoders data fusion** . Both ar simulated via Gazebo plugins in the world/robot description from `mm_bringup`.
 - A discrete GPU is recommended for smoother rendering, especially with the depth camera plugin active.
 - If the simulation runs slower than real-time, this can affect the battery-gated behavior tree timing and navigation accuracy — worth keeping in mind when debugging unexpected tree behavior in simulation vs. on the real robot.
 - The simulated terrain in the world file should ideally reflect the unevenness of real outdoor deployment conditions, since this is one of the known limitations affecting depth camera and GPS-based pose estimation (see [Known limitations](#for-the-next-user-continuing-this-project) below).
