@@ -23,10 +23,10 @@
  
   <depend>tf2</depend>
   <depend>tf2_ros</depend>
+  <depend>custom_interfaces</depend>
   <depend>tf2_geometry_msgs</depend>
   <exec_depend>moveit_kinematics</exec_depend>
   <exec_depend>moveit_planners</exec_depend>
-
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 

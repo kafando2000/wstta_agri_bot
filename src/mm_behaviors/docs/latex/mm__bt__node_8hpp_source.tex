@@ -1,0 +1,50 @@
+\doxysection{mm\+\_\+bt\+\_\+node.\+hpp}
+\hypertarget{mm__bt__node_8hpp_source}{}\label{mm__bt__node_8hpp_source}\index{include/mm\_behaviors/mm\_bt\_node.hpp@{include/mm\_behaviors/mm\_bt\_node.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}rclcpp/rclcpp.hpp"{}}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}rclcpp\_action/rclcpp\_action.hpp"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}nav2\_msgs/action/navigate\_to\_pose.hpp"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}behaviortree\_cpp/behavior\_tree.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}behaviortree\_cpp/bt\_factory.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}behaviortree\_cpp/xml\_parsing.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}yaml-\/cpp/yaml.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}mm\_behaviors/condition\_nodes.hpp"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}mm\_behaviors/mm\_moveit\_actions.hpp"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}mm\_behaviors/mm\_nav\_actions.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}mm\_behaviors/actions\_nodes.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}mm\_behaviors/mm\_moveit\_bt\_nodes.hpp"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}behaviortree\_cpp/loggers/groot2\_publisher.h"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <espeak/speak\_lib.h>}}
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ namespace\ }std::chrono\_literals;}
+\DoxyCodeLine{00016\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceWSTTA}{WSTTA}}\{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classWSTTA_1_1WsttaBtPipelineNode}{WsttaBtPipelineNode}}\ :\ \textcolor{keyword}{public}\ rclcpp::Node\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classWSTTA_1_1WsttaBtPipelineNode}{WsttaBtPipelineNode}}(\textcolor{keyword}{const}\ rclcpp::NodeOptions\ \&\ options);}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \mbox{\hyperlink{classWSTTA_1_1WsttaBtPipelineNode_a0fee23b55d4813cfbe3be0eb3c50ff40}{\string~WsttaBtPipelineNode}}()}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classWSTTA_1_1WsttaBtPipelineNode_a51e7bf436fce5f901cd2d882ed14e6c8}{tree\_}}.haltTree();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWSTTA_1_1WsttaBtPipelineNode_a758d3ea7046fe9733f24fa03e220259a}{tick\_function}}();}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWSTTA_1_1WsttaBtPipelineNode_a6395126009400c9061777c73db6a1d82}{read\_text\_in\_speak}}(std::string\ t);}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWSTTA_1_1WsttaBtPipelineNode_ae1ae7d044f84471be9eb83b703b31bc5}{create\_behavior\_tree}}();\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWSTTA_1_1WsttaBtPipelineNode_a8bd45600b2214cd02f0ab9ea75c1a15b}{battery\_state\_listener}}();}
+\DoxyCodeLine{00054\ \ \ \ \ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classWSTTA_1_1WsttaBtPipelineNode_abd30227353b527e6b94ef654363299df}{tree\_xml\_file\_}};}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ std::shared\_ptr<moveit\_cpp::MoveItCpp>\ \mbox{\hyperlink{classWSTTA_1_1WsttaBtPipelineNode_ae14a51fc67d62fbd98f0923c420bd045}{moveit\_cpp\_ptr}};}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ rclcpp::CallbackGroup::SharedPtr\ \mbox{\hyperlink{classWSTTA_1_1WsttaBtPipelineNode_a6a4119294fe529aca38855334a8c27fc}{callback\_group\_}};}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ BT::Tree\ \mbox{\hyperlink{classWSTTA_1_1WsttaBtPipelineNode_a51e7bf436fce5f901cd2d882ed14e6c8}{tree\_}};}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ std::unique\_ptr<BT::Groot2Publisher>\ \mbox{\hyperlink{classWSTTA_1_1WsttaBtPipelineNode_a269dc6d1b95440e22f910a08e1c53f33}{publisher\_ptr\_}};}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ BT::Blackboard::Ptr\ \mbox{\hyperlink{classWSTTA_1_1WsttaBtPipelineNode_ae8f5348aa993ac3db8b0ece66a049e2b}{global\_bb}};}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classWSTTA_1_1WsttaBtPipelineNode_a5e8654a58a074f9ec2f9468f50252668}{bat}};}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classWSTTA_1_1WsttaBtPipelineNode_ab093222dd15894e6a60d26ffc5b3bda1}{first\_}};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \};}
+\DoxyCodeLine{00076\ \}\textcolor{comment}{//\ end\ of\ namespace\ WSTTA}}
+\DoxyCodeLine{00077\ \textcolor{keywordtype}{int}\ main(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}\ **argv);}
+
+\end{DoxyCode}

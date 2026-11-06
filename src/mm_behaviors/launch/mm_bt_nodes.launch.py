@@ -20,6 +20,8 @@ from moveit_configs_utils.launch_utils import (
     add_debuggable_node,
     DeclareBooleanLaunchArg,
 )
+
+
 def load_yaml(package_name, file_path):
     package_path = get_package_share_directory(package_name)
     absolute_file_path = os.path.join(package_path, file_path)
@@ -29,6 +31,8 @@ def load_yaml(package_name, file_path):
             return yaml.safe_load(file)
     except EnvironmentError:  # parent of IOError, OSError *and* WindowsError where available
         return None
+
+
 def generate_move_group_launch(moveit_config):
     moveit_config = (
         MoveItConfigsBuilder("mm_moveit")
@@ -44,7 +48,6 @@ def generate_move_group_launch(moveit_config):
         .to_moveit_configs()
     )
 
-
     pkg_dir = get_package_share_directory('mm_behaviors')
     tree_path = os.path.join(pkg_dir, 'xml_tree', 'mm_behaviors.xml')
     # MoveItCpp demo executable
@@ -54,20 +57,19 @@ def generate_move_group_launch(moveit_config):
         package="mm_behaviors",
         executable="wstta_bt_node",
         output="screen",
-        parameters=[moveit_config.to_dict(),{"tree_xml_file":tree_path},{}],
+        parameters=[moveit_config.to_dict(), {"tree_xml_file": tree_path}, {}],
     )
 
-   
-
     ld = LaunchDescription()
-    
 
     ld.add_action(DeclareBooleanLaunchArg("debug", default_value=False))
     ld.add_action(
-        DeclareBooleanLaunchArg("allow_trajectory_execution", default_value=True)
+        DeclareBooleanLaunchArg(
+            "allow_trajectory_execution", default_value=True)
     )
     ld.add_action(
-        DeclareBooleanLaunchArg("publish_monitored_planning_scene", default_value=True)
+        DeclareBooleanLaunchArg(
+            "publish_monitored_planning_scene", default_value=True)
     )
     ld.add_action(
         DeclareBooleanLaunchArg("use_sim_time", default_value=True)
@@ -87,11 +89,11 @@ def generate_move_group_launch(moveit_config):
         )
     )
 
-
     kinematics_yaml = load_yaml("mm_moveit", "config/kinematics.yaml")
     # do not copy dynamics information from /joint_states to internal robot monitoring
     # default to false, because almost nothing in move_group relies on this information
-    ld.add_action(DeclareBooleanLaunchArg("monitor_dynamics", default_value=False))
+    ld.add_action(DeclareBooleanLaunchArg(
+        "monitor_dynamics", default_value=False))
 
     should_publish = LaunchConfiguration("publish_monitored_planning_scene")
     use_sim_time = LaunchConfiguration("use_sim_time")
@@ -119,11 +121,13 @@ def generate_move_group_launch(moveit_config):
         moveit_config.to_dict(),
         move_group_configuration,
         kinematics_yaml,
-        {"tree_xml_file":tree_path}
-        
+        {"tree_xml_file": tree_path}
+
     ]
 
     return ld
+
+
 """
 
 def generate_launch_description():

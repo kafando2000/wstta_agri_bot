@@ -1,0 +1,50 @@
+\doxysection{utils.\+hpp}
+\hypertarget{utils_8hpp_source}{}\label{utils_8hpp_source}\index{include/mm\_behaviors/utils.hpp@{include/mm\_behaviors/utils.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}rclcpp/rclcpp.hpp"{}}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <geometry\_msgs/msg/point.hpp>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <geometry\_msgs/msg/pose\_stamped.hpp>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#ifndef\ UTILS\_HPP}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ UTILS\_HPP}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ }Pose3D\ =\ geometry\_msgs::msg::Point;}
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ }PoseStamped\ =\ geometry\_msgs::msg::PoseStamped;}
+\DoxyCodeLine{00012\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structTargetPose}{TargetPose}}\{}
+\DoxyCodeLine{00013\ \ \ \ }
+\DoxyCodeLine{00014\ \ \ \ \ Pose3D\ position;}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{double}\ orientation;}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{structTargetPose_a24a76e953935ec32729a25f37b5bdf5a}{TargetPose}}()\{\}}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{structTargetPose_aeab1e4fd3cf39ee4a0e7aa5bb20752d3}{TargetPose}}(\textcolor{keywordtype}{double}\ x,\textcolor{keywordtype}{double}\ y,\textcolor{keywordtype}{double}\ z,\textcolor{keywordtype}{double}\ theta)\{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ position.set\_\_x(x);}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ position.set\_\_y(y);}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ position.set\_\_z(z);}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ orientation\ =\ theta;}
+\DoxyCodeLine{00030\ \ \ \ \ \}}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{structTargetPose_a3f3a6046141cfcf8a1d28cccf984ad90}{TargetPose}}(Pose3D\ L)\{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ position.set\_\_x(L.x);}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ position.set\_\_y(L.y);}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ position.set\_\_z(L.z);}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ orientation\ =\ 0.0;}
+\DoxyCodeLine{00039\ \ \ \ \ \}}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structTargetPose_a923f7377a8985c4da586231aafa565f0}{norm}}()\{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ just\ to\ have\ onground\ distance}}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::pow(position.x,2)+std::pow(position.y,2);}
+\DoxyCodeLine{00045\ \ \ \ \ \}}
+\DoxyCodeLine{00046\ \ \ \ \ }
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{structTargetPose}{TargetPose}}\ operator-\/(\textcolor{keyword}{const}\ \mbox{\hyperlink{structTargetPose}{TargetPose}}\&\ t2)\{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{structTargetPose_a24a76e953935ec32729a25f37b5bdf5a}{TargetPose}}(this-\/>position.x-\/t2.position.x,this-\/>position.y-\/t2.position.y,}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ this-\/>position.z-\/t2.position.z,this-\/>orientation-\/t2.orientation);}
+\DoxyCodeLine{00050\ \ \ \ \ \}}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{structTargetPose}{TargetPose}}\ operator+(\textcolor{keyword}{const}\ \mbox{\hyperlink{structTargetPose}{TargetPose}}\&\ t2)\{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{structTargetPose_a24a76e953935ec32729a25f37b5bdf5a}{TargetPose}}(this-\/>position.x+t2.position.x,this-\/>position.y+t2.position.y,}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ this-\/>position.z+t2.position.z,this-\/>orientation+t2.orientation);}
+\DoxyCodeLine{00054\ \ \ \ \ \}}
+\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00063\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structPlanObjectInfo}{PlanObjectInfo}}\{}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{int}\ index;}
+\DoxyCodeLine{00065\ \ \ \ \ PoseStamped\ pose;}
+\DoxyCodeLine{00066\ \};}
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

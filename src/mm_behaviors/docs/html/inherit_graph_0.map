@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,80,148,105"/>
+<area shape="rect" id="Node000001" href="$classWSTTA_1_1BatteryChecker.html" title="class to check battery state : it reads battery state from the BlackBoard and decides where okay or n..." alt="" coords="214,5,389,31"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="116,71,195,39,236,28,238,33,197,45,118,76"/>
+<area shape="rect" id="Node000002" href="$classWSTTA_1_1CheckGoToInitials.html" title="class to check if the robot must go back to initial state." alt="" coords="206,55,397,80"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="161,80,206,75,206,81,162,86"/>
+<area shape="rect" id="Node000003" href="$classWSTTA_1_1ContainerChecker.html" title="class to check container state : it reads sensor state from the BlackBoard to check if the container ..." alt="" coords="206,104,397,129"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="162,99,206,104,206,109,162,104"/>
+<area shape="rect" id="Node000004" href="$classWSTTA_1_1JustNavigateChecker.html" title="class to check if the robot must go back to initial state." alt="" coords="196,153,407,179"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="120,108,197,138,242,151,241,156,195,143,118,113"/>
+</map>

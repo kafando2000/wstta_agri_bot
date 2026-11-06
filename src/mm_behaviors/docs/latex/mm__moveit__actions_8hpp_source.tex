@@ -1,0 +1,152 @@
+\doxysection{mm\+\_\+moveit\+\_\+actions.\+hpp}
+\hypertarget{mm__moveit__actions_8hpp_source}{}\label{mm__moveit__actions_8hpp_source}\index{include/mm\_behaviors/mm\_moveit\_actions.hpp@{include/mm\_behaviors/mm\_moveit\_actions.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}rclcpp/rclcpp.hpp"{}}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}behaviortree\_cpp/behavior\_tree.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}tf2\_geometry\_msgs/tf2\_geometry\_msgs.hpp"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}geometry\_msgs/msg/transform\_stamped.hpp"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <geometry\_msgs/msg/point.hpp>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <moveit/move\_group\_interface/move\_group\_interface.hpp>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <moveit/planning\_scene\_interface/planning\_scene\_interface.hpp>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <rclcpp\_action/rclcpp\_action.hpp>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <moveit\_msgs/action/move\_group.hpp>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}tf2/exceptions.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <tf2/LinearMath/Quaternion.hpp>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <tf2/LinearMath/Matrix3x3.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}tf2\_ros/transform\_listener.h"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}tf2\_ros/buffer.h"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}tf2\_eigen/tf2\_eigen.hpp"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <moveit/robot\_state/conversions.hpp>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}geometry\_msgs/msg/point\_stamped.hpp"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}mm\_behaviors/utils.hpp"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <espeak/speak\_lib.h>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}moveit/robot\_model\_loader/robot\_model\_loader.hpp"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ "{}moveit/robot\_model/robot\_model.hpp"{}}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}moveit/robot\_state/robot\_state.hpp"{}}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPlanForTheArm}{PlanForTheArm}}\ :\ \textcolor{keyword}{public}\ BT::StatefulActionNode\{}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlanForTheArm}{PlanForTheArm}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keyword}{const}\ BT::NodeConfig\&\ config,\ rclcpp::Node::SharedPtr\ node\_ptr,}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::shared\_ptr<moveit::planning\_interface::MoveGroupInterface>\&\ move\_group):StatefulActionNode(name,config),}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ node\_ptr\_\{node\_ptr\},move\_group\{move\_group\}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ tf\_buffer\_\ =\ std::make\_unique<tf2\_ros::Buffer>(this-\/>node\_ptr\_-\/>get\_clock());}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ robot\_model\_\ =\ robot\_model\_loader\_-\/>getModel();}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ plan\_key\_\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ read\_text\_in\_speak(std::string\ t);}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ BT::NodeStatus\ onStart()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ BT::NodeStatus\ onRunning()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ onHalted()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ BT::PortsList\ providedPorts()\{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BT::InputPort<std::string>(\textcolor{stringliteral}{"{}plan\_key"{}}),}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BT::InputPort<std::vector<Pose3D>>(\textcolor{stringliteral}{"{}objects\_poses\_vect"{}}),}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BT::InputPort<double>(\textcolor{stringliteral}{"{}circle\_radius"{}}),}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BT::BidirectionalPort<double>(\textcolor{stringliteral}{"{}theta\_shift"{}}),}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BT::InputPort<bool>(\textcolor{stringliteral}{"{}is\_container\_full"{}}),}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BT::OutputPort<TargetPose>(\textcolor{stringliteral}{"{}base\_target"{}}),}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BT::OutputPort<moveit\_msgs::msg::RobotTrajectory>(\textcolor{stringliteral}{"{}arm\_joints\_traject"{}}),}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ get\_near\_pose\_index(std::vector<Pose3D>\&\ t,Pose3D\&\ robot\_pose)\{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ index\ =\ 0;}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structTargetPose}{TargetPose}}\ rob\{robot\_pose\};}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ min\ =\ (rob-\/t.at(0)).norm();}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\ k:t)\{}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ dist\ =\ (rob-\/k).norm();}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(min\ >\ dist)\{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ min\ =\ dist;}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ++index;}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ index;}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ where\ the\ base\ should\ stay\ to\ pick\ object}}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ theta,theta2,\ shift\_theta,shift\_amplitude;}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structTargetPose}{TargetPose}}\ nav\_target\_pose;}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structTargetPose}{TargetPose}}\ nav\_target\_in\_odom;}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ the\ robot\ current\ positon}}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ Pose3D\ robot\_pose\_in\_map;}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ Pose3D\ robot\_pose\_in\_odom;}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ selected\ near\ object}}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ Pose3D\ object\_pose;}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ the\ at\ most\ five\ objects}}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ std::vector<Pose3D>\ Objects\_poses;}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ raduis\ of\ security\ from\ object}}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ radius;}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ rclcpp::Node::SharedPtr\ node\_ptr\_;}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ tf\ buffer\ and\ listener\ to\ get\ robot\ pose}}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ std::unique\_ptr<tf2\_ros::Buffer>\ tf\_buffer\_;}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ std::shared\_ptr<tf2\_ros::TransformListener>\ tf\_listener\_;}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ std::shared\_ptr<robot\_model\_loader::RobotModelLoader>\ robot\_model\_loader\_;}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ std::shared\_ptr<moveit::core::RobotState>\ state\_;}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ moveit::core::RobotModelPtr\ robot\_model\_;}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ the\ moveit\ plan}}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \textcolor{comment}{//moveit\_msgs::msg::RobotTrajectory\ my\_plan;}}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ moveit::planning\_interface::MoveGroupInterface::Plan\ my\_plan;}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ std::shared\_ptr<moveit::planning\_interface::MoveGroupInterface>\ move\_group;}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ geometry\_msgs::msg::PointStamped\ object\_odom\_pose;}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ moveit::core::MoveItErrorCode\ status\_;}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ std::string\ plan\_key\_;}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ index;}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \};}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{keyword}{using\ }ExecuteTrajectory\ =\ moveit\_msgs::action::ExecuteTrajectory;}
+\DoxyCodeLine{00104\ \textcolor{keyword}{using\ }GoalHandleMoveit\ =\ rclcpp\_action::ClientGoalHandle<ExecuteTrajectory>;}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classExecuteArmPlan}{ExecuteArmPlan}}\ :\ \textcolor{keyword}{public}\ BT::StatefulActionNode\{}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classExecuteArmPlan}{ExecuteArmPlan}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keyword}{const}\ BT::NodeConfig\&\ config,\ rclcpp::Node::SharedPtr\ node\_ptr,}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::shared\_ptr<moveit::planning\_interface::MoveGroupInterface>\&\ move\_group):StatefulActionNode(name,config),}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ node\_ptr\_\{node\_ptr\},move\_group\{move\_group\}}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ read\_text\_in\_speak(std::string\ t);}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ BT::NodeStatus\ onStart()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ BT::NodeStatus\ onRunning()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ onHalted()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ BT::PortsList\ providedPorts()\{}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\{}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BT::InputPort<moveit\_msgs::msg::RobotTrajectory>(\textcolor{stringliteral}{"{}arm\_joints\_traject"{}}),}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BT::BidirectionalPort<bool>(\textcolor{stringliteral}{"{}is\_container\_full"{}}),}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ result\_callback(\textcolor{keyword}{const}\ GoalHandleMoveit::WrappedResult\&\ result);}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ rclcpp::Node::SharedPtr\ node\_ptr\_;}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ the\ moveit\ plan}}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ moveit\_msgs::msg::RobotTrajectory\ my\_plan;}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ std::shared\_ptr<moveit::planning\_interface::MoveGroupInterface>\ move\_group;}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ rclcpp\_action::ResultCode\ moveit\_result\_;}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ is\_over;}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ rclcpp\_action::Client<ExecuteTrajectory>::SharedPtr\ client\_ptr\_;}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ GoalHandleMoveit::SharedPtr\ client\_goal\_handle;}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ products\_counter\ =\ 0;}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \};}
+
+\end{DoxyCode}

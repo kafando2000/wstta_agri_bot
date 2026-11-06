@@ -74,15 +74,15 @@ diff_drive_controller:
     odom_frame_id: odom
     base_frame_id: base_footprint
     open_loop: false        # Use feedback (true) or just commands (false)
-    enable_odom_tf: true    # Publish the odom -> base_footprint transform
+    enable_odom_tf: false    # Publish the odom -> base_footprint transform
+    # Odometry topic outputs
+    odometry_topic: /odom
     
     # Velocity Limits (Optional but recommended)
     linear.x.has_velocity_limits: true
     linear.x.max_velocity: 0.5
     angular.z.has_velocity_limits: true
     angular.z.max_velocity: 3.0
-  
-
 sine_controller:
   ros__parameters:
     joints:

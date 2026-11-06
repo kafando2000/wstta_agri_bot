@@ -162,6 +162,8 @@ void WsttaBtPipelineNode::create_behavior_tree() {
     object3.set__y(-6.000000);
     object3.set__z(0.0700000);
 
+    // seting global black board entries
+
     global_bb->set("circle_radius",raduis);
     global_bb->set("theta_shift",0.0000000);
     global_bb->set("base_initial_pose",initial);
